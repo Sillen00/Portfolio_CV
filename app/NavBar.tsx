@@ -7,8 +7,8 @@ const NavBar = () => {
 
   const links = [
     { href: "/", label: "Portfolio" },
-    { href: "/cv", label: "CV" },
     { href: "/contact", label: "Contact" },
+    { href: "/cv", label: "CV" },
   ];
 
   return (
