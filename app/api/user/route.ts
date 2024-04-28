@@ -1,4 +1,4 @@
-import prisma from "@/prisma/prisma";
+import prisma from "@/prisma/client";
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 // npm install bcrypt
@@ -6,19 +6,18 @@ import { z } from "zod";
 // ZOD VALIDATION SCHEMA -----------------------------------------------------------
 // ZOD VALIDATION SCHEMA -----------------------------------------------------------
 // ZOD VALIDATION SCHEMA -----------------------------------------------------------
-const passwordSchema = z.string().min(8).max(255);
-// .refine((val) => {
-//   if (!val.match(/[a-z]/)) {
-//     throw new Error("Password must contain at least one lowercase letter");
-//   }
-//   if (!val.match(/[A-Z]/)) {
-//     throw new Error("Password must contain at least one uppercase letter");
-//   }
-//   if (!val.match(/[0-9]/)) {
-//     throw new Error("Password must contain at least one number");
-//   }
-//   return true;
-// });
+const passwordSchema = z.string().min(8).max(255).refine((val) => {
+  if (!val.match(/[a-z]/)) {
+    throw new Error("Password must contain at least one lowercase letter");
+  }
+  if (!val.match(/[A-Z]/)) {
+    throw new Error("Password must contain at least one uppercase letter");
+  }
+  if (!val.match(/[0-9]/)) {
+    throw new Error("Password must contain at least one number");
+  }
+  return true;
+});
 
 // const hashedPassword = await bcrypt.hash(userValidation.data.password, 10);
 
@@ -42,27 +41,19 @@ export async function post(req: NextRequest) {
     };
   }
 
-  const newUser = await prisma.user.create({
-    data: {
-      email: user.data.email,
-      password: user.data.password, // Store hashed password in the database
-    },
-  });
+  try {
+    const newUser = await prisma.user.create({
+      data: {
+        email: user.data.email,
+        password: user.data.password, // Store hashed password in the database
+      },
+    });
 
-  return NextResponse.json({ user: newUser }, { status: 201 });
-  // try {
-  //   const newUser = await prisma.user.create({
-  //     data: {
-  //       email: user.data.email,
-  //       password: user.data.password, // Store hashed password in the database
-  //     },
-  //   });
-
-  //   return NextResponse.json({ user: newUser }, { status: 201 });
-  // } catch (error) {
-  //   return {
-  //     status: 500,
-  //     body: { error: "Failed to create user" },
-  //   };
-  // }
+    return NextResponse.json({ user: newUser }, { status: 201 });
+  } catch (error) {
+    return {
+      status: 500,
+      body: { error: "Failed to create user" },
+    };
+  }
 }
