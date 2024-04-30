@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <nav>
-      <Link href="/">Logo</Link>
+      <Link href='/'>Logo</Link>
       <ul>
         <li>
           {links.map(({ href, label }) => (

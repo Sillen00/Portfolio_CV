@@ -6,18 +6,22 @@ import { z } from "zod";
 // ZOD VALIDATION SCHEMA -----------------------------------------------------------
 // ZOD VALIDATION SCHEMA -----------------------------------------------------------
 // ZOD VALIDATION SCHEMA -----------------------------------------------------------
-const passwordSchema = z.string().min(8).max(255).refine((val) => {
-  if (!val.match(/[a-z]/)) {
-    throw new Error("Password must contain at least one lowercase letter");
-  }
-  if (!val.match(/[A-Z]/)) {
-    throw new Error("Password must contain at least one uppercase letter");
-  }
-  if (!val.match(/[0-9]/)) {
-    throw new Error("Password must contain at least one number");
-  }
-  return true;
-});
+const passwordSchema = z
+  .string()
+  .min(8)
+  .max(255)
+  .refine(val => {
+    if (!val.match(/[a-z]/)) {
+      throw new Error("Password must contain at least one lowercase letter");
+    }
+    if (!val.match(/[A-Z]/)) {
+      throw new Error("Password must contain at least one uppercase letter");
+    }
+    if (!val.match(/[0-9]/)) {
+      throw new Error("Password must contain at least one number");
+    }
+    return true;
+  });
 
 // const hashedPassword = await bcrypt.hash(userValidation.data.password, 10);
 

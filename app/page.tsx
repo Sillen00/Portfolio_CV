@@ -11,7 +11,7 @@ type Props = {
 
 const emojiRegex = /\p{Emoji}/u;
 const formSchema = z.object({
-  emoji: z.string().refine((value) => emojiRegex.test(value), {
+  emoji: z.string().refine(value => emojiRegex.test(value), {
     message: "Only emojis are allowed",
   }),
 });
@@ -36,8 +36,8 @@ export default function Home({ users }: Props) {
     <div>
       <h2>hej</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <input max={1} maxLength={1} className="border-2 border-black" type="text" {...register("emoji")} />
-        <button className="border-2 bg-orange-600" type="submit">
+        <input max={1} maxLength={1} className='border-2 border-black' type='text' {...register("emoji")} />
+        <button className='border-2 bg-orange-600' type='submit'>
           Submit emoji
         </button>
       </form>
