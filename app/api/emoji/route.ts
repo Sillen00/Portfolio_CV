@@ -1,9 +1,8 @@
 import prisma from "@/prisma/client";
 import { NextRequest, NextResponse } from "next/server";
 
-export async function POST(req: NextRequest) {
+export async function POST(req: NextRequest, res: NextResponse) {
   const { emoji } = await req.json();
-  console.log(emoji);
   try {
     const newEmoji = await prisma.emoji.create({
       data: {
@@ -11,7 +10,16 @@ export async function POST(req: NextRequest) {
       },
     });
 
-    return NextResponse.json({ emoji: newEmoji }, { status: 201 });
+    // return NextResponse.json({ emoji: newEmoji }, { status: 201 });
+    return NextResponse.json(
+      { emoji: newEmoji },
+      {
+        status: 201,
+        headers: {
+          "Content-Type": "application/json; charset=utf-8mb4",
+        },
+      }
+    );
   } catch (error) {
     return {
       status: 500,
