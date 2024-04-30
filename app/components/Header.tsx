@@ -6,9 +6,10 @@ const Header = () => {
   const currentPath = usePathname();
 
   const links = [
-    { href: "/", label: "Portfolio" },
-    { href: "/contact", label: "Contact" },
-    { href: "/cv", label: "CV" },
+    { href: "#about", label: "About" },
+    { href: "#experience", label: "Experience" },
+    { href: "#portfolio", label: "Portfolio" },
+    { href: "#contact", label: "Contact" },
   ];
 
   return (
@@ -17,9 +18,9 @@ const Header = () => {
       <ul>
         <li>
           {links.map(({ href, label }) => (
-            <Link key={href} href={href} className={`${href === currentPath ? "text-zinc-900" : "text-zinc-500"} hover:text-ORANGE-900`}>
+            <a key={href} href={href} className={`${href === currentPath ? "text-zinc-900" : "text-zinc-500"} hover:text-ORANGE-900`}>
               {label}
-            </Link>
+            </a>
           ))}
         </li>
       </ul>

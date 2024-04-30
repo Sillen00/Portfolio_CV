@@ -4,6 +4,10 @@ import { User } from "@prisma/client";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
+import About from "./containers/home-page/About";
+import Contact from "./containers/home-page/Contact";
+import Experience from "./containers/home-page/Experience";
+import Portfolio from "./containers/home-page/Portfolio";
 
 type Props = {
   users: User[];
@@ -34,7 +38,10 @@ export default function Home({ users }: Props) {
 
   return (
     <div>
-      <h2>hej</h2>
+      <About />
+      <Experience />
+      <Portfolio />
+      <Contact />
       <form onSubmit={handleSubmit(onSubmit)}>
         <input max={1} maxLength={1} className='border-2 border-black' type='text' {...register("emoji")} />
         <button className='border-2 bg-orange-600' type='submit'>

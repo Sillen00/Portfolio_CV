@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div>
+    <div className="min-h-96"  id='contact'>
       <h2>Contact</h2>
       <h2>Contact</h2>
       <h2>Contact</h2>
