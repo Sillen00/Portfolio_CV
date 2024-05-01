@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div className="min-h-96"  id='contact'>
+    <div className='max-w-screen-lg mx-auto'  id='contact'>
       <h2>Contact</h2>
       <h2>Contact</h2>
       <h2>Contact</h2>

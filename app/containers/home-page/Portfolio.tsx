@@ -1,6 +1,6 @@
 const Portfolio = () => {
   return (
-    <div className='min-h-96' id='portfolio'>
+    <div className='max-w-screen-lg mx-auto' id='portfolio'>
       <h2>Portfolio</h2>
     </div>
   );
