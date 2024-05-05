@@ -14,19 +14,28 @@ const Header = () => {
   ];
 
   return (
-    <nav className='flex justify-between items-center px-12 fixed w-full'>
+    <nav className='flex justify-between items-center px-12 py-2 fixed w-full'>
       <Link href='/'>
         <Image width={30} height={30} alt="Simon Bengtsson 'S' logo." src='/logo.png' />
       </Link>
-      <ul className='flex gap-8'>
-        {links.map(({ href, label }, index) => (
-          <li key={href} className={"hover:text-orange-600"}>
-            <a href={href}>
-              <span className='text-cyan-400'>0{index + 1}</span> {label}
-            </a>
-          </li>
-        ))}
-      </ul>
+
+      <div className='flex items-center gap-8'>
+        <ul className='gap-6 hidden md:flex'>
+          {links.map(({ href, label }, index) => (
+            <li key={href} className={"hover:text-secondary"}>
+              <a href={href}>
+                <span className='text-secondary-color'>0{index + 1}.</span> {label}
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        <button className='border-secondary-color border-2 px-4 py-1.5 rounded-md text-secondary-color'>Resume</button>
+
+        <div className='md:hidden'>
+          -- <br />
+        </div>
+      </div>
     </nav>
   );
 };
