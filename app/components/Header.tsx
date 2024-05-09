@@ -1,11 +1,17 @@
 "use client";
+import { AlignJustify } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import { twMerge } from "tailwind-merge";
 
 const Header = () => {
   // const currentPath = usePathname();
   // className={`${href === currentPath ? "text-zinc-900" : "text-zinc-500"} hover:text-orange-600`}>
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  console.log(isMenuOpen);
   const links = [
     { href: "#about", label: "About" },
     { href: "#experience", label: "Experience" },
@@ -14,13 +20,13 @@ const Header = () => {
   ];
 
   return (
-    <nav className='flex justify-between items-center px-12 py-2 fixed w-full'>
+    <header className='flex justify-between items-center px-12 py-2 fixed w-full'>
       <Link href='/'>
-        <Image width={30} height={30} alt="Simon Bengtsson 'S' logo." src='/logo.png' />
+        <Image width={30} height={30} alt="Simon Bengtsson 'S' logo." src='/logo.png' style={{ width: "auto", height: "auto" }} />
       </Link>
 
-      <div className='flex items-center gap-8'>
-        <ul className='gap-6 hidden md:flex'>
+      <nav>
+        <ul className={twMerge("gap-6 hidden md:flex items-center")}>
           {links.map(({ href, label }, index) => (
             <li key={href} className={"hover:text-secondary"}>
               <a href={href}>
@@ -28,15 +34,36 @@ const Header = () => {
               </a>
             </li>
           ))}
+          <button className='border-secondary-color ml-6 border-2 px-4 py-1.5 rounded-md text-secondary-color'>Resume</button>
         </ul>
 
-        <button className='border-secondary-color border-2 px-4 py-1.5 rounded-md text-secondary-color'>Resume</button>
+        {isMenuOpen && (
+          <div className='absolute top-0 left-0 w-full h-screen bg-primary-color-dark'>
+            <div className='flex justify-between items-center px-12 py-2' onClick={() => setIsMenuOpen(prevState => !prevState)}>
+              <Image width={30} height={30} alt="Simon Bengtsson 'S' logo." src='/logo.png' style={{ width: "auto", height: "auto" }} />
+              <AlignJustify width={30} />
+            </div>
 
-        <div className='md:hidden'>
-          -- <br />
+            <ul className={twMerge("flex flex-col items-start pt-12")}>
+              {links.map(({ href, label }, index) => (
+                <li onClick={() => setIsMenuOpen(prevState => !prevState)} key={href} className={"hover:bg-accent-color w-full py-3 pl-12"}>
+                  <a href={href}>
+                    <span className='text-secondary-color'>0{index + 1}.</span> {label}
+                  </a>
+                </li>
+              ))}
+              <button className='border-secondary-color mt-12 mx-auto w-[calc(100%-96px)] border-2 px-4 py-1.5 rounded-md text-secondary-color'>
+                Resume
+              </button>
+            </ul>
+          </div>
+        )}
+
+        <div onClick={() => setIsMenuOpen(prevState => !prevState)} className='md:hidden'>
+          <AlignJustify width={30} />
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 };
 

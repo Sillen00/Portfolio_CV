@@ -4,7 +4,7 @@
 
 :root {
   --text-color: 255, 255, 255;
-  --background-color: 0, 0, 0;
+  --background-color: 38, 28, 33; /* Primary color */
 }
 
 * {
