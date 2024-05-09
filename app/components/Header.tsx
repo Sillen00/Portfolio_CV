@@ -1,5 +1,5 @@
 "use client";
-import { AlignJustify } from "lucide-react";
+import { AlignJustify, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -41,7 +41,7 @@ const Header = () => {
           <div className='absolute top-0 left-0 w-full h-screen bg-primary-color-dark'>
             <div className='flex justify-between items-center px-12 py-2' onClick={() => setIsMenuOpen(prevState => !prevState)}>
               <Image width={30} height={30} alt="Simon Bengtsson 'S' logo." src='/logo.png' style={{ width: "auto", height: "auto" }} />
-              <AlignJustify width={30} />
+              <X width={30} />
             </div>
 
             <ul className={twMerge("flex flex-col items-start pt-12")}>
