@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
+import OrangeOutlineBtn from "./OrangeOutlineBtn";
 
 const Header = () => {
   // const currentPath = usePathname();
@@ -28,13 +29,13 @@ const Header = () => {
       <nav>
         <ul className={twMerge("gap-6 hidden md:flex items-center")}>
           {links.map(({ href, label }, index) => (
-            <li key={href} className={"hover:text-secondary"}>
+            <li key={href} className={"hover:text-secondary-color"}>
               <a href={href}>
                 <span className='text-secondary-color'>0{index + 1}.</span> {label}
               </a>
             </li>
           ))}
-          <button className='border-secondary-color ml-6 border-2 px-4 py-1.5 rounded-md text-secondary-color'>Resume</button>
+          <OrangeOutlineBtn className='ml-6'>Resume</OrangeOutlineBtn>
         </ul>
 
         {isMenuOpen && (
@@ -52,9 +53,10 @@ const Header = () => {
                   </a>
                 </li>
               ))}
-              <button className='border-secondary-color mt-12 mx-auto w-[calc(100%-96px)] border-2 px-4 py-1.5 rounded-md text-secondary-color'>
+              {/* <button className='border-secondary-color mt-12 mx-auto w-[calc(100%-96px)] border-2 px-4 py-1.5 rounded-md text-secondary-color'>
                 Resume
-              </button>
+              </button> */}
+              <OrangeOutlineBtn className='mt-12 mx-auto w-[calc(100%-96px)]'>Resume</OrangeOutlineBtn>
             </ul>
           </div>
         )}
