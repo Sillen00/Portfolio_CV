@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
+import css from "./Header.module.scss";
 import OrangeOutlineBtn from "./OrangeOutlineBtn";
 
 const Header = () => {
@@ -12,7 +13,6 @@ const Header = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  console.log(isMenuOpen);
   const links = [
     { href: "#about", label: "About" },
     { href: "#experience", label: "Experience" },
@@ -23,7 +23,15 @@ const Header = () => {
   return (
     <header className='flex justify-between items-center px-12 py-2 fixed w-full'>
       <Link href='/'>
-        <Image width={30} height={30} alt="Simon Bengtsson 'S' logo." src='/logo.png' style={{ width: "auto", height: "auto" }} />
+        <Image
+          className={css.logo}
+          priority
+          width={10}
+          height={10}
+          alt="Simon Bengtsson 'S' logo."
+          src='/logoFull.svg'
+          style={{ width: "30px", height: "auto" }}
+        />
       </Link>
 
       <nav>
@@ -42,7 +50,7 @@ const Header = () => {
         {isMenuOpen && (
           <div className='absolute top-0 left-0 w-full h-screen bg-primary-color-dark'>
             <div className='flex justify-between items-center px-12 py-2' onClick={() => setIsMenuOpen(prevState => !prevState)}>
-              <Image width={30} height={30} alt="Simon Bengtsson 'S' logo." src='/logo.png' style={{ width: "auto", height: "auto" }} />
+              <Image width={30} height={30} alt="Simon Bengtsson 'S' logo." src='/logo.png' style={{ width: "30px", height: "30px" }} />
               <X width={30} />
             </div>
 
