@@ -27,15 +27,16 @@ const Header = () => {
       </Link>
 
       <nav>
-        <ul className={twMerge("gap-6 hidden md:flex items-center")}>
+        <ul className={twMerge("gap-5 hidden md:flex items-center")}>
           {links.map(({ href, label }, index) => (
             <li key={href} className={"hover:text-secondary-color"}>
               <a href={href}>
-                <span className='text-secondary-color'>0{index + 1}.</span> {label}
+                <span className='text-secondary-color'>0{index + 1}.</span>
+                {label}
               </a>
             </li>
           ))}
-          <OrangeOutlineBtn className='ml-6'>Resume</OrangeOutlineBtn>
+          <OrangeOutlineBtn className='ml-5'>Resume</OrangeOutlineBtn>
         </ul>
 
         {isMenuOpen && (
@@ -53,9 +54,6 @@ const Header = () => {
                   </a>
                 </li>
               ))}
-              {/* <button className='border-secondary-color mt-12 mx-auto w-[calc(100%-96px)] border-2 px-4 py-1.5 rounded-md text-secondary-color'>
-                Resume
-              </button> */}
               <OrangeOutlineBtn className='mt-12 mx-auto w-[calc(100%-96px)]'>Resume</OrangeOutlineBtn>
             </ul>
           </div>

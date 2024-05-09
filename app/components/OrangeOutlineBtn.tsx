@@ -1,4 +1,5 @@
 import { twMerge } from "tailwind-merge";
+import css from "./OrangeOutlineBtn.module.scss";
 
 interface OrangeOutlineBtnProps {
   className?: string;
@@ -7,7 +8,7 @@ interface OrangeOutlineBtnProps {
 
 const OrangeOutlineBtn: React.FC<OrangeOutlineBtnProps> = ({ className, children }) => {
   return (
-    <button className={twMerge(className, "border-secondary-color border-2 px-4 py-1.5 rounded-md text-secondary-color")}>
+    <button className={twMerge(className, css.btn, "border-secondary-color border-2 px-4 py-1.5 rounded-md text-secondary-color")}>
       {children}
     </button>
   );
