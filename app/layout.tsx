@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fira_Mono } from "next/font/google";
+import { Fira_Mono, Lato } from "next/font/google";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./globals.css";
@@ -9,6 +9,13 @@ const inter = Fira_Mono({
   style: "normal",
   subsets: ["latin"],
   variable: "--fira-mono",
+});
+
+const lato = Lato({
+  weight: "400",
+  style: "normal",
+  subsets: ["latin"],
+  variable: "--lato",
 });
 
 export const metadata: Metadata = {

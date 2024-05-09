@@ -2,11 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 :root {
   --text-color: 255, 255, 255;
   --background-color: 38, 28, 33; /* Primary color */
   --secondary-color: rgb(222, 65, 38); /* Primary color */
   --accent-color: rgb(176, 37, 79);
+  --roboto: "Roboto", sans-serif;
 }
 
 * {
@@ -26,7 +29,9 @@ body {
 
 /* Typography */
 h2 {
+  font-family: var(--roboto);
   font-size: clamp(2.5rem, 0.714rem + 4.762vw, 5rem);
+  letter-spacing: -3px;
 }
 
 p,
