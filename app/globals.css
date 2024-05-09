@@ -5,6 +5,7 @@
 :root {
   --text-color: 255, 255, 255;
   --background-color: 38, 28, 33; /* Primary color */
+  --secondary-color: rgb(222, 65, 38); /* Primary color */
   --accent-color: rgb(176, 37, 79);
 }
 
