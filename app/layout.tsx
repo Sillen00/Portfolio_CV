@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Fira_Mono } from "next/font/google";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Fira_Mono({
+  weight: "400",
+  style: "normal",
+  subsets: ["latin"],
+  variable: "--fira-mono",
+});
 
 export const metadata: Metadata = {
   title: "Portfolio - Simon Bengtsson - Fullstack Developer - Gothenburg",
