@@ -23,3 +23,13 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Typography */
+h2 {
+  font-size: clamp(2.5rem, 0.714rem + 4.762vw, 5rem);
+}
+
+p,
+a {
+  font-size: clamp(1.125rem, 1.036rem + 0.238vw, 1.25rem);
+}
