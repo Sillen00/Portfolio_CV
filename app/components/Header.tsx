@@ -21,7 +21,7 @@ const Header = () => {
   ];
 
   return (
-    <header className='flex justify-between items-center px-12 py-2 fixed w-full'>
+    <header className='flex justify-between items-center px-6 md:px-12 py-2 fixed w-full'>
       <Link href='/'>
         <Image
           className={css.logo}
@@ -39,12 +39,12 @@ const Header = () => {
           {links.map(({ href, label }, index) => (
             <li key={href} className={"hover:text-secondary-color"}>
               <a href={href}>
-                <span className='text-secondary-color'>0{index + 1}.</span>
+                <span className='text-secondary-color'>0{index + 1}. </span>
                 {label}
               </a>
             </li>
           ))}
-          <OrangeOutlineBtn className='ml-5'>Resume</OrangeOutlineBtn>
+          <OrangeOutlineBtn className='ml-5 px-4 py-1.5'>Resume</OrangeOutlineBtn>
         </ul>
 
         {isMenuOpen && (
@@ -62,7 +62,7 @@ const Header = () => {
                   </a>
                 </li>
               ))}
-              <OrangeOutlineBtn className='mt-12 mx-auto w-[calc(100%-96px)]'>Resume</OrangeOutlineBtn>
+              <OrangeOutlineBtn className='mt-12 px-4 py-1.5 mx-auto w-[calc(100%-96px)]'>Resume</OrangeOutlineBtn>
             </ul>
           </div>
         )}
