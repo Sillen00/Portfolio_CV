@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fira_Mono, Lato } from "next/font/google";
+import AbsoluteLinks from "./components/AbsoluteLinks";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./globals.css";
@@ -50,6 +51,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={inter.className}>
         <Header />
+        <AbsoluteLinks />
         <main>{children}</main>
         <Footer />
       </body>
