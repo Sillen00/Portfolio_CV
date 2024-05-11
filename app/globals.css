@@ -7,6 +7,7 @@
 :root {
   --text-color: 204, 214, 246;
   --background-color: 32, 32, 32; /* Primary color */
+  --text-color-color: rgb(204, 214, 246);
   --secondary-color: rgb(222, 65, 38); /* Primary color */
   --accent-color: rgb(176, 37, 79);
   --roboto: "Roboto", sans-serif;
@@ -44,13 +45,14 @@ body {
 
 h1 {
   font-family: var(--roboto);
-  font-size: clamp(3rem, 1.071rem + 5.357vw, 6rem); /* 48px - 96px */
+  font-size: clamp(2.5rem, 1.071rem + 3.81vw, 4.5rem); /* 40px - 72px */
   letter-spacing: -4px;
+  font-weight: 700;
 }
 
 h2 {
   font-family: var(--roboto);
-  font-size: clamp(2.5rem, 0.714rem + 4.762vw, 5rem); /* 40px - 80px */
+  font-size: clamp(2.5rem, 1.071rem + 3.81vw, 4.5rem); /* 40px - 72px */
   letter-spacing: -3px;
   font-weight: 700;
 }
