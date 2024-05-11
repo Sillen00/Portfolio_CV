@@ -1,0 +1,22 @@
+.lineSocials::after {
+  content: ' ';
+  // display: block;
+  position: absolute;
+  top: calc(100% + 18px) ;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--secondary-color);
+  width: 2px;
+  height: 300px;
+}
+
+.lineEmail::after {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 18px);
+  transform: translateY(50%);
+  background-color: var(--secondary-color);
+  width: 300px;
+  height: 2px;
+}

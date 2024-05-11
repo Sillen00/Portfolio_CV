@@ -1,10 +1,12 @@
 import { Github, Linkedin, Phone } from "lucide-react";
 import Link from "next/link";
+import { twMerge } from "tailwind-merge";
+import css from "./AbsoluteLinks.module.scss";
 
 const AbsoluteLinks = () => {
   return (
     <>
-      <div className='hidden fixed bottom-36 left-12 z-10 md:flex flex-col gap-4'>
+      <div className={twMerge(css.lineSocials, 'hidden fixed bottom-36 left-12 z-10 md:flex flex-col gap-4')}>
         <Link className='hover:text-secondary-color' href='github'>
           <Github />
         </Link>
@@ -15,7 +17,7 @@ const AbsoluteLinks = () => {
           <Phone />
         </Link>
       </div>
-      <div className='hidden md:block fixed bottom-64 -right-16 z-10 rotate-90'>
+      <div className={twMerge(css.lineEmail, 'hidden md:block fixed bottom-64 -right-16 z-10 rotate-90')}>
         <Link className='hover:text-secondary-color' href='mail'>
           simonbengtsson00@gmail.com
         </Link>
