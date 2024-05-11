@@ -21,7 +21,7 @@ const Header = () => {
   ];
 
   return (
-    <header className='flex justify-between items-center px-6 md:px-12 py-2 fixed w-full'>
+    <header className='fira flex justify-between items-center px-6 md:px-12 py-2 fixed w-full'>
       <Link href='/'>
         <Image
           className={css.logo}

@@ -1,22 +1,15 @@
 import type { Metadata } from "next";
-import { Fira_Mono, Lato } from "next/font/google";
+import { Roboto } from "next/font/google";
 import AbsoluteLinks from "./components/AbsoluteLinks";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./globals.css";
 
-const inter = Fira_Mono({
+const inter = Roboto({
   weight: "400",
   style: "normal",
   subsets: ["latin"],
-  variable: "--fira-mono",
-});
-
-const lato = Lato({
-  weight: "400",
-  style: "normal",
-  subsets: ["latin"],
-  variable: "--lato",
+  variable: "--roboto",
 });
 
 export const metadata: Metadata = {
