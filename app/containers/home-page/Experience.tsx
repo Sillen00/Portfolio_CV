@@ -1,6 +1,9 @@
 const Experience = () => {
   return (
-    <div className='max-w-screen-lg mx-auto' id='experience'>
+    <div className='max-w-screen-lg mx-auto px-6 md:px-24' id='experience'>
+      <h2>Experience</h2>
+      <h2>Experience</h2>
+      <h2>Experience</h2>
       <h2>Experience</h2>
     </div>
   );
