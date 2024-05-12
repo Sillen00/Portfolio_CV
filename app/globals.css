@@ -6,10 +6,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap");
 
 :root {
-  --text-color: 204, 214, 246;
-  --background-color: 32, 32, 32; /* Primary color */
-  --text-color-color: rgb(204, 214, 246);
-  --secondary-color: rgb(222, 65, 38); /* Primary color */
+  --text-color: rgb(204, 214, 246);
+  --background-color: rgb(32, 32, 32); /* Primary color */
+  --secondary-color: rgb(222, 65, 38);
   --accent-color: rgb(176, 37, 79);
   --roboto: "Roboto", sans-serif;
   --fira: "Fira Mono", monospace;
@@ -21,12 +20,12 @@
 
 html {
   scrollbar-width: thin;
-  scrollbar-color: #888888 rgb(var(--background-color));
+  scrollbar-color: #888888 var(--background-color);
 }
 
 body {
-  color: rgb(var(--text-color));
-  background-color: rgb(var(--background-color));
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 @layer utilities {
@@ -66,13 +65,15 @@ h3 {
   font-weight: 700;
 }
 
+p.fira,
+a.fira {
+  font-size: clamp(0.875rem, 0.786rem + 0.238vw, 1rem); /* 14px - 16px */
+  letter-spacing: 0.5px;
+}
 p,
 a {
-  font-size: clamp(0.875rem, 0.786rem + 0.238vw, 1rem); /* 14px - 16px */
-}
-p.roboto,
-a.roboto {
   font-size: clamp(1rem, 0.911rem + 0.238vw, 1.125rem); /* 16px - 18px */
+  letter-spacing: 0.5px;
 }
 
 p.small,
