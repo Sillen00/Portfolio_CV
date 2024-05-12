@@ -1,0 +1,28 @@
+.line::after {
+  content: " ";
+  position: absolute;
+  background-color: var(--text-color);
+  width: calc(100% - 200px);
+  height: 0.5px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.line::before {
+  content: " ";
+  position: absolute;
+  background-color: var(--background-color);
+  z-index: 30;
+  width: 51%;
+  height: 4px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+  .line::after {
+    width: calc(100% - 160px); /* Adjust width for smaller screens */
+  }
+}
