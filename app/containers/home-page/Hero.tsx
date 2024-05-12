@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className='min-h-screen pt-44 max-w-screen-lg mx-auto px-6 md:px-28' id='hero'>
+    <section className='pt-36 pb-60 max-w-screen-lg mx-auto px-6 md:px-28' id='hero'>
       <p className='fira text-secondary-color pb-5 pl-1'>Hej, mitt namn är</p>
       <h1 className='leading-none'>Simon Bengtsson</h1>
       <h2 className='gray leading-tight pb-4'>Skapar digitala lösningar</h2>
