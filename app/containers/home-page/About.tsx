@@ -1,10 +1,10 @@
 import { Play } from "lucide-react";
 import { twMerge } from "tailwind-merge";
-import css from "./About.module.scss";
+import css from "./_Home.module.scss";
 
 const About = () => {
   return (
-    <div className='max-w-screen-lg mx-auto px-6 md:px-28' id='about'>
+    <div className='max-w-screen-lg mx-auto pb-60 px-6 md:px-28' id='about'>
       <h3 className={twMerge(css.line, "relative hidden md:block mb-8")}>
         <span className='fira text-secondary-color text-2xl'>01. </span>About Me
       </h3>
@@ -22,74 +22,74 @@ const About = () => {
           <p className='absolute -top-3 bg-[var(--background-color)] px-2 left-4 hidden md:block'>Skills </p>
           <ul>
             <div className='flex gap-2'>
-              <Play width={6} className='text-secondary-color' />
+              <Play width={7} className='text-secondary-color' />
               <li>Javascript</li>
             </div>
             <div className='flex gap-2'>
-              <Play width={6} className='text-secondary-color' />
+              <Play width={7} className='text-secondary-color' />
               <li>Typescript</li>
             </div>
             <div className='flex gap-2'>
-              <Play width={6} className='text-secondary-color' />
+              <Play width={7} className='text-secondary-color' />
               <li>React.JS</li>
             </div>
             <div className='flex gap-2'>
-              <Play width={6} className='text-secondary-color' />
+              <Play width={7} className='text-secondary-color' />
               <li>Npm</li>
             </div>
             <div className='flex gap-2'>
-              <Play width={6} className='text-secondary-color' />
+              <Play width={7} className='text-secondary-color' />
               <li>UX/UI</li>
             </div>
             <div className='flex gap-2'>
-              <Play width={6} className='text-secondary-color' />
+              <Play width={7} className='text-secondary-color' />
               <li>Figma</li>
             </div>
             <div className='flex gap-2'>
-              <Play width={6} className='text-secondary-color' />
+              <Play width={7} className='text-secondary-color' />
               <li>Github</li>
             </div>
             <div className='flex gap-2'>
-              <Play width={6} className='text-secondary-color' />
+              <Play width={7} className='text-secondary-color' />
               <li>ExpressJS</li>
             </div>
             <div className='flex gap-2'>
-              <Play width={6} className='text-secondary-color' />
+              <Play width={7} className='text-secondary-color' />
               <li>Mongodb</li>
             </div>
             <div className='flex gap-2'>
-              <Play width={6} className='text-secondary-color' />
+              <Play width={7} className='text-secondary-color' />
               <li>Agila arbetsmetoder</li>
             </div>
           </ul>
           <ul>
             <li className='underline absolute'>Introducerade tekniker:</li>
             <div className='flex gap-2 pt-6'>
-              <Play width={6} className='text-secondary-color' />
+              <Play width={7} className='text-secondary-color ' />
               <li>PHP</li>
             </div>
             <div className='flex gap-2'>
-              <Play width={6} className='text-secondary-color' />
+              <Play width={7} className='text-secondary-color' />
               <li>MySQL</li>
             </div>
             <div className='flex gap-2'>
-              <Play width={6} className='text-secondary-color' />
+              <Play width={7} className='text-secondary-color' />
               <li>P5.js</li>
             </div>
             <div className='flex gap-2'>
-              <Play width={6} className='text-secondary-color' />
+              <Play width={7} className='text-secondary-color' />
               <li>Svelte</li>
             </div>
             <div className='flex gap-2'>
-              <Play width={6} className='text-secondary-color' />
+              <Play width={7} className='text-secondary-color' />
               <li>Wordpress</li>
             </div>
             <div className='flex gap-2'>
-              <Play width={6} className='text-secondary-color' />
+              <Play width={7} className='text-secondary-color' />
               <li>Jest</li>
             </div>
             <div className='flex gap-2'>
-              <Play width={6} className='text-secondary-color' />
+              <Play width={7} className='text-secondary-color' />
               <li>React TL</li>
             </div>
           </ul>
