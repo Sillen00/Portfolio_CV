@@ -7,22 +7,28 @@ const Experience = () => {
 
   return (
     <div className='max-w-screen-lg mx-auto px-6 md:px-28' id='experience'>
-      <h3 className={twMerge(css.line, "relative hidden md:block mb-8")}>
-        <span className='fira text-secondary-color text-2xl'>01. </span>About Me
+      <h3 className={twMerge(css.line, "flex flex-nowrap items-center relative mb-8")}>
+        <span className='fira text-secondary-color text-2xl mr-4'>02. </span>Experience
       </h3>
 
       <div className='flex'>
-        <ul>
+        <ul className='fira'>
           <li className={twMerge(css.navItem, selectedItem == "Kokokaka" && css.active)} onClick={() => setSelectedItem("Kokokaka")}>
             Kokokaka
           </li>
           <li className={twMerge(css.navItem, selectedItem == "Gym Control" && css.active)} onClick={() => setSelectedItem("Gym Control")}>
             Gym Control
           </li>
-          <li className={twMerge(css.navItem, selectedItem == "MedieInstitutet" && css.active)} onClick={() => setSelectedItem("MedieInstitutet")}>
+          <li
+            className={twMerge(css.navItem, selectedItem == "MedieInstitutet" && css.active)}
+            onClick={() => setSelectedItem("MedieInstitutet")}
+          >
             MedieInstitutet
           </li>
-          <li className={twMerge(css.navItem, selectedItem == "Elpro Alingsås" && css.active)} onClick={() => setSelectedItem("Elpro Alingsås")}>
+          <li
+            className={twMerge(css.navItem, selectedItem == "Elpro Alingsås" && css.active)}
+            onClick={() => setSelectedItem("Elpro Alingsås")}
+          >
             Elpro Alingsås
           </li>
           <li className={twMerge(css.navItem, selectedItem == "Netto Borås" && css.active)} onClick={() => setSelectedItem("Netto Borås")}>

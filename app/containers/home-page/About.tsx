@@ -5,11 +5,11 @@ import css from "./_Home.module.scss";
 const About = () => {
   return (
     <div className='max-w-screen-lg mx-auto pb-60 px-6 md:px-28' id='about'>
-      <h3 className={twMerge(css.line, "relative hidden md:block mb-8")}>
-        <span className='fira text-secondary-color text-2xl'>01. </span>About Me
+      <h3 className={twMerge(css.line, "flex flex-nowrap items-center relative mb-8")}>
+        <span className='fira text-secondary-color text-2xl mr-4'>01. </span>About Me
       </h3>
 
-      <div className='flex gap-4 wrap '>
+      <div className='flex gap-4 wrap'>
         <p className='min-w-[50%] gray'>
           Hej! Jag är en junior Frontend-Utvecklare, född och uppvuxen i Alingsås. Upplevs som en positiv kille som gärna vill hjälpa till
           och är serviceminded. Har inga problem med nya arbetsuppgifter utan är snarare nyfiken och motiverad att utveckla mina färdigheter

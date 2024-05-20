@@ -1,29 +1,21 @@
 .line::after {
   content: " ";
-  position: absolute;
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+
   background-color: var(--text-color);
-  width: calc(100% - 200px);
-  height: 0.5px;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
+  width: 300px;
+  height: 1px;
+  margin-left: 16px;
+
 }
 
-.line::before {
-  content: " ";
-  position: absolute;
-  background-color: var(--background-color);
-  z-index: 30;
-  width: 51%;
-  height: 4px;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-}
 
 @media (max-width: 768px) {
   .line::after {
-    width: calc(100% - 160px); /* Adjust width for smaller screens */
+    width: 100%; 
   }
 }
 
@@ -33,19 +25,37 @@
 .navItem {
   padding: 10px 20px;
   position: relative;
-  
-  &:hover {
-    background-color: #353535;
-    color: var(--secondary-color);
-  }
-  
-  &.active::after {
+
+  &::after {
     content: " ";
     position: absolute;
-    background-color: var(--secondary-color);
+    background-color: #584d4c;
     width: 2px;
     height: 100%;
     top: 0;
     left: 0;
+    z-index: 10;
   }
+  
+  &:hover {
+    background-color: #262626;
+    color: var(--secondary-color);
+  }
+  
+  &.active {
+    color: var(--secondary-color);
+
+    &::after {
+      content: " ";
+      position: absolute;
+      background-color: var(--secondary-color);
+      width: 2px;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+  }
+
+  
 }
