@@ -31,5 +31,21 @@
 
 
 .navItem {
+  padding: 10px 20px;
+  position: relative;
   
+  &:hover {
+    background-color: #353535;
+    color: var(--secondary-color);
+  }
+  
+  &.active::after {
+    content: " ";
+    position: absolute;
+    background-color: var(--secondary-color);
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
 }
