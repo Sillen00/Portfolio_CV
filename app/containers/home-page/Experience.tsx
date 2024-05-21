@@ -3,7 +3,7 @@ import { twMerge } from "tailwind-merge";
 import css from "./_Home.module.scss";
 
 const Experience = () => {
-  const [selectedItem, setSelectedItem] = useState("");
+  const [selectedItem, setSelectedItem] = useState("Kokokaka");
 
   return (
     <div className='max-w-screen-lg mx-auto px-6 md:px-28' id='experience'>
@@ -36,7 +36,9 @@ const Experience = () => {
           </li>
         </ul>
 
-        <div className='flex-grow'>{selectedItem && <p>You clicked on: {selectedItem}</p>}</div>
+        <div className='flex-grow ml-4 mt-1.5'>
+          {selectedItem && <h4>{selectedItem}</h4>}
+        </div>
       </div>
     </div>
   );
