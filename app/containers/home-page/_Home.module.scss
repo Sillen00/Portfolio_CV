@@ -9,7 +9,6 @@
   width: 300px;
   height: 1px;
   margin-left: 16px;
-
 }
 
 
@@ -25,6 +24,7 @@
 .navItem {
   padding: 10px 20px;
   position: relative;
+  transition: background-color 0.3s ease-in-out;
 
   &::after {
     content: " ";
@@ -35,27 +35,38 @@
     top: 0;
     left: 0;
     z-index: 10;
+    transition: background-color 0.3s ease-in-out;
   }
-  
+
   &:hover {
     background-color: #262626;
     color: var(--secondary-color);
   }
-  
+
   &.active {
     color: var(--secondary-color);
+    background-color: #262626;
+
 
     &::after {
-      content: " ";
-      position: absolute;
       background-color: var(--secondary-color);
-      width: 2px;
-      height: 100%;
-      top: 0;
-      left: 0;
-      z-index: 10;
+      transition: background-color 0.3s ease-in-out;
+      transform: scaleY(1);
     }
   }
+}
 
-  
+// Keyframes for smooth transition between active items
+@keyframes slideIn {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+// Apply the animation to the active state
+.navItem.active::after {
+  animation: slideIn 0.5s ease-in-out forwards;
 }

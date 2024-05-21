@@ -37,7 +37,31 @@ const Experience = () => {
         </ul>
 
         <div className='flex-grow ml-4 mt-1.5'>
-          {selectedItem && <h4>{selectedItem}</h4>}
+          {selectedItem === "Kokokaka" && (
+            <h4>
+              Frontend Utvecklare <span>@ Kokokaka Creative Studio</span>
+            </h4>
+          )}
+          {selectedItem === "Gym Control" && (
+            <h4>
+              Fullstack Utvecklare <span>@ Gym Control</span>
+            </h4>
+          )}
+          {selectedItem === "MedieInstitutet" && (
+            <h4>
+              Student Frontend <span>@ MedieInstitutet</span>
+            </h4>
+          )}
+          {selectedItem === "Elpro Alingsås" && (
+            <h4>
+              Elmontör <span>@ Elpro i Alingsås</span>
+            </h4>
+          )}
+          {selectedItem === "Netto Borås" && (
+            <h4>
+              Butikssäljare <span>@ Netto Borås</span>
+            </h4>
+          )}
         </div>
       </div>
     </div>
