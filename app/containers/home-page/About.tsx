@@ -9,7 +9,7 @@ const About = () => {
         <span className='fira text-secondary-color text-2xl mr-4'>01. </span>About Me
       </h3>
 
-      <div className='flex gap-4 wrap'>
+      <div className='flex flex-col md:flex-row gap-4 wrap'>
         <p className='min-w-[50%] gray'>
           Hej! Jag är en junior Frontend-Utvecklare, född och uppvuxen i Alingsås. Upplevs som en positiv kille som gärna vill hjälpa till
           och är serviceminded. Har inga problem med nya arbetsuppgifter utan är snarare nyfiken och motiverad att utveckla mina färdigheter
@@ -20,7 +20,7 @@ const About = () => {
 
         <div className='gray relative min-w-[50%] flex border p-6 border-secondary-color'>
           <p className='absolute -top-3 bg-[var(--background-color)] px-2 left-4 hidden md:block'>Skills </p>
-          <ul>
+          <ul className="mr-2">
             <div className='flex gap-2'>
               <Play width={7} className='text-secondary-color' />
               <li>Javascript</li>
@@ -63,8 +63,8 @@ const About = () => {
             </div>
           </ul>
           <ul>
-            <li className='underline absolute'>Introducerade tekniker:</li>
-            <div className='flex gap-2 pt-6'>
+            <li className='underline'>Introducerade tekniker:</li>
+            <div className='flex gap-2 pt-1'>
               <Play width={7} className='text-secondary-color ' />
               <li>PHP</li>
             </div>
