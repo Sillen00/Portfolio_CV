@@ -1,9 +1,9 @@
+import OrangeOutlineBtn from "@/app/components/OrangeOutlineBtn";
 import { Play } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 import css from "./_Home.module.scss";
-import OrangeOutlineBtn from "@/app/components/OrangeOutlineBtn";
 
 const Experience = () => {
   const [selectedItem, setSelectedItem] = useState("Kokokaka");
@@ -36,6 +36,10 @@ const Experience = () => {
           </li>
         </ul>
 
+        {/* KOKOKAKA ----------------------------------------------------------------------------------------------------- */}
+        {/* KOKOKAKA ----------------------------------------------------------------------------------------------------- */}
+        {/* KOKOKAKA ----------------------------------------------------------------------------------------------------- */}
+
         <div className='flex-grow ml-4 mt-1.5'>
           {selectedItem === "Kokokaka" && (
             <div>
@@ -45,9 +49,39 @@ const Experience = () => {
                   @ Kokokaka Creative Studio
                 </Link>
               </h4>
-              <Link href="/path/to/pdf/file.pdf" download>
-                <OrangeOutlineBtn>Download PDF</OrangeOutlineBtn>
+              <div className='flex gap-4'>
+                <Play width={7} className='text-secondary-color flex-none' />
+                <p className='gray'>
+                  Hos Gym Control fick jag möjlighet att ytterligare utveckla mina kunskaper inom frontend-teknologier såsom HTML, CSS,
+                  Javascript/JQuery samt integrationer med olika API:er och PHP med SQL som backend.
+                </p>
+              </div>
+              <div className='flex gap-4 pt-4'>
+                <Play width={7} className='text-secondary-color flex-none' />
+                <p className='gray'>
+                  Vid avslutet av min praktik fick jag en mycket positiv utvärdering från Johan: &quot;Simon står på tårna och lär sig fort
+                  och kommer bli en tillgång för den som får chans att arbeta/anställa honom i framtiden. Bästa av alla praktikanter vi haft
+                  i företaget genom åren.&quot;
+                </p>
+              </div>
+              <Link href='./pdfs/Simon_rekommendationsbrev.pdf' target='_blank' download>
+                <OrangeOutlineBtn>Mitt Rekommendationsbrev</OrangeOutlineBtn>
               </Link>
+            </div>
+          )}
+
+          {/* GYM CONTROL ----------------------------------------------------------------------------------------------------- */}
+          {/* GYM CONTROL ----------------------------------------------------------------------------------------------------- */}
+          {/* GYM CONTROL ----------------------------------------------------------------------------------------------------- */}
+
+          {selectedItem === "Gym Control" && (
+            <div>
+              <h4>
+                Fullstack Utvecklare{" "}
+                <Link className='text-secondary-color' href={"https://gymcontrol.se/"}>
+                  @ Gym Control
+                </Link>
+              </h4>
               <div className='flex gap-4'>
                 <Play width={7} className='text-secondary-color flex-none' />
                 <p className='gray'>
@@ -65,6 +99,11 @@ const Experience = () => {
               </div>
             </div>
           )}
+
+          {/* MEDIEINSTITUTET ----------------------------------------------------------------------------------------------------- */}
+          {/* MEDIEINSTITUTET ----------------------------------------------------------------------------------------------------- */}
+          {/* MEDIEINSTITUTET ----------------------------------------------------------------------------------------------------- */}
+
           {selectedItem === "MedieInstitutet" && (
             <div>
               <h4>
@@ -80,6 +119,11 @@ const Experience = () => {
               </div>
             </div>
           )}
+
+          {/* ELPRO ----------------------------------------------------------------------------------------------------- */}
+          {/* ELPRO ----------------------------------------------------------------------------------------------------- */}
+          {/* ELPRO ----------------------------------------------------------------------------------------------------- */}
+
           {selectedItem === "Elpro" && (
             <div>
               <h4>
@@ -95,6 +139,11 @@ const Experience = () => {
               </div>
             </div>
           )}
+
+          {/* NETTO ----------------------------------------------------------------------------------------------------- */}
+          {/* NETTO ----------------------------------------------------------------------------------------------------- */}
+          {/* NETTO ----------------------------------------------------------------------------------------------------- */}
+
           {selectedItem === "Netto" && (
             <div>
               <h4>
