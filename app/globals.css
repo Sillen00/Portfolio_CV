@@ -77,9 +77,11 @@ a.fira {
   font-size: clamp(0.875rem, 0.786rem + 0.238vw, 1rem); /* 14px - 16px */
   letter-spacing: 0.5px;
 }
-p,
-a {
-  font-size: clamp(1rem, 0.911rem + 0.238vw, 1.125rem); /* 16px - 18px */
+p {
+  /* 16px - 18px */
+  /* font-size: clamp(1rem, 0.911rem + 0.238vw, 1.125rem);  */
+  /* 15px - 17px */
+  font-size: clamp(0.938rem, 0.848rem + 0.238vw, 1.063rem);
   letter-spacing: 0.5px;
 }
 

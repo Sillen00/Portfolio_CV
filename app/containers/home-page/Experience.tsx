@@ -1,12 +1,15 @@
+import { Play } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 import css from "./_Home.module.scss";
+import OrangeOutlineBtn from "@/app/components/OrangeOutlineBtn";
 
 const Experience = () => {
   const [selectedItem, setSelectedItem] = useState("Kokokaka");
 
   return (
-    <div className='max-w-screen-lg mx-auto px-6 md:px-28' id='experience'>
+    <div className='max-w-screen-lg mx-auto pb-60 px-6 md:px-28' id='experience'>
       <h3 className={twMerge(css.line, "flex flex-nowrap items-center relative mb-8")}>
         <span className='fira text-secondary-color text-2xl mr-4'>02. </span>Experience
       </h3>
@@ -25,42 +28,84 @@ const Experience = () => {
           >
             MedieInstitutet
           </li>
-          <li
-            className={twMerge(css.navItem, selectedItem == "Elpro Alingsås" && css.active)}
-            onClick={() => setSelectedItem("Elpro Alingsås")}
-          >
-            Elpro Alingsås
+          <li className={twMerge(css.navItem, selectedItem == "Elpro" && css.active)} onClick={() => setSelectedItem("Elpro")}>
+            Elpro
           </li>
-          <li className={twMerge(css.navItem, selectedItem == "Netto Borås" && css.active)} onClick={() => setSelectedItem("Netto Borås")}>
-            Netto Borås
+          <li className={twMerge(css.navItem, selectedItem == "Netto" && css.active)} onClick={() => setSelectedItem("Netto")}>
+            Netto
           </li>
         </ul>
 
         <div className='flex-grow ml-4 mt-1.5'>
           {selectedItem === "Kokokaka" && (
-            <h4>
-              Frontend Utvecklare <span>@ Kokokaka Creative Studio</span>
-            </h4>
-          )}
-          {selectedItem === "Gym Control" && (
-            <h4>
-              Fullstack Utvecklare <span>@ Gym Control</span>
-            </h4>
+            <div>
+              <h4>
+                Frontend Utvecklare{" "}
+                <Link className='text-secondary-color' href={"https://kokokaka.com/"}>
+                  @ Kokokaka Creative Studio
+                </Link>
+              </h4>
+              <Link href="/path/to/pdf/file.pdf" download>
+                <OrangeOutlineBtn>Download PDF</OrangeOutlineBtn>
+              </Link>
+              <div className='flex gap-4'>
+                <Play width={7} className='text-secondary-color flex-none' />
+                <p className='gray'>
+                  Hos Gym Control fick jag möjlighet att ytterligare utveckla mina kunskaper inom frontend-teknologier såsom HTML, CSS,
+                  Javascript/JQuery samt integrationer med olika API:er och PHP med SQL som backend.
+                </p>
+              </div>
+              <div className='flex gap-4 pt-4'>
+                <Play width={7} className='text-secondary-color flex-none' />
+                <p className='gray'>
+                  Vid avslutet av min praktik fick jag en mycket positiv utvärdering från Johan: &quot;Simon står på tårna och lär sig fort
+                  och kommer bli en tillgång för den som får chans att arbeta/anställa honom i framtiden. Bästa av alla praktikanter vi haft
+                  i företaget genom åren.&quot;
+                </p>
+              </div>
+            </div>
           )}
           {selectedItem === "MedieInstitutet" && (
-            <h4>
-              Student Frontend <span>@ MedieInstitutet</span>
-            </h4>
+            <div>
+              <h4>
+                Student Frontend{" "}
+                <Link className='text-secondary-color' href={"https://medieinstitutet.se/"}>
+                  @ MedieInstitutet
+                </Link>
+              </h4>
+              <p className='fira small gray pb-4 pt-0.5'>september 2022 - maj 2024</p> {/* 12 september 2022 - 17 maj 2024 */}
+              <div className='flex gap-4'>
+                <Play width={7} className='text-secondary-color' />
+                <p className='gray'></p>
+              </div>
+            </div>
           )}
-          {selectedItem === "Elpro Alingsås" && (
-            <h4>
-              Elmontör <span>@ Elpro i Alingsås</span>
-            </h4>
+          {selectedItem === "Elpro" && (
+            <div>
+              <h4>
+                Elmontör{" "}
+                <Link className='text-secondary-color' href={"https://elpro.se/"}>
+                  @ Elpro i Alingsås
+                </Link>
+              </h4>
+              <p className='fira small gray pb-4 pt-0.5'>september 2019 - september 2022</p> {/* 29 januari - 17 maj 2024 */}
+              <div className='flex gap-4'>
+                <Play width={7} className='text-secondary-color' />
+                <p className='gray'>Här var jag hos kokokaka</p>
+              </div>
+            </div>
           )}
-          {selectedItem === "Netto Borås" && (
-            <h4>
-              Butikssäljare <span>@ Netto Borås</span>
-            </h4>
+          {selectedItem === "Netto" && (
+            <div>
+              <h4>
+                Butikssäljare <span className='text-secondary-color cursor-pointer'>@ Netto Borås</span>
+              </h4>
+              <p className='fira small gray pb-4 pt-0.5'>juni - augusti 2019</p> {/* 29 januari - 17 maj 2024 */}
+              <div className='flex gap-4'>
+                <Play width={7} className='text-secondary-color' />
+                <p className='gray'>Här var jag hos kokokaka</p>
+              </div>
+            </div>
           )}
         </div>
       </div>
