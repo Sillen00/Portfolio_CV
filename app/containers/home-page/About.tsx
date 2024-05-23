@@ -4,7 +4,7 @@ import css from "./_Home.module.scss";
 
 const About = () => {
   return (
-    <div className='max-w-screen-lg mx-auto pb-60 px-6 md:px-28' id='about'>
+    <section className='max-w-screen-lg mx-auto pb-60 px-6 md:px-28' id='about'>
       <h3 className={twMerge(css.line, "flex flex-nowrap items-center relative mb-8")}>
         <span className='fira text-secondary-color text-2xl mr-4'>01. </span>About Me
       </h3>
@@ -20,7 +20,7 @@ const About = () => {
 
         <div className='gray relative min-w-[50%] flex border p-6 border-secondary-color'>
           <p className='absolute -top-3 bg-[var(--background-color)] px-2 left-4 hidden md:block'>Skills </p>
-          <ul className="mr-2">
+          <ul className='mr-2'>
             <div className='flex gap-2'>
               <Play width={7} className='text-secondary-color' />
               <li>Javascript</li>
@@ -95,7 +95,7 @@ const About = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
