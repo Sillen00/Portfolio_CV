@@ -4,8 +4,8 @@
 }
 
 .btn:hover {
-  box-shadow: 1px 1px 10px 0px var(--secondary-color), -1px -1px 10px 0px var(--secondary-color);
-  transform: translateX(-2%) translateY(0%);
+  box-shadow: 1px 1px 6px 0px var(--secondary-color), -1px -1px 6px 0px var(--secondary-color);
+  transform: translateX(-1px) translateY(0%);
   
   transition: 0.3s ease-in-out;
 }
