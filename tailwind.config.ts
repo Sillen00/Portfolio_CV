@@ -18,7 +18,7 @@ const config: Config = {
         "accent-color": "#B0254F",
       },
       textColor: {
-        primary: "#FFFFFF",
+        primary: "#ccd6f6",
         secondary: "#B0B0B0",
       },
     },
