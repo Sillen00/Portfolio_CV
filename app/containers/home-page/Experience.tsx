@@ -142,15 +142,15 @@ const Experience = () => {
               </h4>
               <p className='fira small gray pb-4 pt-0.5'>september 2022 - maj 2024</p> {/* 12 september 2022 - 17 maj 2024 */}
               <div className='flex gap-4'>
-                <Play width={7} className='text-secondary-color' />
+                <Play width={7} className='text-secondary-color flex-none' />
                 <p className='gray'>
                   Under min utbildning har jag kontinuerligt utvecklat mina tekniska färdigheter och vuxit både personligen och
                   professionellt. Jag har lärt mig att skapa responsiva och användarvänliga webbplatser samt förmåga att lösa problem,
                   samarbeta effektivt i team och kommunicera tydligt. Mina kunskaper kommer vara ovärderliga i min framtida karriär
                 </p>
               </div>
-              <div className='flex gap-4'>
-                <Play width={7} className='text-secondary-color' />
+              <div className='flex gap-4 pt-4'>
+                <Play width={7} className='text-secondary-color flex-none' />
                 <p className='gray'>
                   När jag blickar framåt ser jag många möjliga yrkesvägar. Att jämföra min nuvarande kunskap med den jag hade när jag
                   började utbildningen ger mig en känsla av stolthet.Utbildningen har varit en ovärderlig del av min resa mot att bli en
@@ -185,8 +185,24 @@ const Experience = () => {
               </h4>
               <p className='fira small gray pb-4 pt-0.5'>september 2019 - september 2022</p> {/* 29 januari - 17 maj 2024 */}
               <div className='flex gap-4'>
-                <Play width={7} className='text-secondary-color' />
-                <p className='gray'>Här var jag hos kokokaka</p>
+                <Play width={7} className='text-secondary-color flex-none' />
+                <p className='gray'>
+                  Under min tid på Elpro har jag fått en stor förståelse för industriell automation och utvecklat mina färdigheter inom
+                  elkonstruktion. Jag arbetade som elmontör, där jag spelade en viktig roll i produktionen av avancerade elektriska
+                  styrsystem och apparatskåp.
+                </p>
+              </div>
+              <div className='flex gap-4 pt-4'>
+                <Play width={7} className='text-secondary-color flex-none' />
+                <p className='gray'>
+                  Med hjälp av olika ritningar skapade jag skräddarsydda lösningar för att möta kundernas specifika behov. Jag hanterade
+                  både enstaka projekt och serietillverkning av apparatskåp. Min roll innefattade att bygga system från grunden och
+                  säkerställa att varje projekt uppfyllde höga kvalitetsstandarder.
+                </p>
+              </div>
+              <div className='flex gap-4 pt-4'>
+                <Play width={7} className='text-secondary-color flex-none' />
+                <p className='gray'>Jag har lärt mig vikten av noggrannhet, effektivitet och kontinuerlig förbättring.</p>
               </div>
             </div>
           )}
