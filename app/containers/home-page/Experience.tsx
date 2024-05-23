@@ -49,24 +49,41 @@ const Experience = () => {
                   @ Kokokaka Creative Studio
                 </Link>
               </h4>
+              <p className='fira small gray pb-4 pt-0.5'>januari - maj 2024</p> {/* 29 januari - 17 maj 2024 */}
+
+              <Link href='./pdfs/Simon_rekommendationsbrev.pdf' target='_blank' download>
+                <OrangeOutlineBtn>Rekommendationsbrev</OrangeOutlineBtn>
+              </Link>
+              
               <div className='flex gap-4'>
                 <Play width={7} className='text-secondary-color flex-none' />
                 <p className='gray'>
-                  Hos Gym Control fick jag möjlighet att ytterligare utveckla mina kunskaper inom frontend-teknologier såsom HTML, CSS,
-                  Javascript/JQuery samt integrationer med olika API:er och PHP med SQL som backend.
+                  Hos Kokokaka fick jag möjlighet att verkligen utforska och utveckla min kreativa och tekniska sida som front-end
+                  utvecklare med fokus på UX/UI.
                 </p>
               </div>
               <div className='flex gap-4 pt-4'>
                 <Play width={7} className='text-secondary-color flex-none' />
                 <p className='gray'>
-                  Vid avslutet av min praktik fick jag en mycket positiv utvärdering från Johan: &quot;Simon står på tårna och lär sig fort
-                  och kommer bli en tillgång för den som får chans att arbeta/anställa honom i framtiden. Bästa av alla praktikanter vi haft
-                  i företaget genom åren.&quot;
+                  Arbetade med en mängd olika teknologier, inklusive HTML, CSS, React Wordpress och även AR-tekniker. Jag fick också
+                  fördjupa mig i Photoshop och Illustrator, vilket breddade mina färdigheter inom både utveckling och design.
                 </p>
               </div>
-              <Link href='./pdfs/Simon_rekommendationsbrev.pdf' target='_blank' download>
-                <OrangeOutlineBtn>Mitt Rekommendationsbrev</OrangeOutlineBtn>
-              </Link>
+              <div className='flex gap-4 pt-4'>
+                <Play width={7} className='text-secondary-color flex-none' />
+                <p className='gray'>
+                  Jag hade en självgående roll där jag ofta fick lösa problem och göra research på egen hand, men jag uppskattade verkligen
+                  det stöd och de insikter jag fick från mina kollegor.
+                </p>
+              </div>
+              <div className='flex gap-4 pt-4'>
+                <Play width={7} className='text-secondary-color flex-none' />
+                <p className='gray'>
+                  Såhär beskrev min handledare mig: &quot;Simon är alltid väldigt fokuserad och engagerad i sitt arbete. När han stöter på
+                  problem så försöker han hitta lösningar med hjälp av AI, forum och tutorials. Han är självständig och noggrann.&quot; Jag
+                  fick även ett mycket fint rekommendationsbrev från Kokokaka som du kan ladda ner här ovan.
+                </p>
+              </div>
             </div>
           )}
 
@@ -82,6 +99,7 @@ const Experience = () => {
                   @ Gym Control
                 </Link>
               </h4>
+              <p className='fira small gray pb-4 pt-0.5'>september - maj 2023</p> {/* 11 september - 17 maj 2023 */}
               <div className='flex gap-4'>
                 <Play width={7} className='text-secondary-color flex-none' />
                 <p className='gray'>
