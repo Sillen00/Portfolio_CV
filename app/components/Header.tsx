@@ -49,14 +49,22 @@ const Header = () => {
 
         {isMenuOpen && (
           <div className='absolute top-0 left-0 w-full h-screen bg-primary-color-dark'>
-            <div className='flex justify-between items-center px-12 py-2' onClick={() => setIsMenuOpen(prevState => !prevState)}>
-              <Image width={30} height={30} alt="Simon Bengtsson 'S' logo." src='/logo.png' style={{ width: "30px", height: "30px" }} />
+            <div className='flex justify-between items-center px-6 py-2' onClick={() => setIsMenuOpen(prevState => !prevState)}>
+              <Image
+                className={css.logo}
+                priority
+                width={10}
+                height={10}
+                alt="Simon Bengtsson 'S' logo."
+                src='/logoOrange.svg'
+                style={{ width: "30px", height: "auto" }}
+              />
               <X width={30} />
             </div>
 
             <ul className={twMerge("flex flex-col items-start pt-12")}>
               {links.map(({ href, label }, index) => (
-                <li onClick={() => setIsMenuOpen(prevState => !prevState)} key={href} className={"hover:bg-accent-color w-full py-3 pl-12"}>
+                <li onClick={() => setIsMenuOpen(prevState => !prevState)} key={href} className={"hover:bg-hover-color w-full py-3 pl-12"}>
                   <a href={href}>
                     <span className='text-secondary-color'>0{index + 1}.</span> {label}
                   </a>

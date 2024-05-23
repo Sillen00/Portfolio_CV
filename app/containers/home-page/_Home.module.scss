@@ -29,7 +29,7 @@
   &::after {
     content: " ";
     position: absolute;
-    background-color: #584d4c;
+    background-color: var(--secondary-color-dark);
     width: 2px;
     height: 100%;
     top: 0;
@@ -39,13 +39,13 @@
   }
 
   &:hover {
-    background-color: #262626;
+    background-color: var(--hover-color);
     color: var(--secondary-color);
   }
 
   &.active {
     color: var(--secondary-color);
-    background-color: #262626;
+    background-color: var(--hover-color);
 
 
     &::after {

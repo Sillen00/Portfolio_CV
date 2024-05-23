@@ -9,7 +9,9 @@
   --text-color: rgb(204, 214, 246);
   --background-color: rgb(32, 32, 32); /* Primary color */
   --secondary-color: rgb(222, 65, 38);
+  --secondary-color-dark: rgb(88, 77, 76);
   --accent-color: rgb(176, 37, 79);
+  --hover-color: rgb(38, 38, 38);
   --roboto: "Roboto", sans-serif;
   --fira: "Fira Mono", monospace;
 }

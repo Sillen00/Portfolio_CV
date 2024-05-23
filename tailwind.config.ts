@@ -13,9 +13,10 @@ const config: Config = {
         "primary-color-dark": "#000000",
         "primary-color-light": "#443A37",
         "secondary-color": "#DE4126",
-        "secondary-color-dark": "#a12c18",
+        "secondary-color-dark": "#584d4c",
         "secondary-color-light": "#E6563C",
         "accent-color": "#B0254F",
+        "hover-color": "#262626",
       },
       textColor: {
         primary: "#ccd6f6",
@@ -23,21 +24,21 @@ const config: Config = {
       },
     },
     screens: {
-      'sm': '640px',
+      sm: "640px",
       // => @media (min-width: 640px) { ... }
 
-      'md': '768px',
+      md: "768px",
       // => @media (min-width: 768px) { ... }
 
-      'lg': '1024px',
+      lg: "1024px",
       // => @media (min-width: 1024px) { ... }
 
-      'xl': '1280px',
+      xl: "1280px",
       // => @media (min-width: 1280px) { ... }
 
-      '2xl': '1980px',
+      "2xl": "1980px",
       // => @media (min-width: 1536px) { ... }
-    }
+    },
   },
   plugins: [],
 };
