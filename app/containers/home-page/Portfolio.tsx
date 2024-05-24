@@ -1,5 +1,7 @@
 import { ExternalLink, Github } from "lucide-react";
+import Link from "next/link";
 import { twMerge } from "tailwind-merge";
+import { Projects, projects } from "../../../data/projects";
 import css from "./_Home.module.scss";
 
 const Portfolio = () => {
@@ -10,25 +12,27 @@ const Portfolio = () => {
       </h3>
 
       <div id='container'>
-        <div className={twMerge(css.project, "px-9 py-11")}>
-          <p className='fira text-secondary-color'>Utvalt Project</p>
-          <h3>Web Shop</h3>
-          <p className='gray '>
-            A school project first made with react client side then added backend side with express and mongoDB database.
-          </p>
+        {projects.map((project: Projects) => (
+          <div key={project.id} className={twMerge(css.project, "px-9 py-11")}>
+            <p className='fira text-secondary-color'>Utvalt Project</p>
+            <h3>{project.title}</h3>
+            <p className='gray'>{project.text}</p>
 
-          <ul className='fira gray flex gap-2.5 flex-wrap'>
-            <li>ReactJS</li>
-            <li>ExpressJS</li>
-            <li>Mongoose</li>
-            <li>MongoDB</li>
-            <li>MongoDB</li>
-          </ul>
-          <div className='flex'>
-            <Github size={24} />
-            <ExternalLink size={24} />
+            <ul className='fira gray flex gap-2.5 flex-wrap'>
+              {project.builtWith?.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+            <div className='flex'>
+              <Link href={project.githubLink ?? ""}>
+                <Github size={24} />
+              </Link>
+              <Link href={project.hostedLink ?? ""}>
+                <ExternalLink size={24} />
+              </Link>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
     </section>
   );
