@@ -12,27 +12,50 @@ const Portfolio = () => {
       </h3>
 
       <div id='container'>
-        {projects.map((project: Projects) => (
-          <div key={project.id} className={twMerge(css.project, "px-9 py-11")}>
-            <p className='fira text-secondary-color'>Utvalt Project</p>
-            <h3>{project.title}</h3>
-            <p className='gray'>{project.text}</p>
-
-            <ul className='fira gray flex gap-2.5 flex-wrap'>
-              {project.builtWith?.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-            <div className='flex'>
-              <Link href={project.githubLink ?? ""}>
-                <Github size={24} />
-              </Link>
-              <Link href={project.hostedLink ?? ""}>
-                <ExternalLink size={24} />
-              </Link>
+        {projects.map((project: Projects) =>
+          project.feautured ? (
+            <div key={project.id} className={twMerge(css.project, "px-9 py-11")}>
+              <p className='fira text-secondary-color'>Utvalt Project</p>
+              <h3>{project.title}</h3>
+              <p className='gray'>{project.text}</p>
+              <ul className='fira gray flex gap-2.5 flex-wrap'>
+                {project.builtWith?.map((item: string, index: number) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+              <div className='flex'>
+                <Link href={project.githubLink ?? ""}>
+                  <Github size={24} />
+                </Link>
+                <Link href={project.hostedLink ?? ""}>
+                  <ExternalLink size={24} />
+                </Link>
+              </div>
             </div>
-          </div>
-        ))}
+          ) : (
+            // Project is not featured--------------------------------------------------------------------
+            // Project is not featured--------------------------------------------------------------------
+            // Project is not featured--------------------------------------------------------------------
+
+            <div key={project.id} className={twMerge(css.project, "px-9 py-11")}>
+              <h3>{project.title}</h3>
+              <p className='gray'>{project.text}</p>
+              <ul className='fira gray flex gap-2.5 flex-wrap'>
+                {project.builtWith?.map((item: string, index: number) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+              <div className='flex'>
+                <Link href={project.githubLink ?? ""}>
+                  <Github size={24} />
+                </Link>
+                <Link href={project.hostedLink ?? ""}>
+                  <ExternalLink size={24} />
+                </Link>
+              </div>
+            </div>
+          )
+        )}
       </div>
     </section>
   );
