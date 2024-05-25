@@ -1,4 +1,5 @@
 import { ExternalLink, Github } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 import { Projects, projects } from "../../../data/projects";
@@ -16,6 +17,7 @@ const Portfolio = () => {
           project.feautured ? (
             <div key={project.id} className={twMerge(css.project, "px-9 py-11")}>
               <p className='fira text-secondary-color'>Utvalt Project</p>
+              <Image width={30} height={30} src={project.img ?? ""} alt={project.title} />
               <h3>{project.title}</h3>
               <p className='gray'>{project.text}</p>
               <ul className='fira gray flex gap-2.5 flex-wrap'>
@@ -38,6 +40,7 @@ const Portfolio = () => {
             // Project is not featured--------------------------------------------------------------------
 
             <div key={project.id} className={twMerge(css.project, "px-9 py-11")}>
+              <Image width={30} height={30} src={project.img ?? ""} alt={project.title} />
               <h3>{project.title}</h3>
               <p className='gray'>{project.text}</p>
               <ul className='fira gray flex gap-2.5 flex-wrap'>
