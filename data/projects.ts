@@ -5,7 +5,7 @@ export type Projects = {
   text: string;
   builtWith?: string[];
   githubLink?: string;
-  hostedLink?: string;
+  hostedLink?: string | null;
 };
 
 // Create and export an array of users
@@ -15,7 +15,7 @@ export const projects: Projects[] = [
     feautured: true,
     title: "Star Bomb Game",
     text: "This is our final project in the JavaScript - Basic Course. The task was to create a game from scratch using everything we have learned during the course with an extra focus on OOP, TypeScript, and the P5 library.",
-    builtWith: ["Figma", "OOP-Typescript", "P5.JS", "HTML", "CSS"],
+    builtWith: ["Figma", "OOP", "Typescript", "P5.JS", "HTML", "CSS"],
     githubLink: "https://github.com/Sillen00/Star-Bomb-Game",
     hostedLink: "https://star-bomb.netlify.app/",
   },
@@ -25,34 +25,35 @@ export const projects: Projects[] = [
     title: "Gent´s Hat",
     text: "In this school assignment, we have built a webshop for a fictional hat company. This webshop allows the user to add and edit the number of products in their shopping cart. When the user chooses to check out their placed order, they can fill in their personal information in a validated form. After the purchase is completed, the user receives an order confirmation. On the page, there is also the option to edit, add and remove products in the form of an admin. In this assignment, we have used the Material UI design system to import and style components.",
     builtWith: ["ReactJS", "Typescript", "Material-UI", "HTML", "CSS"],
-    githubLink: "https://github.com/Sillen00/React-Webshop-Gents-Hat?tab=readme-ov-file",
+    githubLink: "https://github.com/Sillen00/React-Webshop-Gents-Hat",
     hostedLink: "https://gentshats.netlify.app/",
   },
   {
     id: 3,
     feautured: true,
-    title: "So-fun Project",
-    text: "Where Fun and Sofas Unite! This is a fully developed webshop assignment. This user-friendly platform allows users to easily register, log in, and place orders. Notably, our webshop includes an admin interface with enhanced accessibility, granting administrators the ability to create, modify, and remove products as needed. Additionally, our website features a real-time stock counter, keeping customers informed about the availability of our products for sale.",
-    builtWith: ["Figma", "ReactJS", "Typescript", "ExpressJS", "Mongoose", "MongoDB", "HTML", "CSS"],
-    githubLink: "https://github.com/Sillen00/FEST-Webbshop-SOFUN",
-    hostedLink: "https://example.com",
+    title: "GlobalForm-Solutions",
+    text: "GlobalForm-Solutions is a collaborative project undertaken by me and two classmates as part of our final thesis. The project focuses on building a web application that allows users to create forms and share them with friends or events. We have utilized the Next.js framework with the T3 stack to set up the project.",
+    builtWith: ["Figma", "NextJS", "T3-stack", "Typescript", "Prisma", "tRPC", "Clerk.js", "SCSS", "HTML"],
+    githubLink: "https://github.com/Sillen00/GlobalForm-Solutions",
+    hostedLink: "https://global-form-solutions.vercel.app/",
   },
-
-
-
-
-
-
-
-  
   {
     id: 4,
-    feautured: true,
-    title: "So-fun Project",
+    feautured: false,
+    title: "So-fun Webshop",
     text: "Where Fun and Sofas Unite! This is a fully developed webshop assignment. This user-friendly platform allows users to easily register, log in, and place orders. Notably, our webshop includes an admin interface with enhanced accessibility, granting administrators the ability to create, modify, and remove products as needed. Additionally, our website features a real-time stock counter, keeping customers informed about the availability of our products for sale.",
     builtWith: ["Figma", "ReactJS", "Typescript", "ExpressJS", "Mongoose", "MongoDB", "HTML", "CSS"],
     githubLink: "https://github.com/Sillen00/FEST-Webbshop-SOFUN",
-    hostedLink: "https://example.com",
+    hostedLink: null,
+  },
+  {
+    id: 5,
+    feautured: false,
+    title: "Random Name Generator",
+    text: "Having trouble choosing a name for your child? Try this random name generator out! The generator picks a random name from Swedish name days (Svenska namnsdagar). Hosting webpage on Netlify.",
+    builtWith: ["API", "Javascript", "HTML", "CSS"],
+    githubLink: "https://github.com/Sillen00/Random-Name-Generator",
+    hostedLink: "https://random-name-nameday.netlify.app/",
   },
   // Add more users as needed
 ];
