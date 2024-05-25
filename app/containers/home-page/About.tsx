@@ -5,7 +5,7 @@ import css from "./_Home.module.scss";
 const About = () => {
   return (
     <section className='max-w-screen-lg mx-auto pb-60 px-6 md:px-28' id='about'>
-      <h3 className={twMerge(css.line, "flex flex-nowrap items-center relative mb-8")}>
+      <h3 className={twMerge(css.line, "flex text-nowrap items-center relative mb-8")}>
         <span className='fira text-secondary-color text-2xl mr-4'>01. </span>About Me
       </h3>
 
@@ -40,6 +40,18 @@ const About = () => {
             <div className='flex gap-2'>
               <Play width={7} className='text-secondary-color' />
               <li>UX/UI</li>
+            </div>
+            <div className='flex gap-2'>
+              <Play width={7} className='text-secondary-color' />
+              <li>SCSS</li>
+            </div>
+            <div className='flex gap-2'>
+              <Play width={7} className='text-secondary-color' />
+              <li>Tailwind</li>
+            </div>
+            <div className='flex gap-2'>
+              <Play width={7} className='text-secondary-color' />
+              <li>Material-UI</li>
             </div>
             <div className='flex gap-2'>
               <Play width={7} className='text-secondary-color' />
