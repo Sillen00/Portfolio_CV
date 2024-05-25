@@ -169,7 +169,7 @@ export const projects: Projects[] = [
     builtWith: ["Github", "React", "HTML", "CSS"],
     githubLink: "https://github.com/Sillen00/Netflix2-0",
     hostedLink: "https://netflix2dot0.netlify.app/",
-    img: "/projectImages/todo_calendar.png", // Change image -------------------------------------
+    img: "/projectImages/netflix.png",
   },
   {
     id: 17,
