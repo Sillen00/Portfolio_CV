@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Contact = () => {
   return (
-    <section className='max-w-screen-lg mx-auto pb-60 px-6 md:px-28' id='contact'>
+    <section className='max-w-screen-lg mx-auto pt-32 pb-60 px-6 md:px-28' id='contact'>
       <h4 className={"fira text-center text-secondary-color"}>04. Contact</h4>
       <h3 className='font-semibold text-center my-4'>Kom I Kontakt</h3>
       <p className='text-center pb-8 max-w-[600px] mx-auto'>

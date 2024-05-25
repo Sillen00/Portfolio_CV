@@ -8,7 +8,7 @@ const Experience = () => {
   const [selectedItem, setSelectedItem] = useState("Kokokaka");
 
   return (
-    <section className='max-w-screen-lg mx-auto pb-60 px-6 md:px-28' id='experience'>
+    <section className='max-w-screen-lg mx-auto pt-32 pb-28 px-6 md:px-28' id='experience'>
       <h3 className={twMerge(css.line, "flex flex-nowrap items-center relative mb-8")}>
         <span className='fira text-secondary-color text-2xl mr-4'>02. </span>Experience
       </h3>
