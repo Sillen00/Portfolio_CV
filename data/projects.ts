@@ -6,6 +6,7 @@ export type Projects = {
   builtWith: string[];
   githubLink: string;
   hostedLink: string | null;
+  img?: string;
 };
 
 // Create and export an array of users
@@ -18,6 +19,7 @@ export const projects: Projects[] = [
     builtWith: ["Figma", "OOP", "Typescript", "P5.JS"],
     githubLink: "https://github.com/Sillen00/Star-Bomb-Game",
     hostedLink: "https://star-bomb.netlify.app/",
+    img: "./images/starbomb.png",
   },
   {
     id: 2,
@@ -27,6 +29,7 @@ export const projects: Projects[] = [
     builtWith: ["React", "Typescript", "Material-UI"],
     githubLink: "https://github.com/Sillen00/React-Webshop-Gents-Hat",
     hostedLink: "https://gentshats.netlify.app/",
+    img: "./images/starbomb.png",
   },
   {
     id: 3,
@@ -36,6 +39,7 @@ export const projects: Projects[] = [
     builtWith: ["Figma", "NextJS", "T3-stack", "Typescript", "Prisma", "tRPC", "Clerk.js", "SCSS"],
     githubLink: "https://github.com/Sillen00/GlobalForm-Solutions",
     hostedLink: "https://global-form-solutions.vercel.app/",
+    img: "./images/starbomb.png",
   },
   {
     id: 4,
@@ -45,6 +49,7 @@ export const projects: Projects[] = [
     builtWith: ["Figma", "React", "Typescript", "ExpressJS", "Mongoose", "MongoDB"],
     githubLink: "https://github.com/Sillen00/FEST-Webbshop-SOFUN",
     hostedLink: null,
+    img: "./images/starbomb.png",
   },
   {
     id: 5,
@@ -54,6 +59,7 @@ export const projects: Projects[] = [
     builtWith: ["API", "Javascript"],
     githubLink: "https://github.com/Sillen00/Random-Name-Generator",
     hostedLink: "https://random-name-nameday.netlify.app/",
+    img: "./images/starbomb.png",
   },
   {
     id: 6,
@@ -63,6 +69,7 @@ export const projects: Projects[] = [
     builtWith: ["Javascript"],
     githubLink: "https://github.com/Sillen00/To-Do-Calendar",
     hostedLink: null,
+    img: "./images/starbomb.png",
   },
   {
     id: 7,
@@ -72,6 +79,7 @@ export const projects: Projects[] = [
     builtWith: ["Javascript"],
     githubLink: "https://github.com/Sillen00/Remember-Card-Project",
     hostedLink: null,
+    img: "./images/starbomb.png",
   },
   {
     id: 8,
@@ -81,6 +89,7 @@ export const projects: Projects[] = [
     builtWith: ["React", "Jest", "React-Testing-Library"],
     githubLink: "https://github.com/Sillen00/React-Testing-Library-Mocktail-To-Drink",
     hostedLink: null,
+    img: "./images/starbomb.png",
   },
   {
     id: 9,
@@ -90,6 +99,7 @@ export const projects: Projects[] = [
     builtWith: ["Illustrator", "Photoshop", "React"],
     githubLink: "https://github.com/Sillen00/printlab-webshop-react-design",
     hostedLink: "https://printlab.netlify.app/",
+    img: "./images/starbomb.png",
   },
   {
     id: 10,
@@ -99,6 +109,7 @@ export const projects: Projects[] = [
     builtWith: ["Javascript", "HTML", "CSS"],
     githubLink: "https://github.com/Sillen00/Input-Converter-Sats-Btc",
     hostedLink: "https://sillen00.github.io/Input-Converter-Sats-Btc/",
+    img: "./images/starbomb.png",
   },
   {
     id: 11,
@@ -108,6 +119,7 @@ export const projects: Projects[] = [
     builtWith: ["HTML", "CSS"],
     githubLink: "https://github.com/Sillen00/Apple-Hemsida",
     hostedLink: "https://sillen00.github.io/Apple-Hemsida/",
+    img: "./images/apple_html_css_copy.png",
   },
   {
     id: 12,
@@ -117,6 +129,7 @@ export const projects: Projects[] = [
     builtWith: ["Javascript", "HTML", "CSS"],
     githubLink: "https://github.com/Sillen00/TextbaseradInteraktivUpplevelse-Uppgift",
     hostedLink: "https://sillen00.github.io/TextbaseradInteraktivUpplevelse-Uppgift/",
+    img: "./images/starbomb.png",
   },
   {
     id: 13,
@@ -126,6 +139,7 @@ export const projects: Projects[] = [
     builtWith: ["Jest", "React-Testing-Library", "React"],
     githubLink: "https://github.com/Sillen00/DictonaryTestsExersice",
     hostedLink: null,
+    img: "./images/starbomb.png",
   },
   {
     id: 14,
@@ -135,6 +149,7 @@ export const projects: Projects[] = [
     builtWith: ["Svelte", "HTML", "CSS"],
     githubLink: "https://github.com/Sillen00/Svelte-Framework-Assignment",
     hostedLink: null,
+    img: "./images/starbomb.png",
   },
   {
     id: 15,
@@ -144,6 +159,7 @@ export const projects: Projects[] = [
     builtWith: ["React", "HTML", "JSS", "API"],
     githubLink: "https://github.com/Sillen00/Quiz-TLS",
     hostedLink: "https://quizie-quiz.netlify.app/",
+    img: "./images/starbomb.png",
   },
   {
     id: 16,
@@ -153,6 +169,7 @@ export const projects: Projects[] = [
     builtWith: ["Github", "React", "HTML", "JSS"],
     githubLink: "https://github.com/Sillen00/Netflix2-0",
     hostedLink: "https://netflix2dot0.netlify.app/",
+    img: "./images/starbomb.png",
   },
   // Add more project as needed
 ];
