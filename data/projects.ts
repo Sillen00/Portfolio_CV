@@ -91,5 +91,14 @@ export const projects: Projects[] = [
     githubLink: "https://github.com/Sillen00/printlab-webshop-react-design",
     hostedLink: "https://printlab.netlify.app/",
   },
+  {
+    id: 10,
+    feautured: false,
+    title: "Bitcoin Converter",
+    text: "In this task, we have created a chat-based app that allows users to chat with each other in real-time. The communication is set up using socket.io. A user should be able to create a new room. The created rooms are displayed in a list that users can click on to join the desired room. Once inside a room, the users are allowed to chat with each other.",
+    builtWith: ["Socket.io", "Typescript", "React", "MongoDB"],
+    githubLink: "https://github.com/Sillen00/Chat-With-Sockets-LSDT",
+    hostedLink: null,
+  },
   // Add more project as needed
 ];
