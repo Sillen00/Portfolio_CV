@@ -35,6 +35,10 @@ const About = () => {
             </div>
             <div className='flex gap-2'>
               <Play width={7} className='text-secondary-color' />
+              <li>Socket.io</li>
+            </div>
+            <div className='flex gap-2'>
+              <Play width={7} className='text-secondary-color' />
               <li>Npm</li>
             </div>
             <div className='flex gap-2'>
