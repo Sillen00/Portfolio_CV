@@ -13,8 +13,8 @@ const Experience = () => {
         <span className='fira text-secondary-color text-2xl mr-4'>02. </span>Experience
       </h3>
 
-      <div className='flex'>
-        <ul className='fira'>
+      <div>
+        <ul className={twMerge(css.navUl, 'fira flex text-nowrap overflow-scroll')}>
           <li className={twMerge(css.navItem, selectedItem == "Kokokaka" && css.active)} onClick={() => setSelectedItem("Kokokaka")}>
             Kokokaka
           </li>
@@ -25,7 +25,7 @@ const Experience = () => {
             className={twMerge(css.navItem, selectedItem == "MedieInstitutet" && css.active)}
             onClick={() => setSelectedItem("MedieInstitutet")}
           >
-            MedieInstitutet
+            Medieinstitutet
           </li>
           <li className={twMerge(css.navItem, selectedItem == "Elpro" && css.active)} onClick={() => setSelectedItem("Elpro")}>
             Elpro
@@ -35,11 +35,11 @@ const Experience = () => {
           </li>
         </ul>
 
-        {/* KOKOKAKA ----------------------------------------------------------------------------------------------------- */}
-        {/* KOKOKAKA ----------------------------------------------------------------------------------------------------- */}
-        {/* KOKOKAKA ----------------------------------------------------------------------------------------------------- */}
-
         <div className='flex-grow ml-4 mt-1.5'>
+          {/* KOKOKAKA ----------------------------------------------------------------------------------------------------- */}
+          {/* KOKOKAKA ----------------------------------------------------------------------------------------------------- */}
+          {/* KOKOKAKA ----------------------------------------------------------------------------------------------------- */}
+
           {selectedItem === "Kokokaka" && (
             <div>
               <h4>
