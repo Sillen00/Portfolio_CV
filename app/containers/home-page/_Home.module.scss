@@ -106,41 +106,6 @@
 }
 
 
-// .navItem {
-//   padding: 10px 20px;
-//   position: relative;
-//   transition: background-color 0.3s ease-in-out;
-
-//   &::after {
-//     content: " ";
-//     position: absolute;
-//     background-color: var(--secondary-color-dark);
-//     width: 2px;
-//     height: 100%;
-//     top: 0;
-//     left: 0;
-//     z-index: 10;
-//     transition: background-color 0.3s ease-in-out;
-//   }
-
-//   &:hover {
-//     background-color: var(--hover-color);
-//     color: var(--secondary-color);
-//   }
-
-//   &.active {
-//     color: var(--secondary-color);
-//     background-color: var(--hover-color);
-
-
-//     &::after {
-//       background-color: var(--secondary-color);
-//       transition: background-color 0.3s ease-in-out;
-//       transform: scaleY(1);
-//     }
-//   }
-// }
-
 // Keyframes for smooth transition between active items
 @keyframes slideInX {
   from {
