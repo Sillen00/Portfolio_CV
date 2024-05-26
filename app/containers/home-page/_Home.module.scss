@@ -20,13 +20,41 @@
 
 
 .navUl {
-  overflow-y: hidden;
+}
+/* WebKit browsers */
+.navUl::-webkit-scrollbar {
+  height: 8px;
+}
+
+.navUl::-webkit-scrollbar-track {
+  background: var(--text-color); /* Background of the scrollbar track */
+}
+
+.navUl::-webkit-scrollbar-thumb {
+  background: var(--text-color); /* Color of the scrollbar thumb */
+  border-radius: 10px;
+}
+
+.navUl::-webkit-scrollbar-thumb:hover {
+  background: var(--background-color);
+}
+
+/* Firefox */
+.navUl {
+  scrollbar-width: thin;
+  scrollbar-color: var(--text-color) var(--background-color);
 }
 
 .navItem {
-  padding: 10px 20px;
+  padding: 10px 0px;
   position: relative;
   transition: background-color 0.3s ease-in-out;
+
+  width: 100%;
+  min-width: 125px;
+  max-width: 125px;
+  text-align: center;
+
 
   &::after {
     content: " ";

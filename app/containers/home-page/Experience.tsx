@@ -14,7 +14,7 @@ const Experience = () => {
       </h3>
 
       <div>
-        <ul className={twMerge(css.navUl, 'fira flex text-nowrap overflow-scroll')}>
+        <ul className={twMerge(css.navUl, 'fira flex text-nowrap overflow-x-scroll overflow-y-auto sm:flex-col')}>
           <li className={twMerge(css.navItem, selectedItem == "Kokokaka" && css.active)} onClick={() => setSelectedItem("Kokokaka")}>
             Kokokaka
           </li>
@@ -35,7 +35,7 @@ const Experience = () => {
           </li>
         </ul>
 
-        <div className='flex-grow ml-4 mt-1.5'>
+        <div className='flex-grow ml-4 mt-1.5 pt-6'>
           {/* KOKOKAKA ----------------------------------------------------------------------------------------------------- */}
           {/* KOKOKAKA ----------------------------------------------------------------------------------------------------- */}
           {/* KOKOKAKA ----------------------------------------------------------------------------------------------------- */}
