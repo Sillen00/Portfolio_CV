@@ -161,6 +161,31 @@
 
 
 .project {
-  background-image: green;
+
+  &.unfeautured {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-10px);
+      transition: transform 0.3s ease-in-out;
+    }
+  }
+
+  img {
+    opacity: 0.25;
+  }
   
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0px;
+    z-index: -10;
+    transition: background-color 0.3s ease-in-out;
+    background-color: var(--background-color);
+    opacity: 0.8;
+    mix-blend-mode: darken;
+  }
 }

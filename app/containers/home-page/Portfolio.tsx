@@ -2,69 +2,81 @@ import { ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { twMerge } from "tailwind-merge";
-import { Projects, projects } from "../../../data/projects";
+import { projects } from "../../../data/projects";
 import css from "./_Home.module.scss";
 
 const Portfolio = () => {
   return (
-    <section className='max-w-screen-lg mx-auto pt-32 pb-28 px-6 md:px-28' id='portfolio'>
-      <h3 className={twMerge(css.line, "flex flex-nowrap items-center relative mb-8")}>
-        <span className='fira text-secondary-color text-2xl mr-4'>03. </span>Portfolio
-      </h3>
-
-      <div id='container'>
-        {projects.map((project: Projects) =>
-          project.feautured ? (
-            <div key={project.id} className={twMerge(css.project, "px-5 py-6 relative mb-4")}>
+    <section id='portfolio'>
+      {/* FEAUTURED PROJECTS ---------------------------------- */}
+      {/* FEAUTURED PROJECTS ---------------------------------- */}
+      {/* FEAUTURED PROJECTS ---------------------------------- */}
+      <div className='max-w-screen-lg mx-auto pt-32 pb-28 px-6 md:px-28'>
+        <h3 className={twMerge(css.line, "flex flex-nowrap items-center relative mb-8")}>
+          <span className='fira text-secondary-color text-2xl mr-4'>03. </span>Portfolio
+        </h3>
+        {projects
+          .filter(project => project.feautured)
+          .map(project => (
+            <div key={project.id} className={twMerge(css.project, "px-5 py-6 relative mb-6 border border-gray-700 rounded-md")}>
               <Image
-                className='absolute top-0 left-0 -z-40 w-full h-full object-cover opacity-25'
+                className='absolute top-0 left-0 -z-20 w-full h-full object-cover '
                 width={530}
                 height={10}
                 src={project.img ?? ""}
-                alt={project.title}
+                alt={project.title + " project image."}
+                style={{ width: "100%", height: "100%" }}
               />
               <p className='fira text-secondary-color'>Utvalt Project</p>
-              <h3>{project.title}</h3>
-              <p className='gray py-8'>{project.text}</p>
-              <ul className='fira gray flex gap-2.5 flex-wrap pb-4'>
-                {project.builtWith?.map((item: string, index: number) => (
+              <h3 className='primaryLight hover:text-secondary-color'>{project.title}</h3>
+              <p className='py-8'>{project.text}</p>
+              <ul className='fira flex gap-2.5 flex-wrap pb-4'>
+                {project.builtWith?.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
               </ul>
               <div className='flex gap-4'>
-                <Link href={project.githubLink ?? ""}>
+                <Link className='hover:text-secondary-color' href={project.githubLink ?? ""}>
                   <Github size={22} />
                 </Link>
-                <Link href={project.hostedLink ?? ""}>
+                <Link className='hover:text-secondary-color' href={project.hostedLink ?? ""}>
                   <ExternalLink size={22} />
                 </Link>
               </div>
             </div>
-          ) : (
-            // Project is not featured--------------------------------------------------------------------
-            // Project is not featured--------------------------------------------------------------------
-            // Project is not featured--------------------------------------------------------------------
+          ))}
+      </div>
 
-            <div key={project.id} className={twMerge(css.project, "px-9 py-11")}>
-              <Image width={30} height={30} src={project.img ?? ""} alt={project.title} />
-              <h3>{project.title}</h3>
-              <p className='gray'>{project.text}</p>
-              <ul className='fira gray flex gap-2.5 flex-wrap'>
-                {project.builtWith?.map((item: string, index: number) => (
+      <h3 className='text-center mt-24 mb-8'>Other Noteworthy Projects</h3>
+
+      {/* UNFEAUTURED PROJECTS --------------------------------------------------- */}
+      {/* UNFEAUTURED PROJECTS --------------------------------------------------- */}
+      {/* UNFEAUTURED PROJECTS --------------------------------------------------- */}
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-screen-xl mx-auto pt-32 pb-28 px-6 md:px-28'>
+        {projects
+          .filter(project => !project.feautured)
+          .map(project => (
+            <div
+              key={project.id}
+              className={twMerge(css.project, css.unfeautured, "px-5 py-6 relative mb-6 border border-gray-700 rounded-md hover:-translate-y-3 ")}
+            >
+              <h4 className='primaryLight hover:text-secondary-color'>{project.title}</h4>
+              <p className='small gray'>{project.text}</p>
+              <ul className='fira flex gap-2.5 flex-wrap'>
+                {project.builtWith?.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
               </ul>
               <div className='flex'>
-                <Link href={project.githubLink ?? ""}>
+                <Link className='hover:text-secondary-color' href={project.githubLink ?? ""}>
                   <Github size={24} />
                 </Link>
-                <Link href={project.hostedLink ?? ""}>
+                <Link className='hover:text-secondary-color' href={project.hostedLink ?? ""}>
                   <ExternalLink size={24} />
                 </Link>
               </div>
             </div>
-          )
-        )}
+          ))}
       </div>
     </section>
   );
