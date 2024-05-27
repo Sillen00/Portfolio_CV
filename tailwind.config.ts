@@ -20,6 +20,7 @@ const config: Config = {
       },
       textColor: {
         primary: "#ccd6f6",
+        primaryLight: "#e1e1e1",
         secondary: "#B0B0B0",
       },
     },
