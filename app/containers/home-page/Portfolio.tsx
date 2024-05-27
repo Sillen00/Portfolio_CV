@@ -15,22 +15,28 @@ const Portfolio = () => {
       <div id='container'>
         {projects.map((project: Projects) =>
           project.feautured ? (
-            <div key={project.id} className={twMerge(css.project, "px-9 py-11")}>
+            <div key={project.id} className={twMerge(css.project, "px-5 py-6 relative mb-4")}>
+              <Image
+                className='absolute top-0 left-0 -z-40 w-full h-full object-cover opacity-25'
+                width={530}
+                height={10}
+                src={project.img ?? ""}
+                alt={project.title}
+              />
               <p className='fira text-secondary-color'>Utvalt Project</p>
-              <Image width={30} height={30} src={project.img ?? ""} alt={project.title} />
               <h3>{project.title}</h3>
-              <p className='gray'>{project.text}</p>
-              <ul className='fira gray flex gap-2.5 flex-wrap'>
+              <p className='gray py-8'>{project.text}</p>
+              <ul className='fira gray flex gap-2.5 flex-wrap pb-4'>
                 {project.builtWith?.map((item: string, index: number) => (
                   <li key={index}>{item}</li>
                 ))}
               </ul>
-              <div className='flex'>
+              <div className='flex gap-4'>
                 <Link href={project.githubLink ?? ""}>
-                  <Github size={24} />
+                  <Github size={22} />
                 </Link>
                 <Link href={project.hostedLink ?? ""}>
-                  <ExternalLink size={24} />
+                  <ExternalLink size={22} />
                 </Link>
               </div>
             </div>
