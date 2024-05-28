@@ -43,6 +43,10 @@ const About = () => {
             </div>
             <div className='flex gap-2'>
               <Play width={7} className='text-secondary-color' />
+              <li>CI/CD</li>
+            </div>
+            <div className='flex gap-2'>
+              <Play width={7} className='text-secondary-color' />
               <li>UX/UI</li>
             </div>
             <div className='flex gap-2'>
