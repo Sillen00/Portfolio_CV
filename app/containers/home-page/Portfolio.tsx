@@ -28,9 +28,9 @@ const Portfolio = () => {
                 style={{ width: "100%", height: "100%" }}
               />
               <p className='fira text-secondary-color'>Utvalt Project</p>
-              <h3 className='primaryLight hover:text-secondary-color'>{project.title}</h3>
-              <p className='py-8'>{project.text}</p>
-              <ul className='fira flex gap-2.5 flex-wrap pb-4'>
+              <h3 className='hover:text-secondary-color'>{project.title}</h3>
+              <p className='py-8 gray'>{project.text}</p>
+              <ul className='fira gray flex gap-2.5 flex-wrap pb-4'>
                 {project.builtWith?.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
@@ -56,14 +56,7 @@ const Portfolio = () => {
         {projects
           .filter(project => !project.feautured)
           .map(project => (
-            <div
-              key={project.id}
-              className={twMerge(
-                css.project,
-                css.unfeautured,
-                "px-5 pt-8 pb-20 relative mb-6 bg-primary-color-light rounded-md hover:-translate-y-3 "
-              )}
-            >
+            <div key={project.id} className={twMerge(css.unfeautured, "px-5 pt-8 pb-20 relative mb-6 bg-primary-color-light rounded-md ")}>
               <div className='flex justify-between items-center mb-6'>
                 <Folder size={42} className='text-secondary-color' />
                 <div className='flex gap-3'>

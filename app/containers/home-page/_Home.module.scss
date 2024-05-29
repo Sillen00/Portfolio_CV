@@ -163,22 +163,6 @@
 
 
 .project {
-
-  &.unfeautured {
-    cursor: pointer;
-    transition: transform 0.5s ease-in-out;
-
-    &:hover {
-      transform: translateY(-10px);
-      transition: transform 0.5s ease-in-out;
-      
-      h4 {
-        transition: color 0.3s ease-in-out;
-        color: var(--secondary-color);
-      }
-    }
-  }
-
   img {
     opacity: 0.25;
   }
@@ -194,5 +178,21 @@
     background-color: var(--background-color);
     opacity: 0.8;
     mix-blend-mode: darken;
+  }
+}
+
+.unfeautured {
+  box-shadow: 0 10px 30px -15px var(--hover-color);
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+
+  &:hover {
+    transform: translateY(-10px);
+    transition: transform 0.5s ease-in-out;
+    
+    h4 {
+      transition: color 0.3s ease-in-out;
+      color: var(--secondary-color);
+    }
   }
 }

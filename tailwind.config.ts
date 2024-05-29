@@ -9,9 +9,9 @@ const config: Config = {
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        "primary-color": "#202020",
+        "primary-color": "#18110f",
         "primary-color-dark": "#000000",
-        "primary-color-light": "#443A37",
+        "primary-color-light": "#221815",
         "secondary-color": "#DE4126",
         "secondary-color-dark": "#584d4c",
         "secondary-color-light": "#E6563C",
@@ -20,8 +20,7 @@ const config: Config = {
       },
       textColor: {
         primary: "#ccd6f6",
-        primaryLight: "#e1e1e1",
-        secondary: "#B0B0B0",
+        primaryLight: "#e8e8e8",
       },
     },
     screens: {
