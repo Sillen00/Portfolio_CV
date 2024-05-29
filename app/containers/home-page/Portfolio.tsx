@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Folder, Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { twMerge } from "tailwind-merge";
@@ -36,12 +36,12 @@ const Portfolio = () => {
                 ))}
               </ul>
               <div className='flex gap-4'>
-                <Link className='hover:text-secondary-color' href={project.githubLink ?? ""}>
+                <a className='hover:text-secondary-color' href={project.githubLink ?? ""} onClick={e => e.preventDefault()}>
                   <Github size={22} />
-                </Link>
-                <Link className='hover:text-secondary-color' href={project.hostedLink ?? ""}>
+                </a>
+                <a className='hover:text-secondary-color' href={project.hostedLink ?? ""} onClick={e => e.preventDefault()}>
                   <ExternalLink size={22} />
-                </Link>
+                </a>
               </div>
             </div>
           ))}
@@ -58,23 +58,38 @@ const Portfolio = () => {
           .map(project => (
             <div
               key={project.id}
-              className={twMerge(css.project, css.unfeautured, "px-5 py-6 relative mb-6 border border-gray-700 rounded-md hover:-translate-y-3 ")}
+              className={twMerge(
+                css.project,
+                css.unfeautured,
+                "px-5 pt-8 pb-20 relative mb-6 bg-primary-color-light rounded-md hover:-translate-y-3 "
+              )}
             >
-              <h4 className='primaryLight hover:text-secondary-color'>{project.title}</h4>
+              <div className='flex justify-between items-center mb-6'>
+                <Folder size={42} className='text-secondary-color' />
+                <div className='flex gap-3'>
+                  {project.hostedLink ? (
+                    <Link className='hover:text-secondary-color' href={project.hostedLink}>
+                      <ExternalLink size={22} />
+                    </Link>
+                  ) : (
+                    <span className='w-[22px]'></span>
+                  )}
+                  {project.githubLink ? (
+                    <Link className='hover:text-secondary-color' href={project.githubLink}>
+                      <Github size={22} />
+                    </Link>
+                  ) : (
+                    <span className='w-[22px]'></span>
+                  )}
+                </div>
+              </div>
+              <h4 className='primaryLight pb-2.5'>{project.title}</h4>
               <p className='small gray'>{project.text}</p>
-              <ul className='fira flex gap-2.5 flex-wrap'>
+              <ul className='fira gray flex gap-2.5 flex-wrap absolute bottom-[24px] '>
                 {project.builtWith?.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
               </ul>
-              <div className='flex'>
-                <Link className='hover:text-secondary-color' href={project.githubLink ?? ""}>
-                  <Github size={24} />
-                </Link>
-                <Link className='hover:text-secondary-color' href={project.hostedLink ?? ""}>
-                  <ExternalLink size={24} />
-                </Link>
-              </div>
             </div>
           ))}
       </div>

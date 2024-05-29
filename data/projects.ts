@@ -144,7 +144,7 @@ export const projects: Projects[] = [
   {
     id: 14,
     feautured: false,
-    title: "Svelte Framework School Projekt",
+    title: "Svelte Framework",
     text: "School assignment inspired by State of JS where I had to choose one of the listed frameworks and create a simpler version of the site with the chosen framework. I chose to code with Svelte. The design is based on the following template.",
     builtWith: ["Svelte", "HTML", "CSS"],
     githubLink: "https://github.com/Sillen00/Svelte-Framework-Assignment",
