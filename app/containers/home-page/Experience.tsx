@@ -60,28 +60,28 @@ const Experience = () => {
                 </div>
               </div>
 
-              <div className='flex gap-4'>
+              <div className={twMerge(css.textRowHover, "flex gap-4")}>
                 <Play width={11} className='text-secondary-color flex-none' />
                 <p className='gray'>
                   Hos Kokokaka fick jag möjlighet att verkligen utforska och utveckla min kreativa och tekniska sida som front-end
                   utvecklare med fokus på UX/UI.
                 </p>
               </div>
-              <div className='flex gap-4 pt-4'>
+              <div className={twMerge(css.textRowHover, "flex gap-4 pt-4")}>
                 <Play width={11} className='text-secondary-color flex-none' />
                 <p className='gray'>
                   Arbetade med en mängd olika teknologier, inklusive HTML, CSS, React Wordpress och även AR-tekniker. Jag fick också
                   fördjupa mig i Photoshop och Illustrator, vilket breddade mina färdigheter inom både utveckling och design.
                 </p>
               </div>
-              <div className='flex gap-4 pt-4'>
+              <div className={twMerge(css.textRowHover, "flex gap-4 pt-4")}>
                 <Play width={11} className='text-secondary-color flex-none' />
                 <p className='gray'>
                   Jag hade en självgående roll där jag ofta fick lösa problem och göra research på egen hand, men jag uppskattade verkligen
                   det stöd och de insikter jag fick från mina kollegor.
                 </p>
               </div>
-              <div className='flex gap-4 pt-4'>
+              <div className={twMerge(css.textRowHover, "flex gap-4 pt-4")}>
                 <Play width={11} className='text-secondary-color flex-none' />
                 <p className='gray'>
                   Såhär beskrev min handledare mig:{" "}
@@ -108,15 +108,15 @@ const Experience = () => {
                 </Link>
               </h4>
               <p className='fira small gray pb-4 pt-0.5'>september - maj 2023</p> {/* 11 september - 17 maj 2023 */}
-              <div className='flex gap-4'>
-                <Play width={7} className='text-secondary-color flex-none' />
+              <div className={twMerge(css.textRowHover, "flex gap-4")}>
+                <Play width={11} className='text-secondary-color flex-none' />
                 <p className='gray'>
                   Hos Gym Control fick jag möjlighet att ytterligare utveckla mina kunskaper inom frontend-teknologier såsom HTML, CSS,
                   Javascript/JQuery samt integrationer med olika API:er och PHP med SQL som backend.
                 </p>
               </div>
-              <div className='flex gap-4 pt-4'>
-                <Play width={7} className='text-secondary-color flex-none' />
+              <div className={twMerge(css.textRowHover, "flex gap-4 pt-4")}>
+                <Play width={11} className='text-secondary-color flex-none' />
                 <p className='gray'>
                   Vid avslutet av min praktik fick jag en mycket positiv utvärdering från Johan:{" "}
                   <span className='text-primary'>
@@ -141,24 +141,24 @@ const Experience = () => {
                 </Link>
               </h4>
               <p className='fira small gray pb-4 pt-0.5'>september 2022 - maj 2024</p> {/* 12 september 2022 - 17 maj 2024 */}
-              <div className='flex gap-4'>
-                <Play width={7} className='text-secondary-color flex-none' />
+              <div className={twMerge(css.textRowHover, "flex gap-4")}>
+                <Play width={11} className='text-secondary-color flex-none' />
                 <p className='gray'>
                   Under min utbildning har jag kontinuerligt utvecklat mina tekniska färdigheter och vuxit både personligen och
                   professionellt. Jag har lärt mig att skapa responsiva och användarvänliga webbplatser samt förmåga att lösa problem,
                   samarbeta effektivt i team och kommunicera tydligt. Mina kunskaper kommer vara ovärderliga i min framtida karriär
                 </p>
               </div>
-              <div className='flex gap-4 pt-4'>
-                <Play width={7} className='text-secondary-color flex-none' />
+              <div className={twMerge(css.textRowHover, "flex gap-4 pt-4")}>
+                <Play width={11} className='text-secondary-color flex-none' />
                 <p className='gray'>
                   När jag blickar framåt ser jag många möjliga yrkesvägar. Att jämföra min nuvarande kunskap med den jag hade när jag
                   började utbildningen ger mig en känsla av stolthet.Utbildningen har varit en ovärderlig del av min resa mot att bli en
                   framgångsrik Front End Developer, och jag ser med spänning fram emot vad framtiden har att erbjuda.
                 </p>
               </div>
-              <div className='flex gap-4 pt-4'>
-                <Play width={7} className='text-secondary-color flex-none' />
+              <div className={twMerge(css.textRowHover, "flex gap-4 pt-4")}>
+                <Play width={11} className='text-secondary-color flex-none' />
                 <p className='gray'>
                   Vid avslutet av min utbildning fick jag en positiv text av min utbildningsledare Johanna:{" "}
                   <span className='text-primary'>
@@ -184,24 +184,24 @@ const Experience = () => {
                 </Link>
               </h4>
               <p className='fira small gray pb-4 pt-0.5'>september 2019 - september 2022</p> {/* 29 januari - 17 maj 2024 */}
-              <div className='flex gap-4'>
-                <Play width={7} className='text-secondary-color flex-none' />
+              <div className={twMerge(css.textRowHover, "flex gap-4")}>
+                <Play width={11} className='text-secondary-color flex-none' />
                 <p className='gray'>
                   Under min tid på Elpro har jag fått en stor förståelse för industriell automation och utvecklat mina färdigheter inom
                   elkonstruktion. Jag arbetade som elmontör, där jag spelade en viktig roll i produktionen av avancerade elektriska
                   styrsystem och apparatskåp.
                 </p>
               </div>
-              <div className='flex gap-4 pt-4'>
-                <Play width={7} className='text-secondary-color flex-none' />
+              <div className={twMerge(css.textRowHover, "flex gap-4 pt-4")}>
+                <Play width={11} className='text-secondary-color flex-none' />
                 <p className='gray'>
                   Med hjälp av olika ritningar skapade jag skräddarsydda lösningar för att möta kundernas specifika behov. Jag hanterade
                   både enstaka projekt och serietillverkning av apparatskåp. Min roll innefattade att bygga system från grunden och
                   säkerställa att varje projekt uppfyllde höga kvalitetsstandarder.
                 </p>
               </div>
-              <div className='flex gap-4 pt-4'>
-                <Play width={7} className='text-secondary-color flex-none' />
+              <div className={twMerge(css.textRowHover, "flex gap-4 pt-4")}>
+                <Play width={11} className='text-secondary-color flex-none' />
                 <p className='gray'>Jag har lärt mig vikten av noggrannhet, effektivitet och kontinuerlig förbättring.</p>
               </div>
             </div>
@@ -217,15 +217,15 @@ const Experience = () => {
                 Butikssäljare <span className='text-secondary-color cursor-pointer'>@ Netto Borås</span>
               </h4>
               <p className='fira small gray pb-4 pt-0.5'>juni - augusti 2019</p> {/* 29 januari - 17 maj 2024 */}
-              <div className='flex gap-4'>
-                <Play width={7} className='text-secondary-color flex-none' />
+              <div className={twMerge(css.textRowHover, "flex gap-4")}>
+                <Play width={11} className='text-secondary-color flex-none' />
                 <p className='gray'>
                   Efter min gymnasieutbildning hade jag förmånen att arbeta som butiksäljare på Netto, där jag fick möjlighet att utveckla
                   färdigheter inom varulagerhantering, kassahantering, städning, underhåll och kundservice.
                 </p>
               </div>
-              <div className='flex gap-4 pt-4'>
-                <Play width={7} className='text-secondary-color flex-none' />
+              <div className={twMerge(css.textRowHover, "flex gap-4 pt-4")}>
+                <Play width={11} className='text-secondary-color flex-none' />
                 <p className='gray'>
                   Jag lärde mig vikten av effektiv kommunikation, samarbete och problemlösning, samt hur man hanterar krav och förväntningar
                   från olika kundgrupper.
