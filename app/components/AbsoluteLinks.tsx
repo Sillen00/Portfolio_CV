@@ -16,7 +16,7 @@ const AbsoluteLinks = () => {
         >
           <Linkedin />
         </Link>
-        <a className={twMerge(css.iconHover, "hover:text-secondary-color")} href='tel:123456789'>
+        <a className={twMerge(css.iconHover, "hover:text-secondary-color")} href='tel:+46706612089'>
           <Phone />
         </a>
       </div>

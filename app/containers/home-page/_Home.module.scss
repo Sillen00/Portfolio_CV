@@ -5,9 +5,9 @@
   top: 0;
   left: 0;
 
-  background-color: var(--text-color);
+  background-color: var(--text-color-gray);
   width: 300px;
-  height: 1px;
+  height: 0.5px;
   margin-left: 16px;
 }
 
@@ -163,6 +163,9 @@
 
 
 .project {
+
+  box-shadow: 0 10px 30px -15px var(--hover-color);
+
   img {
     opacity: 0.25;
   }
