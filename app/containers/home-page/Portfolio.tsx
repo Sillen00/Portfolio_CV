@@ -58,34 +58,36 @@ const Portfolio = () => {
         {projects
           .filter(project => !project.feautured)
           .map(project => (
-            <div key={project.id} className={twMerge(css.unfeautured, "px-5 pt-8 pb-20 relative mb-6 bg-primary-color-light rounded-md ")}>
-              <div className='flex justify-between items-center mb-6'>
-                <Folder size={42} className='text-secondary-color' />
-                <div className='flex gap-3'>
-                  {project.hostedLink ? (
-                    <Link className='hover:text-secondary-color' href={project.hostedLink}>
-                      <ExternalLink size={22} />
-                    </Link>
-                  ) : (
-                    <span className='w-[22px]'></span>
-                  )}
-                  {project.githubLink ? (
-                    <Link className='hover:text-secondary-color' href={project.githubLink}>
-                      <Github size={22} />
-                    </Link>
-                  ) : (
-                    <span className='w-[22px]'></span>
-                  )}
+            <Link className={twMerge(css.unfeautured, "px-5 pt-8 pb-20 relative mb-6 bg-primary-color-light rounded-md ")} key={project.id} href={project.hostedLink ? project.hostedLink : project.githubLink}>
+              <div>
+                <div className='flex justify-between items-center mb-6'>
+                  <Folder size={42} className='text-secondary-color' />
+                  <div className='flex gap-3'>
+                    {project.hostedLink ? (
+                      <Link className='hover:text-secondary-color' href={project.hostedLink}>
+                        <ExternalLink size={22} />
+                      </Link>
+                    ) : (
+                      <span className='w-[22px]'></span>
+                    )}
+                    {project.githubLink ? (
+                      <Link className='hover:text-secondary-color' href={project.githubLink}>
+                        <Github size={22} />
+                      </Link>
+                    ) : (
+                      <span className='w-[22px]'></span>
+                    )}
+                  </div>
                 </div>
+                <h4 className='primaryLight pb-2.5'>{project.title}</h4>
+                <p className='small gray'>{project.text}</p>
+                <ul className='fira gray flex gap-2.5 flex-wrap absolute bottom-[24px] '>
+                  {project.builtWith?.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
               </div>
-              <h4 className='primaryLight pb-2.5'>{project.title}</h4>
-              <p className='small gray'>{project.text}</p>
-              <ul className='fira gray flex gap-2.5 flex-wrap absolute bottom-[24px] '>
-                {project.builtWith?.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
-              </ul>
-            </div>
+            </Link>
           ))}
       </div>
     </section>
