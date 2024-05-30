@@ -28,7 +28,9 @@ const Portfolio = () => {
                 style={{ width: "100%", height: "100%" }}
               />
               <p className='fira text-secondary-color'>Utvalt Project</p>
-              <h3 className='hover:text-secondary-color'>{project.title}</h3>
+              <Link href={project.hostedLink ?? ""}>
+                <h3 className='hover:text-secondary-color'>{project.title}</h3>
+              </Link>
               <p className='py-8 gray'>{project.text}</p>
               <ul className='fira gray flex gap-2.5 flex-wrap pb-4'>
                 {project.builtWith?.map((item, index) => (
