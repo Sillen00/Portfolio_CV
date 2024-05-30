@@ -53,7 +53,7 @@ const Experience = () => {
                 <p className='fira small gray'>januari - maj 2024</p> {/* 29 januari - 17 maj 2024 */}
                 <p className='fira small gray'> | </p>
                 <div className='flex items-center gap-2'>
-                  <Link href='./pdfs/Simon_rekommendationsbrev.pdf' target='_blank' download className='flex items-center gap-2'>
+                  <Link href='./pdfs/Simon_rekommendationsbrev.pdf' target='_blank' download className='flex items-center gap-2 cursor-pointer'>
                     <p className={twMerge(css.linkHover, "fira small underline text-secondary-color")}>Rekommendationsbrev</p>
                     <Download className='gray' width={15}></Download>
                   </Link>

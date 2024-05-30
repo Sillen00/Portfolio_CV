@@ -27,7 +27,7 @@ const Portfolio = () => {
                 alt={project.title + " project image."}
                 style={{ width: "100%", height: "100%" }}
               />
-              <p className='fira text-secondary-color'>Utvalt Project</p>
+              <p className='fira text-secondary-color'>Feautured Project</p>
               <Link href={project.hostedLink ?? ""}>
                 <h3 className='hover:text-secondary-color'>{project.title}</h3>
               </Link>
