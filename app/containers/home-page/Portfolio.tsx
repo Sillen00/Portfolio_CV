@@ -93,7 +93,7 @@ const Portfolio = () => {
                     )}
                   </div>
                 </div>
-                <h4 className='primaryLight pb-2.5'>{project.title}</h4>
+                <h4 className='text-color-Light pb-2.5'>{project.title}</h4>
                 <p className='small gray'>{project.text}</p>
                 <ul className='fira gray flex gap-2.5 flex-wrap absolute bottom-[24px] '>
                   {project.builtWith?.map((item, index) => (

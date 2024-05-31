@@ -59,7 +59,7 @@ const MedieInstitutet = () => {
         <Play width={11} className='text-secondary-color flex-none' />
         <p className='gray'>
           Vid avslutet av min utbildning fick jag en positiv text av min utbildningsledare Johanna:{" "}
-          <span className='text-primary'>
+          <span className='text-text-color'>
             &quot;Du är grym och imponerar ständigt! Har varit så kul att följa dig under utbildningens gång. Jag upplever också att du har
             utvecklats mycket under din LIA, vilket är så kul att se. Fortsätt att tro på dig själv och gå ut på arbetsmarknaden med
             självförtroende.&quot;

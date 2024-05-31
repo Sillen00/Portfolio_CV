@@ -19,8 +19,9 @@ const config: Config = {
         "hover-color": "#262626",
       },
       textColor: {
-        primary: "#ccd6f6",
-        primaryLight: "#e8e8e8",
+        "text-color": "#ccd6f6",
+        "text-color-Light": "#e8e8e8",
+        "text-color-Gray": "#abaaaa",
       },
     },
     screens: {

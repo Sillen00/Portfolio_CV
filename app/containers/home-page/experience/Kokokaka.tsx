@@ -64,7 +64,7 @@ const Kokokaka = () => {
         <Play width={11} className='text-secondary-color flex-none' />
         <p className='gray'>
           Såhär beskrev min handledare mig:{" "}
-          <span className='text-primary'>
+          <span className='text-text-color'>
             &quot;Simon är alltid väldigt fokuserad och engagerad i sitt arbete. När han stöter på problem så försöker han hitta lösningar
             med hjälp av AI, forum och tutorials. Han är självständig och noggrann.&quot;{" "}
           </span>

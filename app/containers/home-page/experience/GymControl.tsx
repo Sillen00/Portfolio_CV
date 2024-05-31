@@ -24,7 +24,7 @@ const GymControl = () => {
         <Play width={11} className='text-secondary-color flex-none' />
         <p className='gray'>
           Vid avslutet av min praktik fick jag en mycket positiv utvärdering från Johan:{" "}
-          <span className='text-primary'>
+          <span className='text-text-color'>
             &quot;Simon står på tårna och lär sig fort och kommer bli en tillgång för den som får chans att arbeta/anställa honom i
             framtiden. Bästa av alla praktikanter vi haft i företaget genom åren.&quot;
           </span>
