@@ -57,7 +57,7 @@ const Portfolio = () => {
           ))}
       </div>
 
-      <h3 className='text-center mt-24 mb-8'>Other Noteworthy Projects</h3>
+      <h3 className='text-center mt-24 mb-6'>Other Noteworthy Projects</h3>
 
       {/* UNFEAUTURED PROJECTS --------------------------------------------------- */}
       {/* UNFEAUTURED PROJECTS --------------------------------------------------- */}
