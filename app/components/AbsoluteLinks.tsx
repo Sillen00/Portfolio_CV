@@ -7,12 +7,13 @@ const AbsoluteLinks = () => {
   return (
     <>
       <div className={twMerge(css.lineSocials, "hidden fixed bottom-32 left-12 z-10 md:flex flex-col gap-4")}>
-        <Link className={twMerge(css.iconHover, "hover:text-secondary-color")} href='https://github.com/Sillen00'>
+        <Link className={twMerge(css.iconHover, "hover:text-secondary-color")} href='https://github.com/Sillen00' target='_blank'>
           <Github />
         </Link>
         <Link
           className={twMerge(css.iconHover, "hover:text-secondary-color")}
           href='https://www.linkedin.com/in/simon-bengtsson-656a86193/'
+          target='_blank'
         >
           <Linkedin />
         </Link>

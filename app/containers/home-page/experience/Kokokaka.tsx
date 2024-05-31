@@ -1,14 +1,22 @@
+import PDFViewer from "@/app/components/PDFViewer";
 import { Download, Play } from "lucide-react";
 import Link from "next/link";
+import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 import css from "../_Home.module.scss";
 
 const Kokokaka = () => {
+  const [showPDF, setShowPDF] = useState(false);
+
+  const handlePDFClick = () => {
+    setShowPDF(true);
+  };
+
   return (
     <div>
       <h4>
         Frontend Utvecklare{" "}
-        <Link className='text-secondary-color' href={"https://kokokaka.com/"}>
+        <Link className='text-secondary-color' href={"https://kokokaka.com/"} target='_blank'>
           @ Kokokaka Creative Studio
         </Link>
       </h4>
@@ -16,10 +24,15 @@ const Kokokaka = () => {
       <div className='flex items-center gap-4 pb-4 pt-0.5 flex-wrap'>
         <p className='fira small gray'>januari - maj 2024</p> {/* 29 januari - 17 maj 2024 */}
         <p className='fira small gray'> | </p>
-        <Link href='./pdfs/Simon_rekommendationsbrev.pdf' target='_blank' download className='flex items-center gap-2 cursor-pointer'>
+        {/* <Link href='./pdfs/Simon_rekommendationsbrev.pdf' target='_blank' download className='flex items-center gap-2 cursor-pointer'>
           <p className={twMerge(css.linkHover, "fira small underline text-secondary-color")}>Rekommendationsbrev</p>
           <Download className='gray' width={15}></Download>
-        </Link>
+        </Link> */}
+        <button onClick={handlePDFClick} className='flex items-center gap-2 cursor-pointer'>
+          <p className={twMerge("fira small underline text-secondary-color")}>Rekommendationsbrev</p>
+          <Download className='gray' width={15}></Download>
+        </button>
+        {showPDF && <PDFViewer src='./pdfs/Simon_rekommendationsbrev.pdf' />}
       </div>
 
       <div className={twMerge(css.textRowHover, "flex gap-4")}>

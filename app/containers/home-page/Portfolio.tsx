@@ -28,7 +28,7 @@ const Portfolio = () => {
                 style={{ width: "100%", height: "100%" }}
               />
               <p className='fira text-secondary-color'>Feautured Project</p>
-              <Link href={project.hostedLink ?? ""}>
+              <Link href={project.hostedLink ?? ""} target='_blank'>
                 <h3 className='hover:text-secondary-color'>{project.title}</h3>
               </Link>
               <p className='py-8 gray'>{project.text}</p>
@@ -38,10 +38,10 @@ const Portfolio = () => {
                 ))}
               </ul>
               <div className='flex gap-4'>
-                <a className='hover:text-secondary-color' href={project.githubLink ?? ""} onClick={e => e.preventDefault()}>
+                <a className='hover:text-secondary-color' href={project.githubLink ?? ""} target='_blank'>
                   <Github size={22} />
                 </a>
-                <a className='hover:text-secondary-color' href={project.hostedLink ?? ""} onClick={e => e.preventDefault()}>
+                <a className='hover:text-secondary-color' href={project.hostedLink ?? ""} target='_blank'>
                   <ExternalLink size={22} />
                 </a>
               </div>
@@ -58,20 +58,25 @@ const Portfolio = () => {
         {projects
           .filter(project => !project.feautured)
           .map(project => (
-            <Link className={twMerge(css.unfeautured, "px-5 pt-8 pb-20 relative mb-6 bg-primary-color-light rounded-md ")} key={project.id} href={project.hostedLink ? project.hostedLink : project.githubLink}>
+            <Link
+              className={twMerge(css.unfeautured, "px-5 pt-8 pb-20 relative mb-6 bg-primary-color-light rounded-md ")}
+              key={project.id}
+              href={project.hostedLink ? project.hostedLink : project.githubLink}
+              target='_blank'
+            >
               <div>
                 <div className='flex justify-between items-center mb-6'>
                   <Folder size={42} className='text-secondary-color' />
                   <div className='flex gap-3'>
                     {project.hostedLink ? (
-                      <Link className='hover:text-secondary-color' href={project.hostedLink}>
+                      <Link className='hover:text-secondary-color' href={project.hostedLink} target='_blank'>
                         <ExternalLink size={22} />
                       </Link>
                     ) : (
                       <span className='w-[22px]'></span>
                     )}
                     {project.githubLink ? (
-                      <Link className='hover:text-secondary-color' href={project.githubLink}>
+                      <Link className='hover:text-secondary-color' href={project.githubLink} target='_blank'>
                         <Github size={22} />
                       </Link>
                     ) : (

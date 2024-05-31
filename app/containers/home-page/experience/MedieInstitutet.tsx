@@ -8,7 +8,7 @@ const MedieInstitutet = () => {
     <div>
       <h4>
         Student Frontend{" "}
-        <Link className='text-secondary-color' href={"https://medieinstitutet.se/"}>
+        <Link className='text-secondary-color' href={"https://medieinstitutet.se/"} target='_blank'>
           @ MedieInstitutet
         </Link>
       </h4>

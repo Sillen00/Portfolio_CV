@@ -8,7 +8,7 @@ const Elpro = () => {
     <div>
       <h4>
         Elmontör{" "}
-        <Link className='text-secondary-color' href={"https://elpro.se/"}>
+        <Link className='text-secondary-color' href={"https://elpro.se/"} target='_blank'>
           @ Elpro i Alingsås
         </Link>
       </h4>

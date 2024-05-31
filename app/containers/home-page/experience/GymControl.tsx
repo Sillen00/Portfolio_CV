@@ -8,7 +8,7 @@ const GymControl = () => {
     <div>
       <h4>
         Fullstack Utvecklare{" "}
-        <Link className='text-secondary-color' href={"https://gymcontrol.se/"}>
+        <Link className='text-secondary-color' href={"https://gymcontrol.se/"} target='_blank'>
           @ Gym Control
         </Link>
       </h4>
