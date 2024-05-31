@@ -12,7 +12,7 @@ export type Project = {
 // Create and export an array of users
 export const projects: Project[] = [
   {
-    id: 1,
+    id: 10,
     feautured: true,
     title: "Star Bomb Game",
     text: "This is our final project in the JavaScript - Basic Course. The task was to create a game from scratch using everything we have learned during the course with an extra focus on OOP, TypeScript, and the P5 library.",
@@ -22,7 +22,7 @@ export const projects: Project[] = [
     img: "/projectImages/star_bomb.png",
   },
   {
-    id: 2,
+    id: 20,
     feautured: true,
     title: "Gent´s Hat",
     text: "In this school assignment, we have built a webshop for a fictional hat company. This webshop allows the user to add and edit the number of products in their shopping cart. When the user chooses to check out their placed order, they can fill in their personal information in a validated form. After the purchase is completed, the user receives an order confirmation. On the page, there is also the option to edit, add and remove products in the form of an admin.",
@@ -32,7 +32,7 @@ export const projects: Project[] = [
     img: "/projectImages/gentshat.png",
   },
   {
-    id: 3,
+    id: 30,
     feautured: true,
     title: "GlobalForm-Solutions",
     text: "GlobalForm-Solutions is a collaborative project undertaken by me and two classmates as part of our final thesis. The project focuses on building a web application that allows users to create forms and share them with friends or events. We have utilized the Next.js framework with the T3 stack to set up the project.",
@@ -42,7 +42,7 @@ export const projects: Project[] = [
     img: "/projectImages/globalform_solutions.png",
   },
   {
-    id: 17,
+    id: 40,
     feautured: false,
     title: "Socket-chat",
     text: "In this task, we have created a chat-based app that allows users to chat with each other in real-time. The communication is set up using socket.io. A user should be able to create a new room. The created rooms are displayed in a list that users can click on to join the desired room. Once inside a room, the users are allowed to chat with each other.",
@@ -52,7 +52,7 @@ export const projects: Project[] = [
     img: "/projectImages/socket_io_chat.png",
   },
   {
-    id: 4,
+    id: 50,
     feautured: false,
     title: "So-fun Webshop",
     text: "Where Fun and Sofas Unite! This is a fully developed webshop assignment. It allows users to register, log in, and place orders easily. Notably, our webshop also includes an admin interface with enhanced accessibility, granting administrators the ability to create, modify, and remove products as needed.",
@@ -62,7 +62,7 @@ export const projects: Project[] = [
     img: "/projectImages/so_fun.png",
   },
   {
-    id: 5,
+    id: 60,
     feautured: false,
     title: "Random Name Generator",
     text: "Having trouble choosing a name for your child? Try this random name generator out! The generator picks a random name from Swedish name days (Svenska namnsdagar). Hosting webpage on Netlify.",
@@ -72,7 +72,7 @@ export const projects: Project[] = [
     img: "/projectImages/random_name_generator.png",
   },
   {
-    id: 14,
+    id: 70,
     feautured: false,
     title: "Svelte Framework",
     text: "School assignment inspired by State of JS where I had to choose one of the listed frameworks and create a simpler version of the site with the chosen framework. I chose to code with Svelte. The design is based on the following template.",
@@ -82,7 +82,7 @@ export const projects: Project[] = [
     img: "/projectImages/svelte.jpg",
   },
   {
-    id: 10,
+    id: 80,
     feautured: false,
     title: "Bitcoin Converter",
     text: "This project is a conversion tool that allows users to easily convert Bitcoin to Satoshi and vice versa. You can enter either a Bitcoin amount or a Satoshi amount and instantly see the equivalent value in the other unit.",
@@ -92,7 +92,7 @@ export const projects: Project[] = [
     img: "/projectImages/bitcoin_converter.png",
   },
   {
-    id: 9,
+    id: 90,
     feautured: false,
     title: "Printlab",
     text: "In this school exercise, I conceptualized an imaginary brand from scratch. This involved creating a brand name, designing a logo, selecting a color palette, and choosing a font for the website. After establishing the brand's visual identity, I translated my design concepts into a static website.",
@@ -102,7 +102,7 @@ export const projects: Project[] = [
     img: "/projectImages/printlab.png",
   },
   {
-    id: 16,
+    id: 100,
     feautured: false,
     title: "Netflix 2.0",
     text: "This project is a school project aimed at learning and practicing various Git and GitHub concepts, such as branches, merges, rebases, commits, and more. Additionally, we have focused on creating tests for every component in the project.",
@@ -112,7 +112,7 @@ export const projects: Project[] = [
     img: "/projectImages/netflix.png",
   },
   {
-    id: 6,
+    id: 110,
     feautured: false,
     title: "To-Do Calendar",
     text: "In this task, we have built a tool where the user can create and schedule todos. The tool displays a list of todos and a calendar for an overview.",
@@ -122,7 +122,7 @@ export const projects: Project[] = [
     img: "/projectImages/todo_calendar.png",
   },
   {
-    id: 7,
+    id: 120,
     feautured: false,
     title: "Memory Game",
     text: "This project is a classic memory game implemented as a web application. I created this project beside my studies to practice my skills in JavaScript, HTML, and CSS.",
@@ -132,7 +132,7 @@ export const projects: Project[] = [
     img: "/projectImages/memory.png",
   },
   {
-    id: 8,
+    id: 130,
     feautured: false,
     title: "Drink Management System",
     text: "This project is a web application that enables users to explore and manage drink preferences. Users can search for drinks from an external API, add them to their drinking list, mark them as completed, and even sort their drinks based on completion status. This project is focused on making tests with Jest and React Testing Library.",
@@ -142,7 +142,7 @@ export const projects: Project[] = [
     img: "/projectImages/drink_list.png",
   },
   {
-    id: 11,
+    id: 140,
     feautured: false,
     title: "Apple Copy",
     text: "School project where we used html and css to create a responsive copy of a website (Apple).",
@@ -152,7 +152,7 @@ export const projects: Project[] = [
     img: "/projectImages/apple_html_css_copy.png",
   },
   {
-    id: 12,
+    id: 150,
     feautured: false,
     title: "Text-based Experience Game",
     text: "In my text-based adventure, the goal is to find gold in an underwater cave, but it turns out that you end up finding your best friend. You will talk to a mermaid who wants to trade items with you and also try to survive against a shark. (In Swedish)",
@@ -162,7 +162,7 @@ export const projects: Project[] = [
     img: "/projectImages/textbaserad_upplevelse.png",
   },
   {
-    id: 13,
+    id: 160,
     feautured: false,
     title: "Dictonary Tests Exersice",
     text: "This project allows users to search for words in a dictionary API and bookmark them to their favorite words list. It provides a convenient way to explore definitions and save frequently used words for future reference. Focus on creating tests with Jest and React Testing Library.",
@@ -172,7 +172,7 @@ export const projects: Project[] = [
     img: "/projectImages/simons_dictionary.png",
   },
   {
-    id: 15,
+    id: 170,
     feautured: false,
     title: "Quizie Quiz",
     text: "This project is a quiz website that uses a quiz API to generate various quizzes on different topics. Tested 'CSS in JS' with JSS.",
