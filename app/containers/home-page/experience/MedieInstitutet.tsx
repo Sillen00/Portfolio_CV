@@ -1,9 +1,21 @@
-import { Play } from "lucide-react";
+import PDFViewer from "@/app/components/PDFViewer";
+import { Download, Play } from "lucide-react";
 import Link from "next/link";
+import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 import css from "../_Home.module.scss";
 
 const MedieInstitutet = () => {
+  const [showPDF, setShowPDF] = useState(false);
+
+  const handlePDFClick = () => {
+    setShowPDF(true);
+  };
+
+  const handlePDFClose = () => {
+    setShowPDF(false);
+  };
+
   return (
     <div>
       <h4>
@@ -12,7 +24,21 @@ const MedieInstitutet = () => {
           @ MedieInstitutet
         </Link>
       </h4>
-      <p className='fira small gray pb-4 pt-0.5'>september 2022 - maj 2024</p> {/* 12 september 2022 - 17 maj 2024 */}
+
+      <div className='flex items-center gap-4 pb-4 pt-0.5 flex-wrap'>
+        <p className='fira small gray'>september 2022 - maj 2024</p> {/* 12 september 2022 - 17 maj 2024 */}
+        <p className='fira small gray'> | </p>
+        <div className='flex items-center gap-2'>
+          <button onClick={handlePDFClick} className='flex items-center gap-2 cursor-pointer'>
+            <p className={twMerge(css.linkHover, "fira small underline text-secondary-color")}>Examensbevis</p>
+          </button>
+          <Link href='./pdfs/Examensbevis_Simon_Bengtsson.pdf' target='_blank' download>
+            <Download className='gray' width={15}></Download>
+          </Link>
+        </div>
+        {showPDF && <PDFViewer src='./pdfs/Examensbevis_Simon_Bengtsson.pdf' onClose={handlePDFClose} />}
+      </div>
+
       <div className={twMerge(css.textRowHover, "flex gap-4")}>
         <Play width={11} className='text-secondary-color flex-none' />
         <p className='gray'>
