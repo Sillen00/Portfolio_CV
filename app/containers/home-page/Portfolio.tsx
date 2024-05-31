@@ -67,7 +67,7 @@ const Portfolio = () => {
           .filter(project => !project.feautured)
           .map(project => (
             <div
-              className={twMerge(css.unfeautured, "px-5 pt-8 pb-20 relative mb-6 bg-primary-color-light rounded-md ")}
+              className={twMerge(css.unfeautured, "px-5 pt-8 pb-20 relative mb-6 bg-background-color-light rounded-md ")}
               key={project.id}
               onClick={() => handleCardClick(project)}
               // href={project.hostedLink ? project.hostedLink : project.githubLink}

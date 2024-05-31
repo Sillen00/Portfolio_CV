@@ -48,7 +48,7 @@ const Header = () => {
         </ul>
 
         {isMenuOpen && (
-          <div className='absolute top-0 left-0 w-full h-screen bg-primary-color-dark'>
+          <div className='absolute top-0 left-0 w-full h-screen bg-background-color-dark'>
             <div className='flex justify-between items-center px-6 py-2' onClick={() => setIsMenuOpen(prevState => !prevState)}>
               <Image
                 className={css.logo}
