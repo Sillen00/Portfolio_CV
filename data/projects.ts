@@ -42,6 +42,16 @@ export const projects: Project[] = [
     img: "/projectImages/globalform_solutions.png",
   },
   {
+    id: 17,
+    feautured: false,
+    title: "Socket-chat",
+    text: "In this task, we have created a chat-based app that allows users to chat with each other in real-time. The communication is set up using socket.io. A user should be able to create a new room. The created rooms are displayed in a list that users can click on to join the desired room. Once inside a room, the users are allowed to chat with each other.",
+    builtWith: ["Socket.io", "React", "Typescript"],
+    githubLink: "https://github.com/Sillen00/Chat-With-Sockets-LSDT",
+    hostedLink: null,
+    img: "/projectImages/socket_io_chat.png",
+  },
+  {
     id: 4,
     feautured: false,
     title: "So-fun Webshop",
@@ -60,6 +70,16 @@ export const projects: Project[] = [
     githubLink: "https://github.com/Sillen00/Random-Name-Generator",
     hostedLink: "https://random-name-nameday.netlify.app/",
     img: "/projectImages/random_name_generator.png",
+  },
+  {
+    id: 14,
+    feautured: false,
+    title: "Svelte Framework",
+    text: "School assignment inspired by State of JS where I had to choose one of the listed frameworks and create a simpler version of the site with the chosen framework. I chose to code with Svelte. The design is based on the following template.",
+    builtWith: ["Svelte"],
+    githubLink: "https://github.com/Sillen00/Svelte-Framework-Assignment",
+    hostedLink: null,
+    img: "/projectImages/svelte.jpg",
   },
   {
     id: 6,
@@ -142,16 +162,6 @@ export const projects: Project[] = [
     img: "/projectImages/simons_dictionary.png",
   },
   {
-    id: 14,
-    feautured: false,
-    title: "Svelte Framework",
-    text: "School assignment inspired by State of JS where I had to choose one of the listed frameworks and create a simpler version of the site with the chosen framework. I chose to code with Svelte. The design is based on the following template.",
-    builtWith: ["Svelte"],
-    githubLink: "https://github.com/Sillen00/Svelte-Framework-Assignment",
-    hostedLink: null,
-    img: "/projectImages/svelte.jpg",
-  },
-  {
     id: 15,
     feautured: false,
     title: "Quizie Quiz",
@@ -171,15 +181,6 @@ export const projects: Project[] = [
     hostedLink: "https://netflix2dot0.netlify.app/",
     img: "/projectImages/netflix.png",
   },
-  {
-    id: 17,
-    feautured: false,
-    title: "Socket-chat",
-    text: "In this task, we have created a chat-based app that allows users to chat with each other in real-time. The communication is set up using socket.io. A user should be able to create a new room. The created rooms are displayed in a list that users can click on to join the desired room. Once inside a room, the users are allowed to chat with each other.",
-    builtWith: ["Socket.io", "React", "Typescript"],
-    githubLink: "https://github.com/Sillen00/Chat-With-Sockets-LSDT",
-    hostedLink: null,
-    img: "/projectImages/socket_io_chat.png",
-  },
+
   // Add more project as needed
 ];
