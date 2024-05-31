@@ -10,13 +10,14 @@ const config: Config = {
       },
       colors: {
         "background-color": "#18110f",
+        // "background-color-dark": "#150e0c",
         "background-color-dark": "#150e0c",
         "background-color-light": "#2a1e1a",
         "secondary-color": "#DE4126",
         "secondary-color-dark": "#584d4c",
         "secondary-color-light": "#E6563C",
         "accent-color": "#B0254F",
-        "hover-color": "#26150e",
+        "hover-color": "#26150e52",
       },
       textColor: {
         "text-color": "#ccd6f6",

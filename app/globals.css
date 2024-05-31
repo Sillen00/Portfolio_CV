@@ -12,13 +12,13 @@
   /* --background-color: #1d1615; */
   /* --background-color: #181312; */
   --background-color: #18110f;
-  --fdfdfdfdfdfdfdffffffffffffffffffffffff-color: #130e0c;
+  --fdfdfdfdfdfdfdffffffffffffffffffffffff-color: #15100f;
   /* --secondary-color: #64ffda; */
   --secondary-color: #de4126;
   --secondary-color-dark: #8d2918;
   --secondary-color-light: #E6563C;
   --accent-color: rgb(176, 37, 79);
-  --hover-color: #26150e;
+  --hover-color: #26150e52;
   --roboto: "Roboto", sans-serif;
   --fira: "Fira Mono", monospace;
 }
