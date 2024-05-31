@@ -35,6 +35,7 @@ const Portfolio = () => {
                 alt={project.title + " project image."}
                 style={{ width: "100%", height: "100%" }}
               />
+              <div className={twMerge(css.imageFilter)}></div>
               <p className='fira text-secondary-color'>Feautured Project</p>
               <Link href={project.hostedLink ?? ""} target='_blank'>
                 <h3 className='hover:text-secondary-color'>{project.title}</h3>
@@ -67,7 +68,7 @@ const Portfolio = () => {
           .filter(project => !project.feautured)
           .map(project => (
             <div
-              className={twMerge(css.unfeautured, "px-5 pt-8 pb-20 relative mb-6 bg-background-color-light rounded-md ")}
+              className={twMerge(css.unfeautured, "px-5 pt-8 pb-20 relative mb-6 bg-background-color-dark rounded-md ")}
               key={project.id}
               onClick={() => handleCardClick(project)}
               // href={project.hostedLink ? project.hostedLink : project.githubLink}

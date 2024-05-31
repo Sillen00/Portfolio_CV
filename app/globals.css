@@ -9,16 +9,16 @@
   --text-color: #ccd6f6;
   --text-color-light: #e8e8e8;
   --text-color-gray: #abaaaa;
-  /* --background-color: #1d1615; Primary color */
-  /* --background-color: #181312; Primary color */
-  --background-color: #18110f; /* Primary color */
-  --ds-color: #221815; /* Primary color */
+  /* --background-color: #1d1615; */
+  /* --background-color: #181312; */
+  --background-color: #18110f;
+  --fdfdfdfdfdfdfdffffffffffffffffffffffff-color: #130e0c;
   /* --secondary-color: #64ffda; */
-  --secondary-color: rgb(222, 65, 38);
-  --secondary-color-dark: rgb(88, 77, 76);
+  --secondary-color: #de4126;
+  --secondary-color-dark: #8d2918;
   --secondary-color-light: #E6563C;
   --accent-color: rgb(176, 37, 79);
-  --hover-color: rgb(38, 38, 38);
+  --hover-color: #26150e;
   --roboto: "Roboto", sans-serif;
   --fira: "Fira Mono", monospace;
 }

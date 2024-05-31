@@ -186,6 +186,25 @@
   img {
     opacity: 0.25;
   }
+  .imageFilter {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-color); 
+    opacity: 0.04;
+    z-index: -10;
+    transition: opacity 0.3s ease-in-out;
+  }
+  &:hover {
+    .imageFilter {
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+  }
+
   
   &::before {
     content: "";
