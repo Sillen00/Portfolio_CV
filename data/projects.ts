@@ -1,4 +1,4 @@
-export type Projects = {
+export type Project = {
   id: number;
   feautured: boolean;
   title: string;
@@ -10,7 +10,7 @@ export type Projects = {
 };
 
 // Create and export an array of users
-export const projects: Projects[] = [
+export const projects: Project[] = [
   {
     id: 1,
     feautured: true,

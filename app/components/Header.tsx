@@ -38,10 +38,10 @@ const Header = () => {
         <ul className={twMerge("gap-5 hidden md:flex items-center")}>
           {links.map(({ href, label }, index) => (
             <li key={href} className={"hover:text-secondary-color"}>
-              <a href={href}>
+              <Link href={href}>
                 <span className='text-secondary-color'>0{index + 1}. </span>
                 {label}
-              </a>
+              </Link>
             </li>
           ))}
           <OrangeOutlineBtn className='ml-5 px-4 py-1.5'>Resume</OrangeOutlineBtn>
@@ -64,11 +64,11 @@ const Header = () => {
 
             <ul className={twMerge("flex flex-col items-start pt-12")}>
               {links.map(({ href, label }, index) => (
-                <a className='w-full' onClick={() => setIsMenuOpen(prevState => !prevState)} href={href} key={href}>
+                <Link className='w-full' onClick={() => setIsMenuOpen(prevState => !prevState)} href={href} key={href}>
                   <li className={"hover:bg-hover-color w-full py-3 pl-12"}>
                     <span className='text-secondary-color'>0{index + 1}.</span> {label}
                   </li>
-                </a>
+                </Link>
               ))}
               <OrangeOutlineBtn className='mt-12 px-4 py-1.5 mx-auto w-[calc(100%-96px)]'>Resume</OrangeOutlineBtn>
             </ul>

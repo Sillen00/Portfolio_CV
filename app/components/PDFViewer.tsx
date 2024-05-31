@@ -3,7 +3,7 @@ interface PDFViewerProps {
   onClose: () => void;
 }
 
-const PDFViewer: React.FC<PDFViewerProps> = ({ src, onClose }) => {
+const PDFViewer = ({ src, onClose }: PDFViewerProps) => {
   return (
     <div className='fixed z-50 inset-0 bg-black bg-opacity-60 flex justify-center items-center'>
       <div className='relative w-11/12 sm:w-10/12 h-5/6'>

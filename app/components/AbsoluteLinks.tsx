@@ -17,9 +17,9 @@ const AbsoluteLinks = () => {
         >
           <Linkedin />
         </Link>
-        <a className={twMerge(css.iconHover, "hover:text-secondary-color")} href='tel:+46706612089'>
+        <Link className={twMerge(css.iconHover, "hover:text-secondary-color")} href='tel:+46706612089'>
           <Phone />
-        </a>
+        </Link>
       </div>
       <div className={twMerge(css.lineEmail, "hidden md:block fixed bottom-60 -right-16 z-10 rotate-90")}>
         <Link className={twMerge("hover:text-secondary-color")} href='mailto:simonbengtsson00@gmail.com' target='_blank'>

@@ -1,11 +1,19 @@
 import { ExternalLink, Folder, Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+// import { useRouter } from "next/router";
 import { twMerge } from "tailwind-merge";
-import { projects } from "../../../data/projects";
+import { Project, projects } from "../../../data/projects";
 import css from "./_Home.module.scss";
 
 const Portfolio = () => {
+  const handleCardClick = (project: Project) => {
+    const href = project.hostedLink ? project.hostedLink : project.githubLink;
+    if (href) {
+      window.open(href, "_blank");
+    }
+  };
+
   return (
     <section id='portfolio'>
       {/* FEAUTURED PROJECTS ---------------------------------- */}
@@ -38,12 +46,12 @@ const Portfolio = () => {
                 ))}
               </ul>
               <div className='flex gap-4'>
-                <a className='hover:text-secondary-color' href={project.githubLink ?? ""} target='_blank'>
+                <Link className='hover:text-secondary-color' href={project.githubLink ?? ""} target='_blank'>
                   <Github size={22} />
-                </a>
-                <a className='hover:text-secondary-color' href={project.hostedLink ?? ""} target='_blank'>
+                </Link>
+                <Link className='hover:text-secondary-color' href={project.hostedLink ?? ""} target='_blank'>
                   <ExternalLink size={22} />
-                </a>
+                </Link>
               </div>
             </div>
           ))}
@@ -58,11 +66,12 @@ const Portfolio = () => {
         {projects
           .filter(project => !project.feautured)
           .map(project => (
-            <Link
+            <div
               className={twMerge(css.unfeautured, "px-5 pt-8 pb-20 relative mb-6 bg-primary-color-light rounded-md ")}
               key={project.id}
-              href={project.hostedLink ? project.hostedLink : project.githubLink}
-              target='_blank'
+              onClick={() => handleCardClick(project)}
+              // href={project.hostedLink ? project.hostedLink : project.githubLink}
+              // target='_blank'
             >
               <div>
                 <div className='flex justify-between items-center mb-6'>
@@ -92,7 +101,7 @@ const Portfolio = () => {
                   ))}
                 </ul>
               </div>
-            </Link>
+            </div>
           ))}
       </div>
     </section>
