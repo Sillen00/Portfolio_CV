@@ -29,7 +29,7 @@ const Header = () => {
           width={10}
           height={10}
           alt="Simon Bengtsson 'S' logo."
-          src='/logoOrange.svg'
+          src='/logo.svg'
           style={{ width: "30px", height: "auto" }}
         />
       </Link>
