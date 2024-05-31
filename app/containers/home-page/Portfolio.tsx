@@ -2,6 +2,8 @@ import { ExternalLink, Folder, Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 // import { useRouter } from "next/router";
+import OrangeOutlineBtn from "@/app/components/OrangeOutlineBtn";
+import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 import { Project, projects } from "../../../data/projects";
 import css from "./_Home.module.scss";
@@ -12,6 +14,12 @@ const Portfolio = () => {
     if (href) {
       window.open(href, "_blank");
     }
+  };
+
+  const [showAllProjects, setShowAllProjects] = useState(false);
+
+  const toggleShowAllProjects = () => {
+    setShowAllProjects(prevState => !prevState);
   };
 
   return (
@@ -63,9 +71,10 @@ const Portfolio = () => {
       {/* UNFEAUTURED PROJECTS --------------------------------------------------- */}
       {/* UNFEAUTURED PROJECTS --------------------------------------------------- */}
       {/* UNFEAUTURED PROJECTS --------------------------------------------------- */}
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-screen-xl mx-auto pt-32 pb-28 px-6 md:px-28'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-screen-xl mx-auto pt-32 pb-16 px-6 md:px-28'>
         {projects
           .filter(project => !project.feautured)
+          .slice(0, showAllProjects ? projects.length : 6)
           .map(project => (
             <div
               className={twMerge(css.unfeautured, "px-5 pt-8 pb-20 relative mb-6 bg-background-color-dark rounded-md ")}
@@ -104,6 +113,9 @@ const Portfolio = () => {
               </div>
             </div>
           ))}
+      </div>
+      <div onClick={toggleShowAllProjects} className='cursor-pointer max-w-fit mx-auto'>
+        <OrangeOutlineBtn className='px-6 py-4 rounded-md'>{showAllProjects ? "Show Less" : "Show More"}</OrangeOutlineBtn>
       </div>
     </section>
   );
