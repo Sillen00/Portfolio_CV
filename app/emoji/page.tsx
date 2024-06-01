@@ -49,15 +49,21 @@
 
 // USERS EXAMPLE
 
-{
-  /* {users.map((user) => (
+// {
+/* {users.map((user) => (
   <div key={user.id}>
     <h1>{user.email}</h1>
     <p>{user.password}</p>
   </div>
 ))} */
-}
+// }
 // export async function getServerSideProps() {
 //   const users = await prisma.user.findMany();
 //   return { props: { users } };
 // }
+
+const emptypage = () => {
+  return <div>emptypage</div>;
+};
+
+export default emptypage; // This file doesn't export anything. Add this line to avoid TS errors becouse a empty tsx file needs to export something.
