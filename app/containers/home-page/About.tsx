@@ -19,7 +19,7 @@ const About = () => {
           till där det behövs som mest.
         </p>
 
-        <div className='gray relative min-w-[50%] flex border p-6 border-secondary-color'>
+        <div className='gray relative min-w-[50%] flex flex-wrap sm:gap-8 border p-6 border-secondary-color'>
           <p className='absolute -top-3 bg-[var(--background-color)] px-2 left-4 hidden md:block'>Skills </p>
           <ul className='mr-2'>
             <div className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative")}>
@@ -79,7 +79,7 @@ const About = () => {
               <Play width={7} className='text-secondary-color' />
             </div>
             <div className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative")}>
-              <li>Agila arbetsmetoder</li>
+              <li className='text-nowrap'>Agile Working</li>
               <Play width={7} className='text-secondary-color' />
             </div>
           </ul>
