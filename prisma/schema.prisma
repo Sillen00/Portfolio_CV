@@ -21,7 +21,7 @@ model User {
   updatedAt DateTime @default(now()) @updatedAt
 }
 
-model Emoji {
-  id    String @id @default(cuid())
-  emoji String
-}
+// model Emoji {
+//   id    String @id @default(cuid())
+//   emoji String
+// }
