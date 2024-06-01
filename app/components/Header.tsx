@@ -1,5 +1,5 @@
 "use client";
-import { AlignJustify, X } from "lucide-react";
+import { AlignJustify, Github, Linkedin, Phone, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -72,6 +72,30 @@ const Header = () => {
               ))}
               <OrangeOutlineBtn className='mt-12 px-4 py-1.5 mx-auto w-[calc(100%-96px)]'>Resume</OrangeOutlineBtn>
             </ul>
+
+            <div className='absolute bottom-10 left-[50%] -translate-x-2/4 z-10'>
+              <div className={twMerge("flex justify-center gap-6 mb-6")}>
+                <Link className={twMerge(css.iconHover, "hover:text-secondary-color")} href='https://github.com/Sillen00' target='_blank'>
+                  <Github />
+                </Link>
+                <Link
+                  className={twMerge(css.iconHover, "hover:text-secondary-color")}
+                  href='https://www.linkedin.com/in/simon-bengtsson-656a86193/'
+                  target='_blank'
+                >
+                  <Linkedin />
+                </Link>
+                <Link className={twMerge(css.iconHover, "hover:text-secondary-color")} href='tel:+46706612089'>
+                  <Phone />
+                </Link>
+              </div>
+
+              <div>
+                <Link className={twMerge("hover:text-secondary-color")} href='mailto:simonbengtsson00@gmail.com' target='_blank'>
+                  <p className={css.iconHover}>simonbengtsson00@gmail.com</p>
+                </Link>
+              </div>
+            </div>
           </div>
         )}
 

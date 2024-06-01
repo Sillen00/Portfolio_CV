@@ -10,3 +10,18 @@
   box-shadow: -10px 10px 8px -8px var(--secondary-color), 10px -10px 8px -8px var(--secondary-color);
   transition: 0.3s ease-in-out;
 }
+
+
+
+
+// SOCIALS ----------------------------------------------
+
+
+.iconHover {
+  transition: transform 0.3s ease-in-out;
+  
+  &:hover {
+    transform: translateY(-4px);
+    transition: transform 0.3s ease-in-out;
+  }
+}
