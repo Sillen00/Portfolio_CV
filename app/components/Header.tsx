@@ -44,7 +44,9 @@ const Header = () => {
               </Link>
             </li>
           ))}
-          <OrangeOutlineBtn className='ml-5 px-4 py-1.5'>Resume</OrangeOutlineBtn>
+          <Link href='./pdfs/Simon_Bengtsson_CV.pdf' target='_blank'>
+            <OrangeOutlineBtn className='ml-5 px-4 py-1.5'>Resume</OrangeOutlineBtn>
+          </Link>
         </ul>
 
         {isMenuOpen && (
@@ -70,7 +72,9 @@ const Header = () => {
                   </li>
                 </Link>
               ))}
-              <OrangeOutlineBtn className='mt-12 px-4 py-1.5 mx-auto w-[calc(100%-96px)]'>Resume</OrangeOutlineBtn>
+              <Link href='./pdfs/Simon_Bengtsson_CV.pdf' target='_blank' className='w-full text-center'>
+                <OrangeOutlineBtn className='mt-12 px-4 py-1.5 mx-auto w-[calc(100%-96px)]'>Resume</OrangeOutlineBtn>
+              </Link>
             </ul>
 
             <div className='absolute bottom-10 left-[50%] -translate-x-2/4 z-10'>

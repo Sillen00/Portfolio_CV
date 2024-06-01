@@ -1,5 +1,4 @@
-import PDFViewer from "@/app/components/PDFViewer";
-import { Download, Play } from "lucide-react";
+import { Play } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
@@ -28,15 +27,9 @@ const Kokokaka = () => {
       <div className='flex items-center gap-4 pb-4 pt-0.5 flex-wrap'>
         <p className='fira small gray'>januari - maj 2024</p> {/* 29 januari - 17 maj 2024 */}
         <p className='fira small gray'> | </p>
-        <div className='flex items-center gap-2'>
-          <button onClick={handlePDFClick} className='flex items-center gap-2 cursor-pointer'>
-            <p className={twMerge(css.linkHover, "fira small underline text-secondary-color")}>Rekommendationsbrev</p>
-          </button>
-          <Link href='./pdfs/Simon_rekommendationsbrev.pdf' target='_blank' download>
-            <Download className='gray' width={15}></Download>
-          </Link>
-        </div>
-        {showPDF && <PDFViewer src='./pdfs/Simon_rekommendationsbrev.pdf' onClose={handlePDFClose} />}
+        <Link href='./pdfs/Simon_rekommendationsbrev.pdf' target='_blank'>
+          <p className={twMerge(css.linkHover, "fira small underline text-secondary-color")}>Rekommendationsbrev</p>
+        </Link>
       </div>
 
       <div className={twMerge(css.textRowHover, "flex gap-4")}>
