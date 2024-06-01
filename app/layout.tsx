@@ -22,16 +22,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://simonbengtsson.com", // Fix URL
+    // url: "https://simonbengtsson.com", // Fix URL
     siteName: "Portfolio",
     title: "Portfolio - Simon Bengtsson - Fullstack Developer - Gothenburg",
     description: "Simon Bengtsson portfolio and CV page built with Next.js to showcase my work and skills as a fullstack developer.",
-    images: [
-      {
-        url: "https://simonbengtsson.com/images/og-image.png", // Fix OpenGraph image
-        alt: "Simon Bengtsson",
-      },
-    ],
+    // images: [
+    //   {
+    //     url: "./Simon-MC.jpg", // Fix OpenGraph image
+    //     alt: "Simon Bengtsson",
+    //   },
+    // ],
   },
 };
 

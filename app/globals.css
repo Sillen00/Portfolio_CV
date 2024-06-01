@@ -1,9 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"); */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"); */
-@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap");
 
 :root {
   --text-color: #ccd6f6;
@@ -16,7 +16,7 @@
   /* --secondary-color: #64ffda; */
   --secondary-color: #de4126;
   --secondary-color-dark: #8d2918;
-  --secondary-color-light: #E6563C;
+  --secondary-color-light: #e6563c;
   --accent-color: rgb(176, 37, 79);
   --hover-color: #26150e52;
   --roboto: "Roboto", sans-serif;
