@@ -57,9 +57,11 @@ const Portfolio = () => {
               <div className='flex gap-4'>
                 <Link className='hover:text-secondary-color' href={project.githubLink ?? ""} target='_blank'>
                   <Github size={22} />
+                  <span className={css.visuallyHidden}>GitHub Profile</span>
                 </Link>
                 <Link className='hover:text-secondary-color' href={project.hostedLink ?? ""} target='_blank'>
                   <ExternalLink size={22} />
+                  <span className={css.visuallyHidden}>External Project Link</span>
                 </Link>
               </div>
             </div>
@@ -90,6 +92,7 @@ const Portfolio = () => {
                     {project.hostedLink ? (
                       <Link className='hover:text-secondary-color' href={project.hostedLink} target='_blank'>
                         <ExternalLink size={22} />
+                        <span className={css.visuallyHidden}>External Project Link</span>
                       </Link>
                     ) : (
                       <span className='w-[22px]'></span>
@@ -97,6 +100,7 @@ const Portfolio = () => {
                     {project.githubLink ? (
                       <Link className='hover:text-secondary-color' href={project.githubLink} target='_blank'>
                         <Github size={22} />
+                        <span className={css.visuallyHidden}>GitHub Profile</span>
                       </Link>
                     ) : (
                       <span className='w-[22px]'></span>
