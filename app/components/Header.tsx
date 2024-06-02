@@ -35,19 +35,21 @@ const Header = () => {
       </Link>
 
       <nav>
-        <ul className={twMerge("gap-5 hidden md:flex items-center")}>
-          {links.map(({ href, label }, index) => (
-            <li key={href} className={"hover:text-secondary-color"}>
-              <Link href={href}>
-                <span className='text-secondary-color'>0{index + 1}. </span>
-                {label}
-              </Link>
-            </li>
-          ))}
+        <div className="flex gap-5">
+          <ul className={twMerge("gap-5 hidden md:flex items-center")}>
+            {links.map(({ href, label }, index) => (
+              <li key={href} className={"hover:text-secondary-color"}>
+                <Link href={href}>
+                  <span className='text-secondary-color'>0{index + 1}. </span>
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
           <Link href='./pdfs/Simon_Bengtsson_CV.pdf' target='_blank'>
             <OrangeOutlineBtn className='ml-5 px-4 py-1.5'>Resume</OrangeOutlineBtn>
           </Link>
-        </ul>
+        </div>
 
         {isMenuOpen && (
           <div className='absolute top-0 left-0 w-full h-screen bg-background-color-dark'>
