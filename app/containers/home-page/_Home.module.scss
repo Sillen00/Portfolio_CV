@@ -19,17 +19,15 @@
 }
 
 .skillHover {
-  li {
-    +svg {
+    svg {
       transition: transform 0.1s ease-in-out;
     }
     &:hover {
-      +svg {
+      svg {
         transform: translateX(3px);
         transition: transform 0.1s ease-in-out;
       }
     }
-  }
 }
 
 

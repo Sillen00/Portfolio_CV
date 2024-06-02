@@ -3,6 +3,26 @@ import { twMerge } from "tailwind-merge";
 import css from "./_Home.module.scss";
 
 const About = () => {
+  const skills = [
+    "Javascript",
+    "Typescript",
+    "React.JS",
+    "Socket.io",
+    "Npm",
+    "CI/CD",
+    "UX/UI",
+    "SCSS",
+    "Tailwind",
+    "Material-UI",
+    "Figma",
+    "Github",
+    "ExpressJS",
+    "Mongodb",
+    "Agile Working",
+  ];
+
+  const introducedTechnologies = ["PHP", "MySQL", "P5.js", "Svelte", "Wordpress", "Jest", "React TL"];
+
   return (
     <section className='max-w-screen-lg mx-auto pt-32 pb-28 px-6 md:px-28' id='about'>
       <h3 className={twMerge(css.line, "flex text-nowrap items-center relative mb-8")}>
@@ -22,97 +42,21 @@ const About = () => {
         <div className='gray relative min-w-[50%] flex flex-wrap sm:gap-8 border p-6 border-secondary-color'>
           <p className='absolute -top-3 bg-[var(--background-color)] px-2 left-4 hidden md:block'>Skills </p>
           <ul className='mr-2'>
-            <div className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative")}>
-              <li>Javascript</li>
-              <Play width={7} className='text-secondary-color' />
-            </div>
-            <div className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative")}>
-              <li>Typescript</li>
-              <Play width={7} className='text-secondary-color' />
-            </div>
-            <div className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative")}>
-              <li>React.JS</li>
-              <Play width={7} className='text-secondary-color' />
-            </div>
-            <div className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative")}>
-              <li>Socket.io</li>
-              <Play width={7} className='text-secondary-color' />
-            </div>
-            <div className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative")}>
-              <li>Npm</li>
-              <Play width={7} className='text-secondary-color' />
-            </div>
-            <div className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative")}>
-              <li>CI/CD</li>
-              <Play width={7} className='text-secondary-color' />
-            </div>
-            <div className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative")}>
-              <li>UX/UI</li>
-              <Play width={7} className='text-secondary-color' />
-            </div>
-            <div className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative")}>
-              <li>SCSS</li>
-              <Play width={7} className='text-secondary-color' />
-            </div>
-            <div className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative")}>
-              <li>Tailwind</li>
-              <Play width={7} className='text-secondary-color' />
-            </div>
-            <div className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative")}>
-              <li>Material-UI</li>
-              <Play width={7} className='text-secondary-color' />
-            </div>
-            <div className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative")}>
-              <li>Figma</li>
-              <Play width={7} className='text-secondary-color' />
-            </div>
-            <div className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative")}>
-              <li>Github</li>
-              <Play width={7} className='text-secondary-color' />
-            </div>
-            <div className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative")}>
-              <li>ExpressJS</li>
-              <Play width={7} className='text-secondary-color' />
-            </div>
-            <div className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative")}>
-              <li>Mongodb</li>
-              <Play width={7} className='text-secondary-color' />
-            </div>
-            <div className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative")}>
-              <li className='text-nowrap'>Agile Working</li>
-              <Play width={7} className='text-secondary-color' />
-            </div>
+            {skills.map(skill => (
+              <li key={skill} className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative")}>
+                <span>{skill}</span>
+                <Play width={7} className={twMerge("text-secondary-color")} />
+              </li>
+            ))}
           </ul>
           <ul>
             <li className={twMerge(css.linkHover, "underline text-secondary-color")}>Introducerade tekniker:</li>
-            <div className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative pt-1")}>
-              <li>PHP</li>
-              <Play width={7} className='text-secondary-color ' />
-            </div>
-            <div className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative")}>
-              <li>MySQL</li>
-              <Play width={7} className='text-secondary-color' />
-            </div>
-            <div className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative")}>
-              <li>P5.js</li>
-              <Play width={7} className='text-secondary-color' />
-            </div>
-            <div className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative")}>
-              <li>Svelte</li>
-              <Play width={7} className='text-secondary-color' />
-            </div>
-            <div className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative")}>
-              <li>Wordpress</li>
-              <Play width={7} className='text-secondary-color' />
-            </div>
-            <div className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative")}>
-              <li>Jest</li>
-              <Play width={7} className='text-secondary-color' />
-            </div>
-            <div className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative")}>
-              <li>React TL</li>
-              <Play width={7} className='text-secondary-color' />
-            </div>
+            {introducedTechnologies.map(tech => (
+              <li key={tech} className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative pt-1")}>
+                <span>{tech}</span>
+                <Play width={7} className='text-secondary-color' />
+              </li>
+            ))}
           </ul>
         </div>
       </div>
