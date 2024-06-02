@@ -44,8 +44,8 @@ export default function RootLayout({
     <html lang='en'>
       <body className={inter.className}>
         <Header />
-        <AbsoluteLinks />
         <main>{children}</main>
+        <AbsoluteLinks />
         <Footer />
       </body>
     </html>
