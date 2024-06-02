@@ -58,7 +58,7 @@ const Header = () => {
                 width={10}
                 height={10}
                 alt="Simon Bengtsson 'S' logo."
-                src='/logoOrange.svg'
+                src='/logo.svg'
                 style={{ width: "30px", height: "auto" }}
               />
               <X width={30} />
@@ -81,6 +81,7 @@ const Header = () => {
               <div className={twMerge("flex justify-center gap-6 mb-6")}>
                 <Link className={twMerge(css.iconHover, "hover:text-secondary-color")} href='https://github.com/Sillen00' target='_blank'>
                   <Github />
+                  <span className={css.visuallyHidden}>GitHub Profile</span>
                 </Link>
                 <Link
                   className={twMerge(css.iconHover, "hover:text-secondary-color")}
@@ -88,9 +89,11 @@ const Header = () => {
                   target='_blank'
                 >
                   <Linkedin />
+                  <span className={css.visuallyHidden}>LinkedIn Profile</span>
                 </Link>
                 <Link className={twMerge(css.iconHover, "hover:text-secondary-color")} href='tel:+46706612089'>
                   <Phone />
+                  <span className={css.visuallyHidden}>Phone Number</span>
                 </Link>
               </div>
 
@@ -105,6 +108,7 @@ const Header = () => {
 
         <div onClick={() => setIsMenuOpen(prevState => !prevState)} className='md:hidden'>
           <AlignJustify width={30} />
+          <span className={css.visuallyHidden}>Menu</span>
         </div>
       </nav>
     </header>
