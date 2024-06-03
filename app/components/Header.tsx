@@ -35,7 +35,7 @@ const Header = () => {
       </Link>
 
       <nav>
-        <div className="flex gap-5">
+        <div className='flex gap-5'>
           <ul className={twMerge("gap-5 hidden md:flex items-center")}>
             {links.map(({ href, label }, index) => (
               <li key={href} className={"hover:text-secondary-color"}>
@@ -46,7 +46,7 @@ const Header = () => {
               </li>
             ))}
           </ul>
-          <Link href='./pdfs/Simon_Bengtsson_CV.pdf' target='_blank'>
+          <Link href='./pdfs/Simon_Bengtsson_CV.pdf' target='_blank' className='hidden md:block'>
             <OrangeOutlineBtn className='ml-5 px-4 py-1.5'>Resume</OrangeOutlineBtn>
           </Link>
         </div>
