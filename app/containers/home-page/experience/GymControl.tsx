@@ -12,17 +12,17 @@ const GymControl = () => {
           @ Gym Control
         </Link>
       </h4>
-      <p className='fira small gray pb-4 pt-0.5'>september - maj 2023</p> {/* 11 september - 17 maj 2023 */}
+      <p className='fira small text-gray pb-4 pt-0.5'>september - maj 2023</p> {/* 11 september - 17 maj 2023 */}
       <div className={twMerge(css.textRowHover, "flex gap-4")}>
         <Play width={11} className='text-secondary-color flex-none' />
-        <p className='gray'>
+        <p className='text-gray'>
           Hos Gym Control fick jag möjlighet att ytterligare utveckla mina kunskaper inom frontend-teknologier såsom HTML, CSS,
           Javascript/JQuery samt integrationer med olika API:er och PHP med SQL som backend.
         </p>
       </div>
       <div className={twMerge(css.textRowHover, "flex gap-4 pt-4")}>
         <Play width={11} className='text-secondary-color flex-none' />
-        <p className='gray'>
+        <p className='text-gray'>
           Vid avslutet av min praktik fick jag en mycket positiv utvärdering från Johan:{" "}
           <span className='text-text-color'>
             &quot;Simon står på tårna och lär sig fort och kommer bli en tillgång för den som får chans att arbeta/anställa honom i

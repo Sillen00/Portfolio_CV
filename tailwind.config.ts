@@ -20,9 +20,9 @@ const config: Config = {
         "hover-color": "#26150e52",
       },
       textColor: {
-        "text-color": "#ccd6f6",
-        "text-color-Light": "#e8e8e8",
-        "text-color-Gray": "#abaaaa",
+        "color": "#ccd6f6",
+        "light": "#e8e8e8",
+        "gray": "#abaaaa",
       },
     },
     screens: {

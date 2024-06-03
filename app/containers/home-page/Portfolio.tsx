@@ -47,8 +47,8 @@ const Portfolio = () => {
               <Link href={project.hostedLink ?? ""} target='_blank'>
                 <h3 className='hover:text-secondary-color'>{project.title}</h3>
               </Link>
-              <p className='py-8 gray'>{project.text}</p>
-              <ul className='fira gray flex gap-2.5 flex-wrap pb-4'>
+              <p className='py-8 text-gray'>{project.text}</p>
+              <ul className='fira text-gray flex gap-2.5 flex-wrap pb-4'>
                 {project.builtWith?.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
@@ -105,9 +105,9 @@ const Portfolio = () => {
                     )}
                   </div>
                 </div>
-                <h4 className='text-color-Light pb-2.5'>{project.title}</h4>
-                <p className='small gray'>{project.text}</p>
-                <ul className='fira gray flex gap-2.5 flex-wrap absolute bottom-[24px] '>
+                <h4 className='text-light pb-2.5'>{project.title}</h4>
+                <p className='small text-gray'>{project.text}</p>
+                <ul className='fira text-gray flex gap-2.5 flex-wrap absolute bottom-[24px] '>
                   {project.builtWith?.map((item, index) => (
                     <li key={index}>{item}</li>
                   ))}

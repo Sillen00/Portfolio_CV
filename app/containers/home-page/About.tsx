@@ -30,7 +30,7 @@ const About = () => {
       </h3>
 
       <div className='flex flex-col md:flex-row gap-4 wrap'>
-        <p className='min-w-[50%] gray'>
+        <p className='min-w-[50%] text-gray'>
           Hej! Jag är en junior Frontend-Utvecklare, född och uppvuxen i Alingsås. Jag upplevs som en positiv kille som gärna vill hjälpa
           till och är serviceinriktad. <br /> <br />
           Har inga problem med nya arbetsuppgifter utan är snarare nyfiken och motiverad att utveckla mina färdigheter och lära mig nytt.
@@ -39,20 +39,29 @@ const About = () => {
           till där det behövs som mest.
         </p>
 
-        <div className='gray relative min-w-[50%] flex flex-wrap sm:gap-8 border p-6 border-secondary-color mt-8 md:mt-0'>
-          <p className={twMerge("text-text-color-Light absolute -top-3 bg-[var(--background-color)] px-2 left-4")}>Skills</p>
+        <div className='relative min-w-[50%] flex flex-wrap sm:gap-8 border p-6 border-secondary-color mt-8 md:mt-0'>
+          <p className={twMerge("absolute -top-3 bg-[var(--background-color)] px-2 left-4")}>Skills</p>
           <ul className='mr-2'>
             {skills.map(skill => (
-              <li key={skill} className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative")}>
+              <li
+                key={skill}
+                className={twMerge(css.skillHover, "text-gray flex gap-2 flex-row-reverse items-center justify-end relative")}
+              >
                 <span>{skill}</span>
                 <Play width={7} className={twMerge("text-secondary-color")} />
               </li>
             ))}
           </ul>
           <ul>
-            <li className={twMerge(css.linkHover, "text-text-color-Light pt-1")}>Introducerade tekniker:</li>
+            <li className={twMerge(css.linkHover, "pt-1")}>Introducerade tekniker:</li>
             {introducedTechnologies.map(tech => (
-              <li key={tech} className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative pt-1")}>
+              <li
+                key={tech}
+                className={twMerge(
+                  css.skillHover,
+                  "text-gray flex gap-2 flex-row-reverse items-center justify-end relative pt-1"
+                )}
+              >
                 <span>{tech}</span>
                 <Play width={7} className='text-secondary-color' />
               </li>
