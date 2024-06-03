@@ -5,17 +5,10 @@ import Link from "next/link";
 import OrangeOutlineBtn from "@/app/components/OrangeOutlineBtn";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
-import { Project, projects } from "../../../data/projects";
+import { projects } from "../../../data/projects";
 import css from "./_Home.module.scss";
 
 const Portfolio = () => {
-  const handleCardClick = (project: Project) => {
-    const href = project.hostedLink ? project.hostedLink : project.githubLink;
-    if (href) {
-      window.open(href, "_blank");
-    }
-  };
-
   const [showAllProjects, setShowAllProjects] = useState(false);
 
   const toggleShowAllProjects = () => {
@@ -81,7 +74,6 @@ const Portfolio = () => {
             <div
               className={twMerge(css.unfeautured, "px-5 pt-8 pb-20 relative mb-6 bg-background-color-dark rounded-md ")}
               key={project.id}
-              onClick={() => handleCardClick(project)}
               // href={project.hostedLink ? project.hostedLink : project.githubLink}
               // target='_blank'
             >
