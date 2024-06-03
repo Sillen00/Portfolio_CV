@@ -13,7 +13,7 @@ const config: Config = {
         // "background-color-dark": "#150e0c",
         "background-color-dark": "#150e0c",
         "background-color-light": "#2a1e1a",
-        "secondary-color": "#DE4126",
+        "secondary-color": "#e64528",
         "secondary-color-dark": "#584d4c",
         "secondary-color-light": "#E6563C",
         "accent-color": "#B0254F",
