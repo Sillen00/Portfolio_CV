@@ -9,12 +9,9 @@
   --text-color: #ccd6f6;
   --text-color-light: #e8e8e8;
   --text-color-gray: #abaaaa;
-  /* --background-color: #1d1615; */
-  /* --background-color: #181312; */
   --background-color: #18110f;
-  --fdfdfdfdfdfdfdffffffffffffffffffffffff-color: #15100f;
-  /* --secondary-color: #64ffda; */
-  --secondary-color: #de4126;
+  /* --secondary-color: #de4126; */ /* Old color. Change to lighter to get good contrast. */
+  --secondary-color: #e64528;
   --secondary-color-dark: #8d2918;
   --secondary-color-light: #e6563c;
   --accent-color: rgb(176, 37, 79);
