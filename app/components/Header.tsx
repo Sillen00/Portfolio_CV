@@ -46,8 +46,8 @@ const Header = () => {
               </li>
             ))}
           </ul>
-          <Link href='./pdfs/Simon_Bengtsson_CV.pdf' target='_blank' className='hidden md:block'>
-            <OrangeOutlineBtn className='ml-5 px-4 py-1.5'>Resume</OrangeOutlineBtn>
+          <Link href='./pdfs/Simon_Bengtsson_CV.pdf' target='_blank' className='hidden md:block ml-5'>
+            <OrangeOutlineBtn className='px-4 py-1.5'>Resume</OrangeOutlineBtn>
           </Link>
         </div>
 

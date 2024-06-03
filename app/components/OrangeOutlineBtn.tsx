@@ -8,7 +8,7 @@ interface OrangeOutlineBtnProps {
 
 const OrangeOutlineBtn: React.FC<OrangeOutlineBtnProps> = ({ className, children }) => {
   return (
-    <button className={twMerge(className, css.btn, "border-secondary-color border-2 rounded-md text-secondary-color")}>
+    <button className={twMerge(className, css.btn, "border-secondary-color border-2 rounded-md text-secondary-color")} tabIndex={-1}>
       {children}
     </button>
   );
