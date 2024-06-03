@@ -39,8 +39,8 @@ const About = () => {
           till där det behövs som mest.
         </p>
 
-        <div className='gray relative min-w-[50%] flex flex-wrap sm:gap-8 border p-6 border-secondary-color'>
-          <p className='absolute -top-3 bg-[var(--background-color)] px-2 left-4 hidden md:block'>Skills </p>
+        <div className='gray relative min-w-[50%] flex flex-wrap sm:gap-8 border p-6 border-secondary-color mt-8 md:mt-0'>
+          <p className={twMerge("text-text-color-Light absolute -top-3 bg-[var(--background-color)] px-2 left-4")}>Skills</p>
           <ul className='mr-2'>
             {skills.map(skill => (
               <li key={skill} className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative")}>
@@ -50,7 +50,7 @@ const About = () => {
             ))}
           </ul>
           <ul>
-            <li className={twMerge(css.linkHover, "underline text-secondary-color")}>Introducerade tekniker:</li>
+            <li className={twMerge(css.linkHover, "text-text-color-Light pt-1")}>Introducerade tekniker:</li>
             {introducedTechnologies.map(tech => (
               <li key={tech} className={twMerge(css.skillHover, "flex gap-2 flex-row-reverse items-center justify-end relative pt-1")}>
                 <span>{tech}</span>

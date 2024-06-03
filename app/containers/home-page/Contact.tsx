@@ -4,7 +4,7 @@ import Link from "next/link";
 const Contact = () => {
   return (
     <section className='max-w-screen-lg mx-auto pt-52 pb-60 px-6 md:px-28' id='contact'>
-      <p className={"fira text-center text-secondary-color"}>04. What´s Next?</p>
+      <p className={"fira text-center text-secondary-color"}>04. What&rsquo;s Next?</p>
       <h3 className='font-semibold text-center my-4'>Get In Touch</h3>
       <p className='text-center pb-8 max-w-[580px] mx-auto'>
         Jag söker nya möjligheter. Min inkorg alltid öppen, oavsett om du har en fråga eller bara vill säga hej så ska jag göra mitt bästa
