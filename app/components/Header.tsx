@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <header className={twMerge(css.header, "fira flex justify-between items-center px-6 md:px-12 py-2 fixed w-full z-50")}>
-      <Link href='/'>
+      <Link href='#top'>
         <Image
           className={css.logo}
           priority
@@ -53,17 +53,19 @@ const Header = () => {
 
         {isMenuOpen && (
           <div className='absolute top-0 left-0 w-full h-screen bg-background-color-dark'>
-            <div className='flex justify-between items-center px-6 py-2' onClick={() => setIsMenuOpen(prevState => !prevState)}>
-              <Image
-                className={css.logo}
-                priority
-                width={10}
-                height={10}
-                alt="Simon Bengtsson 'S' logo."
-                src='/logo.svg'
-                style={{ width: "30px", height: "auto" }}
-              />
-              <X width={30} />
+            <div className='flex justify-between items-center px-6 py-2'>
+              <Link href='#top' onClick={() => setIsMenuOpen(prevState => !prevState)}>
+                <Image
+                  className={css.logo}
+                  priority
+                  width={10}
+                  height={10}
+                  alt="Simon Bengtsson 'S' logo."
+                  src='/logo.svg'
+                  style={{ width: "30px", height: "auto" }}
+                />
+              </Link>
+              <X width={30} className='cursor-pointer' onClick={() => setIsMenuOpen(prevState => !prevState)} />
             </div>
 
             <ul className={twMerge("flex flex-col items-start pt-12")}>
@@ -108,7 +110,7 @@ const Header = () => {
           </div>
         )}
 
-        <div onClick={() => setIsMenuOpen(prevState => !prevState)} className='md:hidden'>
+        <div onClick={() => setIsMenuOpen(prevState => !prevState)} className='md:hidden cursor-pointer'>
           <AlignJustify width={30} />
           <span className={css.visuallyHidden}>Menu</span>
         </div>
