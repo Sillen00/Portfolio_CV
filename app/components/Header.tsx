@@ -74,8 +74,8 @@ const Header = () => {
                   </li>
                 </Link>
               ))}
-              <Link href='./pdfs/Simon_Bengtsson_CV.pdf' target='_blank' className='w-full text-center'>
-                <OrangeOutlineBtn className='mt-12 px-4 py-1.5 mx-auto w-[calc(100%-96px)]'>Resume</OrangeOutlineBtn>
+              <Link href='./pdfs/Simon_Bengtsson_CV.pdf' target='_blank' className='w-[calc(100%-96px)] mx-auto mt-12'>
+                <OrangeOutlineBtn className='px-4 py-1.5 w-full'>Resume</OrangeOutlineBtn>
               </Link>
             </ul>
 
