@@ -15,6 +15,12 @@ const Portfolio = () => {
     setShowAllProjects(prevState => !prevState);
   };
 
+  const handleKeyDown = (event: React.KeyboardEvent, showAllProjects: boolean) => {
+    if (event.key === "Enter") {
+      setShowAllProjects(!showAllProjects);
+    }
+  };
+
   return (
     <section id='portfolio'>
       {/* FEAUTURED PROJECTS ---------------------------------- */}
@@ -110,7 +116,12 @@ const Portfolio = () => {
             </div>
           ))}
       </div>
-      <div onClick={toggleShowAllProjects} className='cursor-pointer max-w-fit mx-auto'>
+      <div
+        onClick={toggleShowAllProjects}
+        className='cursor-pointer max-w-fit mx-auto'
+        tabIndex={0}
+        onKeyDown={event => handleKeyDown(event, showAllProjects)}
+      >
         <OrangeOutlineBtn className='px-6 py-4 rounded-md'>{showAllProjects ? "Show Less" : "Show More"}</OrangeOutlineBtn>
       </div>
     </section>

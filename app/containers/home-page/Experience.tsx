@@ -12,6 +12,12 @@ const Experience = () => {
 
   const experiences = ["Kokokaka", "Gym Control", "MedieInstitutet", "Elpro", "Netto"];
 
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLLIElement>, experience: string) => {
+    if (event.key === "Enter") {
+      setSelectedItem(experience);
+    }
+  };
+
   return (
     <section className='max-w-screen-lg mx-auto pt-32 pb-28 px-6 md:px-28' id='experience'>
       <h3 className={twMerge(css.line, "flex flex-nowrap items-center relative mb-8")}>
@@ -25,6 +31,8 @@ const Experience = () => {
               key={experience}
               className={twMerge(css.navItem, selectedItem === experience && css.active)}
               onClick={() => setSelectedItem(experience)}
+              onKeyDown={event => handleKeyDown(event, experience)}
+              tabIndex={0}
             >
               {experience}
             </li>
