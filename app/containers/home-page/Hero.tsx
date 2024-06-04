@@ -1,10 +1,13 @@
 import OrangeOutlineBtn from "@/app/components/OrangeOutlineBtn";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section className='pt-36 pb-28 2xl:pt-60 max-w-screen-lg mx-auto px-6 md:px-28' id='hero'>
-      <p className='fira text-secondary-color pb-5 pl-1'>Hej, mitt namn är</p>
+      <p className='fira text-secondary-color pb-5 pl-1'>{t("myNameIs")}</p>
       <h1 className='leading-none'>Simon Bengtsson</h1>
       <h2 className='text-gray leading-tight pb-4'>Skapar digitala lösningar</h2>
 
