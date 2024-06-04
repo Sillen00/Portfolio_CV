@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 import css from "./_Home.module.scss";
-import Elpro from "./experience/Elpro";
-import GymControl from "./experience/GymControl";
-import Kokokaka from "./experience/Kokokaka";
-import MedieInstitutet from "./experience/MedieInstitutet";
-import Netto from "./experience/Netto";
+import Elpro from "./experiencecomponents/Elpro";
+import GymControl from "./experiencecomponents/GymControl";
+import Kokokaka from "./experiencecomponents/Kokokaka";
+import MedieInstitutet from "./experiencecomponents/MedieInstitutet";
+import Netto from "./experiencecomponents/Netto";
 
 const Experience = () => {
   const [selectedItem, setSelectedItem] = useState("Kokokaka");
