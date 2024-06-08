@@ -1,3 +1,61 @@
 {
-  "myNameIs": "Hello, my name is"
+  "header": {
+    "about": "About",
+    "experience": "Experience",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "resume": "Resume"
+  },
+  "hero": {
+    "myNameIs": "Hello, my name is",
+    "whatIDo": "I create digital solutions",
+    "whatIDoLong": "I am a full-stack developer passionate about creating user-friendly digital solutions. My focus is on developing responsive and accessible web applications and constantly improving my skills."
+  },
+  "about": {
+    "aboutMe": "About me",
+    "aboutMeLong": "Hi! I am a junior Frontend Developer, born and raised in Alingsås. I am perceived as a positive guy who is eager to help and service-oriented. I have no issues with new tasks; rather, I am curious and motivated to develop my skills and learn new things. I enjoy collaborating but also have no problem working independently. I like to be organized and meticulous with the tasks I receive. I have no issues being flexible and helping out where it is most needed.",
+    "introducedTechnologies": "Introduced technologies"
+  },
+  "experience": {
+    "experience": "Experience",
+    "kokokaka": {
+      "title": "Frontend Developer",
+      "date": "January - May 2024",
+      "recommendationLetter": "Recommendation letter",
+      "description1": "At Kokokaka, I had the opportunity to truly explore and develop my creative and technical side as a front-end developer with a focus on UX/UI.",
+      "description2": "I worked with a variety of technologies, including HTML, CSS, React, WordPress, and even AR technologies. I also delved into Photoshop and Illustrator, which broadened my skills in both development and design.",
+      "description3": "I had an independent role where I often had to solve problems and conduct research on my own, but I greatly appreciated the support and insights I received from my colleagues.",
+      "description4": "This is how my supervisor described me: (translated to English) 'Simon is always very focused and dedicated to his work. When he encounters problems, he tries to find solutions using AI, forums, and tutorials. He is independent and meticulous.' I also received a very nice letter of recommendation from Kokokaka, which you can download above."
+    },
+    "gymControl": {
+      "title": "Fullstack Developer",
+      "date": "September - May 2023",
+      "description1": "At Gym Control, I had the opportunity to further develop my skills in frontend technologies such as HTML, CSS, JavaScript/jQuery, as well as integrations with various APIs and PHP with SQL as the backend.",
+      "description2": "At the end of my internship, I received very positive feedback from Johan: 'Simon is always on his toes and learns quickly, and he will be an asset to anyone who gets the chance to work with/hire him in the future. The best of all interns we have had in the company over the years.'"
+    },
+    "medieinstitutet": {
+      "title": "Studying Frontend",
+      "date": "September 2022 - May 2024",
+      "degreeCertificate": "Degree certificate",
+      "description1": "During my education, I have continuously developed my technical skills and grown both personally and professionally. I have learned to create responsive and user-friendly websites as well as the ability to solve problems, collaborate effectively in teams, and communicate clearly. My skills will be invaluable in my future career.",
+      "description2": "När jag blickar framåt ser jag många möjliga yrkesvägar. Att jämföra min nuvarande kunskap med den jag hade när jag började utbildningen ger mig en känsla av stolthet.Utbildningen har varit en ovärderlig del av min resa mot att bli en framgångsrik Front End Developer, och jag ser med spänning fram emot vad framtiden har att erbjuda.",
+      "description3": "At the end of my education, I received a positive message from my education leader, Johanna: 'You're awesome and constantly impress! It's been so fun to follow you during the course of your education. I also feel that you have developed a lot during your internship, which is great to see. Keep believing in yourself and enter the job market with confidence.'"
+    },
+    "elpro": {
+      "title": "Electrician",
+      "date": "September 2019 - September 2022",
+      "description1": "During my time at Elpro, I gained a deep understanding of industrial automation and developed my skills in electrical design. I worked as an electrical assembler, where I played a vital role in the production of advanced electrical control systems and cabinets.",
+      "description2": "Med hjälp av olika ritningar skapade jag skräddarsydda lösningar för att möta kundernas specifika behov. Jag hanterade både enstaka projekt och serietillverkning av apparatskåp. Min roll innefattade att bygga system från grunden och säkerställa att varje projekt uppfyllde höga kvalitetsstandarder.",
+      "description3": "I have learned the importance of precision, efficiency, and continuous improvement."
+    },
+    "netto": {
+      "title": "Store Clerk",
+      "date": "June - August 2019",
+      "description1": "After completing my high school education, I had the privilege of working as a retail salesperson at Netto, where I had the opportunity to develop skills in inventory management, cash handling, cleaning, maintenance, and customer service.",
+      "description2": "I learned the importance of effective communication, collaboration, and problem-solving, as well as how to manage demands and expectations from different customer groups."
+    }
+  },
+  "portfolio": {
+    "portfolio": "Portfolio"
+  }
 }
