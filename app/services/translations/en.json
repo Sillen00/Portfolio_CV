@@ -22,11 +22,13 @@
     "kokokaka": {
       "title": "Frontend Developer",
       "date": "January - May 2024",
-      "recommendationLetter": "Recommendation letter",
+      "recommendationLetter": "Recommendation Letter",
       "description1": "At Kokokaka, I had the opportunity to truly explore and develop my creative and technical side as a front-end developer with a focus on UX/UI.",
       "description2": "I worked with a variety of technologies, including HTML, CSS, React, WordPress, and even AR technologies. I also delved into Photoshop and Illustrator, which broadened my skills in both development and design.",
       "description3": "I had an independent role where I often had to solve problems and conduct research on my own, but I greatly appreciated the support and insights I received from my colleagues.",
-      "description4": "This is how my supervisor described me: (translated to English) 'Simon is always very focused and dedicated to his work. When he encounters problems, he tries to find solutions using AI, forums, and tutorials. He is independent and meticulous.' I also received a very nice letter of recommendation from Kokokaka, which you can download above."
+      "description4": "This is how my supervisor described me: (translated to English) ",
+      "quote": "'Simon is always very focused and dedicated to his work. When he encounters problems, he tries to find solutions using AI, forums, and tutorials. He is independent and meticulous.'",
+      "description5": "I also received a very nice letter of recommendation from Kokokaka, which you can download above."
     },
     "gymControl": {
       "title": "Fullstack Developer",
