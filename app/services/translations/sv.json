@@ -14,7 +14,7 @@
   },
   "about": {
     "aboutMe": "Om mig",
-    "aboutMeLong": "Hej! Jag är en junior Frontend-Utvecklare, född och uppvuxen i Alingsås. Jag upplevs som en positiv kille som gärna vill hjälpa till och är serviceinriktad. Har inga problem med nya arbetsuppgifter utan är snarare nyfiken och motiverad att utveckla mina färdigheter och lära mig nytt. Jag tycker det är roligt att samarbeta men har samtidigt inga problem att arbeta självständigt. Jag gillar att ha ordning och reda och är noggrann med de uppgifter jag får. Har inga problem med att vara flexibel och hjälpa till där det behövs som mest.",
+    "aboutMeLong": "Hej! Jag är en junior Frontend-Utvecklare, född och uppvuxen i Alingsås. Jag upplevs som en positiv kille som gärna vill hjälpa till och är serviceinriktad. <br /> <br /> Har inga problem med nya arbetsuppgifter utan är snarare nyfiken och motiverad att utveckla mina färdigheter och lära mig nytt. Jag tycker det är roligt att samarbeta men har samtidigt inga problem att arbeta självständigt. <br /> <br /> Jag gillar att ha ordning och reda och är noggrann med de uppgifter jag får. Har inga problem med att vara flexibel och hjälpa till där det behövs som mest.",
     "introducedTechnologies": "Introducerade tekniker"
   },
   "experience": {

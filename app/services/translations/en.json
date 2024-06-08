@@ -13,8 +13,8 @@
     "checkPortfolio": "Check out my portfolio!"
   },
   "about": {
-    "aboutMe": "About me",
-    "aboutMeLong": "Hi! I am a junior Frontend Developer, born and raised in Alingsås. I am perceived as a positive guy who is eager to help and service-oriented. I have no issues with new tasks; rather, I am curious and motivated to develop my skills and learn new things. I enjoy collaborating but also have no problem working independently. I like to be organized and meticulous with the tasks I receive. I have no issues being flexible and helping out where it is most needed.",
+    "aboutMe": "About Me",
+    "aboutMeLong": "Hi! I am a junior Frontend Developer, born and raised in Alingsås. I am perceived as a positive guy who is eager to help and service-oriented. <br /> <br /> I have no issues with new tasks. Rather, I am curious and motivated to develop my skills and learn new things. I enjoy collaborating but also have no problem working independently. <br /> <br /> I like to be organized and meticulous with the tasks I receive. I have no issues being flexible and helping out where it is most needed.",
     "introducedTechnologies": "Introduced technologies"
   },
   "experience": {
