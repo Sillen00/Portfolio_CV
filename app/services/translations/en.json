@@ -40,10 +40,11 @@
     "medieinstitutet": {
       "title": "Studying Frontend",
       "date": "September 2022 - May 2024",
-      "degreeCertificate": "Degree certificate",
+      "degreeCertificate": "Degree Certificate",
       "description1": "During my education, I have continuously developed my technical skills and grown both personally and professionally. I have learned to create responsive and user-friendly websites as well as the ability to solve problems, collaborate effectively in teams, and communicate clearly. My skills will be invaluable in my future career.",
       "description2": "As I look ahead, I see many possible career paths. Comparing my current knowledge to what) I had when I started the education fills me with a sense of pride. The education has been an invaluable part of my journey towards becoming a successful Front End Developer, and I look forward with excitement to what the future holds.",
-      "description3": "At the end of my education, I received a positive message from my education leader, Johanna: 'You're awesome and constantly impress! It's been so fun to follow you during the course of your education. I also feel that you have developed a lot during your internship, which is great to see. Keep believing in yourself and enter the job market with confidence.'"
+      "description3": "At the end of my education, I received a positive message from my education leader, Johanna: (translated from Swedish) ",
+      "quote": "'You're awesome and constantly impress! It's been so fun to follow you during the course of your education. I also feel that you have developed a lot during your internship, which is great to see. Keep believing in yourself and enter the job market with confidence.'"
     },
     "elpro": {
       "title": "Electrician",
