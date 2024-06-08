@@ -7,17 +7,14 @@ const Hero = () => {
 
   return (
     <section className='pt-36 pb-28 2xl:pt-60 max-w-screen-lg mx-auto px-6 md:px-28' id='hero'>
-      <p className='fira text-secondary-color pb-5 pl-1'>{t("myNameIs")}</p>
+      <p className='fira text-secondary-color pb-5 pl-1'>{t("hero.myNameIs")}</p>
       <h1 className='leading-none'>Simon Bengtsson</h1>
-      <h2 className='text-gray leading-tight pb-4'>Skapar digitala lösningar</h2>
+      <h2 className='text-gray leading-tight pb-4'>{t("hero.whatIDo")}</h2>
 
-      <p className='text-gray max-w-[550px] mb-14'>
-        Jag är en fullstackutvecklare som brinner för att skapa användarvänliga digitala lösningar. Mitt fokus ligger på att utveckla
-        responsiva och tillgängliga webbapplikationer och ständigt förbättra mina kunskaper.
-      </p>
+      <p className='text-gray max-w-[550px] mb-14'>{t("hero.whatIDoLong")}</p>
 
       <Link href='#portfolio'>
-        <OrangeOutlineBtn className='fira py-4 px-6'>Check out my portfolio!</OrangeOutlineBtn>
+        <OrangeOutlineBtn className='fira py-4 px-6'>{t("hero.checkPortfolio")}</OrangeOutlineBtn>
       </Link>
     </section>
   );
