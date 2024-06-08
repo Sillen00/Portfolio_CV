@@ -63,8 +63,8 @@
   },
   "portfolio": {
     "portfolio": "Portfolio",
-    "featuredProject": "Utvalda Projekt",
-    "otherProjects": "Andra Anmärkningsvärda Projekt",
+    "featuredProject": "Utvaldt Projekt",
+    "otherProjects": "Fler Anmärkningsvärda Projekt",
     "showMore": "Visa Mer",
     "showLess": "Visa Mindre"
   },

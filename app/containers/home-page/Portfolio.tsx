@@ -4,11 +4,13 @@ import Link from "next/link";
 // import { useRouter } from "next/router";
 import OrangeOutlineBtn from "@/app/components/OrangeOutlineBtn";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { twMerge } from "tailwind-merge";
 import { projects } from "../../../data/projects";
 import css from "./_Home.module.scss";
 
 const Portfolio = () => {
+  const { t } = useTranslation();
   const [showAllProjects, setShowAllProjects] = useState(false);
 
   const toggleShowAllProjects = () => {
@@ -28,7 +30,8 @@ const Portfolio = () => {
       {/* FEAUTURED PROJECTS ---------------------------------- */}
       <div className='max-w-screen-lg mx-auto pt-32 pb-28 px-6 md:px-28'>
         <h3 className={twMerge(css.line, "flex flex-nowrap items-center relative mb-8")}>
-          <span className='fira text-secondary-color text-2xl mr-4'>03. </span>Portfolio
+          <span className='fira text-secondary-color text-2xl mr-4'>03. </span>
+          {t("portfolio.portfolio")}
         </h3>
         {projects
           .filter(project => project.feautured)
@@ -43,16 +46,19 @@ const Portfolio = () => {
                 style={{ width: "100%", height: "100%" }}
               />
               <div className={twMerge(css.imageFilter)}></div>
-              <p className='fira text-secondary-color'>Feautured Project</p>
+              <p className='fira text-secondary-color'>{t("portfolio.featuredProject")}</p>
+
               <Link href={project.hostedLink ?? ""} target='_blank'>
                 <h3 className='hover:text-secondary-color'>{project.title}</h3>
               </Link>
+
               <p className='py-8 text-gray'>{project.text}</p>
               <ul className='fira text-gray flex gap-2.5 flex-wrap pb-4'>
                 {project.builtWith?.map((item, index) => (
                   <li key={index}>{item}</li>
                 ))}
               </ul>
+
               <div className='flex gap-4'>
                 <Link className='hover:text-secondary-color' href={project.githubLink ?? ""} target='_blank'>
                   <Github size={22} />
@@ -67,7 +73,7 @@ const Portfolio = () => {
           ))}
       </div>
 
-      <h3 className='text-center mt-24 mb-6'>Other Noteworthy Projects</h3>
+      <h3 className='text-center mt-24 mb-6'>{t("portfolio.otherProjects")}</h3>
 
       {/* UNFEAUTURED PROJECTS --------------------------------------------------- */}
       {/* UNFEAUTURED PROJECTS --------------------------------------------------- */}
@@ -122,7 +128,9 @@ const Portfolio = () => {
         tabIndex={0}
         onKeyDown={event => handleKeyDown(event, showAllProjects)}
       >
-        <OrangeOutlineBtn className='px-6 py-4 rounded-md'>{showAllProjects ? "Show Less" : "Show More"}</OrangeOutlineBtn>
+        <OrangeOutlineBtn className='px-6 py-4 rounded-md'>
+          {showAllProjects ? t("portfolio.showLess") : t("portfolio.showMore")}
+        </OrangeOutlineBtn>
       </div>
     </section>
   );
