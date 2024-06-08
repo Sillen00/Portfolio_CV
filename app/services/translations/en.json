@@ -56,6 +56,19 @@
     }
   },
   "portfolio": {
-    "portfolio": "Portfolio"
+    "portfolio": "Portfolio",
+    "featuredProject": "Featured project",
+    "otherProjects": "Other Noteworthy Projects",
+    "showMore": "Show more",
+    "showLess": "Show less"
+  },
+  "contact": {
+    "title": "04. What&rsquo;s next?",
+    "getInTouch": "Get In Touch",
+    "endingText": "I'm seeking new opportunities. My inbox is always open, whether you have a question or just want to say hello, I'll do my best to get back to you!",
+    "contactMe": "Say Hello"
+  },
+  "footer": {
+    "rightsReserved": "© 2024 by Simon Bengtsson"
   }
 }
