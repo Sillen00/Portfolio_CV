@@ -1,20 +1,9 @@
 import { Play } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 import css from "../_Home.module.scss";
 
 const Kokokaka = () => {
-  const [showPDF, setShowPDF] = useState(false);
-
-  const handlePDFClick = () => {
-    setShowPDF(true);
-  };
-
-  const handlePDFClose = () => {
-    setShowPDF(false);
-  };
-
   return (
     <div>
       <h4>
