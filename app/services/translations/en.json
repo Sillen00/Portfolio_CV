@@ -9,7 +9,8 @@
   "hero": {
     "myNameIs": "Hello, my name is",
     "whatIDo": "I create digital solutions",
-    "whatIDoLong": "I am a full-stack developer passionate about creating user-friendly digital solutions. My focus is on developing responsive and accessible web applications and constantly improving my skills."
+    "whatIDoLong": "I am a full-stack developer passionate about creating user-friendly digital solutions. My focus is on developing responsive and accessible web applications and constantly improving my skills.",
+    "checkPortfolio": "Check out my portfolio!"
   },
   "about": {
     "aboutMe": "About me",
@@ -38,14 +39,14 @@
       "date": "September 2022 - May 2024",
       "degreeCertificate": "Degree certificate",
       "description1": "During my education, I have continuously developed my technical skills and grown both personally and professionally. I have learned to create responsive and user-friendly websites as well as the ability to solve problems, collaborate effectively in teams, and communicate clearly. My skills will be invaluable in my future career.",
-      "description2": "När jag blickar framåt ser jag många möjliga yrkesvägar. Att jämföra min nuvarande kunskap med den jag hade när jag började utbildningen ger mig en känsla av stolthet.Utbildningen har varit en ovärderlig del av min resa mot att bli en framgångsrik Front End Developer, och jag ser med spänning fram emot vad framtiden har att erbjuda.",
+      "description2": "As I look ahead, I see many possible career paths. Comparing my current knowledge to what I had when I started the education fills me with a sense of pride. The education has been an invaluable part of my journey towards becoming a successful Front End Developer, and I look forward with excitement to what the future holds.",
       "description3": "At the end of my education, I received a positive message from my education leader, Johanna: 'You're awesome and constantly impress! It's been so fun to follow you during the course of your education. I also feel that you have developed a lot during your internship, which is great to see. Keep believing in yourself and enter the job market with confidence.'"
     },
     "elpro": {
       "title": "Electrician",
       "date": "September 2019 - September 2022",
       "description1": "During my time at Elpro, I gained a deep understanding of industrial automation and developed my skills in electrical design. I worked as an electrical assembler, where I played a vital role in the production of advanced electrical control systems and cabinets.",
-      "description2": "Med hjälp av olika ritningar skapade jag skräddarsydda lösningar för att möta kundernas specifika behov. Jag hanterade både enstaka projekt och serietillverkning av apparatskåp. Min roll innefattade att bygga system från grunden och säkerställa att varje projekt uppfyllde höga kvalitetsstandarder.",
+      "description2": "With the help of various drawings, I created customized solutions to meet the specific needs of customers. I handled both individual projects and serial production of control cabinets. My role involved building systems from scratch and ensuring that each project met high-quality standards.",
       "description3": "I have learned the importance of precision, efficiency, and continuous improvement."
     },
     "netto": {
