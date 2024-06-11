@@ -3,6 +3,8 @@ import { Roboto } from "next/font/google";
 import AbsoluteLinks from "./components/AbsoluteLinks";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+// import { I18nextProvider } from 'react-i18next';
+// import i18n from './services/i18n';
 import "./globals.css";
 
 const inter = Roboto({
