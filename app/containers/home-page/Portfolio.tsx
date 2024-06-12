@@ -31,7 +31,8 @@ const Portfolio = () => {
       <div className='max-w-screen-lg mx-auto pt-32 pb-28 px-6 md:px-28'>
         <h3 className={twMerge(css.line, "flex flex-nowrap items-center relative mb-8")}>
           <span className='fira text-secondary-color text-2xl mr-4'>03. </span>
-          {t("portfolio.portfolio")}
+          Portfolio
+          {/* {t("portfolio.portfolio")} */}
         </h3>
         {projects
           .filter(project => project.feautured)
@@ -46,7 +47,10 @@ const Portfolio = () => {
                 style={{ width: "100%", height: "100%" }}
               />
               <div className={twMerge(css.imageFilter)}></div>
-              <p className='fira text-secondary-color'>{t("portfolio.featuredProject")}</p>
+              <p className='fira text-secondary-color'>
+                Featured Project
+                {/* {t("portfolio.featuredProject")} */}
+              </p>
 
               <Link href={project.hostedLink ?? ""} target='_blank'>
                 <h3 className='hover:text-secondary-color'>{project.title}</h3>
@@ -73,7 +77,10 @@ const Portfolio = () => {
           ))}
       </div>
 
-      <h3 className='text-center mt-24 mb-6'>{t("portfolio.otherProjects")}</h3>
+      <h3 className='text-center mt-24 mb-6'>
+        Other Noteworthy Projects
+        {/* {t("portfolio.otherProjects")} */}
+      </h3>
 
       {/* UNFEAUTURED PROJECTS --------------------------------------------------- */}
       {/* UNFEAUTURED PROJECTS --------------------------------------------------- */}
@@ -129,7 +136,9 @@ const Portfolio = () => {
         onKeyDown={event => handleKeyDown(event, showAllProjects)}
       >
         <OrangeOutlineBtn className='px-6 py-4 rounded-md'>
-          {showAllProjects ? t("portfolio.showLess") : t("portfolio.showMore")}
+          {showAllProjects ? "Show more" : "Show less"}
+          {/* t("portfolio.showLess") */}
+          {/* t("portfolio.showMore") */}
         </OrangeOutlineBtn>
       </div>
     </section>
