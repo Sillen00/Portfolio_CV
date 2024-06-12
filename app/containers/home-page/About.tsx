@@ -1,10 +1,10 @@
 import { Play } from "lucide-react";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 import { twMerge } from "tailwind-merge";
 import css from "./_Home.module.scss";
 
 const About = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   const skills = [
     "Javascript",

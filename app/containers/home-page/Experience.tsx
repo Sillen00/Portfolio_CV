@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 import { twMerge } from "tailwind-merge";
 import css from "./_Home.module.scss";
 import Elpro from "./experiencecomponents/Elpro";
@@ -9,7 +9,7 @@ import MedieInstitutet from "./experiencecomponents/MedieInstitutet";
 import Netto from "./experiencecomponents/Netto";
 
 const Experience = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   const [selectedItem, setSelectedItem] = useState("Kokokaka");
 
   const experiences = ["Kokokaka", "Gym Control", "MedieInstitutet", "Elpro", "Netto"];

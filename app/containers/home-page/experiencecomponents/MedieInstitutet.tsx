@@ -1,11 +1,11 @@
 import { Play } from "lucide-react";
 import Link from "next/link";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 import { twMerge } from "tailwind-merge";
 import css from "../_Home.module.scss";
 
 const MedieInstitutet = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   return (
     <div>
@@ -58,9 +58,9 @@ const MedieInstitutet = () => {
           At the end of my education, I received a positive message from my education leader, Johanna: (translated from Swedish){" "}
           {/* {t("experience.medieinstitutet.description3")} */}
           <span className='text-color'>
-            &#39;You&#39;re awesome and constantly impress! It&#39;s been so fun to follow you during the course of your education. I also feel that
-            you have developed a lot during your internship, which is great to see. Keep believing in yourself and enter the job market with
-            confidence.&#39;
+            &#39;You&#39;re awesome and constantly impress! It&#39;s been so fun to follow you during the course of your education. I also
+            feel that you have developed a lot during your internship, which is great to see. Keep believing in yourself and enter the job
+            market with confidence.&#39;
             {/* {t("experience.medieinstitutet.quote")} */}
           </span>
         </p>

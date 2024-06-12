@@ -1,11 +1,11 @@
 import { Play } from "lucide-react";
 import Link from "next/link";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 import { twMerge } from "tailwind-merge";
 import css from "../_Home.module.scss";
 
 const GymControl = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   return (
     <div>

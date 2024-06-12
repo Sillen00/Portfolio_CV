@@ -1,9 +1,9 @@
 import OrangeOutlineBtn from "@/app/components/OrangeOutlineBtn";
 import Link from "next/link";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 
 const Hero = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   return (
     <section className='pt-36 pb-28 2xl:pt-60 max-w-screen-lg mx-auto px-6 md:px-28' id='hero'>

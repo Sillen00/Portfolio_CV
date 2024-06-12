@@ -4,13 +4,13 @@ import Link from "next/link";
 // import { useRouter } from "next/router";
 import OrangeOutlineBtn from "@/app/components/OrangeOutlineBtn";
 import { useState } from "react";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 import { twMerge } from "tailwind-merge";
 import { projects } from "../../../data/projects";
 import css from "./_Home.module.scss";
 
 const Portfolio = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   const [showAllProjects, setShowAllProjects] = useState(false);
 
   const toggleShowAllProjects = () => {

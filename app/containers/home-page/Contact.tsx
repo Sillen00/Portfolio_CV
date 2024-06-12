@@ -1,9 +1,9 @@
 import OrangeOutlineBtn from "@/app/components/OrangeOutlineBtn";
 import Link from "next/link";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 
 const Contact = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   return (
     <section className='max-w-screen-lg mx-auto pt-52 pb-60 px-6 md:px-28' id='contact'>
