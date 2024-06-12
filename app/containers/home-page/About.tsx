@@ -30,11 +30,18 @@ const About = () => {
     <section className='max-w-screen-lg mx-auto pt-32 pb-28 px-6 md:px-28' id='about'>
       <h3 className={twMerge(css.line, "flex text-nowrap items-center relative mb-8")}>
         <span className='fira text-secondary-color text-2xl mr-4'>01. </span>
-        {t("about.aboutMe")}
+        About Me
+        {/* {t("about.aboutMe")} */}
       </h3>
 
       <div className='flex flex-col md:flex-row gap-4 wrap'>
-        <p className='min-w-[50%] text-gray' dangerouslySetInnerHTML={{ __html: t("about.aboutMeLong") }}></p> 
+        <p className='min-w-[50%] text-gray'>
+          {/* dangerouslySetInnerHTML={{ __html: t("about.aboutMeLong") }} */}
+          Hi! I am a junior Frontend Developer, born and raised in Alingsås. I am perceived as a positive guy who is eager to help and
+          service-oriented. <br /> <br /> I have no issues with new tasks. Rather, I am curious and motivated to develop my skills and learn
+          new things. I enjoy collaborating but also have no problem working independently. <br /> <br /> I like to be organized and
+          meticulous with the tasks I receive. I have no issues being flexible and helping out where it is most needed.
+        </p>
 
         <div className='relative min-w-[50%] flex flex-wrap sm:gap-8 border p-6 border-secondary-color mt-8 md:mt-0'>
           <p className={twMerge("absolute -top-3 bg-[var(--background-color)] px-2 left-4")}>Skills</p>
@@ -50,7 +57,10 @@ const About = () => {
             ))}
           </ul>
           <ul>
-            <li className={twMerge(css.linkHover, "pt-1")}>{t("about.introducedTechnologies")}:</li>
+            <li className={twMerge(css.linkHover, "pt-1")}>
+              Introduced technologies
+              {/* {t("about.introducedTechnologies")}: */}
+            </li>
             {introducedTechnologies.map(tech => (
               <li
                 key={tech}
