@@ -29,6 +29,8 @@ const Hero = () => {
           {/* {t("hero.checkPortfolio")} */}
         </OrangeOutlineBtn>
       </Link>
+
+      {/* <Image width={60} height={60} className='absolute z-50 bottom-0 left-[50%] -translate-x-2/4' src='/icons/scroll.gif' alt='Your GIF' /> */}
     </section>
   );
 };
