@@ -57,7 +57,7 @@ const Header = () => {
               </li>
             ))}
           </ul>
-          <Link href='./pdfs/Simon_Bengtsson_CV.pdf' target='_blank' className='hidden md:block ml-5'>
+          <Link href='./pdfs/Simon_Bengtsson_CV_SV_ENG.pdf' target='_blank' className='hidden md:block ml-5'>
             <OrangeOutlineBtn className='px-4 py-1.5'>Resume</OrangeOutlineBtn>
           </Link>
         </div>
@@ -87,7 +87,7 @@ const Header = () => {
                   </li>
                 </Link>
               ))}
-              <Link href='./pdfs/Simon_Bengtsson_CV.pdf' target='_blank' className='w-[calc(100%-96px)] mx-auto mt-12'>
+              <Link href='./pdfs/Simon_Bengtsson_CV_SV_ENG.pdf' target='_blank' className='w-[calc(100%-96px)] mx-auto mt-12'>
                 <OrangeOutlineBtn className='px-4 py-1.5 w-full'>Resume</OrangeOutlineBtn>
               </Link>
             </ul>
