@@ -4,13 +4,15 @@
     "experience": "Experience",
     "portfolio": "Portfolio",
     "contact": "Contact",
-    "resume": "Resume"
+    "resume": "Resume",
+    "changeLangTo": "Svenska"
   },
   "hero": {
     "myNameIs": "Hello, my name is",
     "whatIDo": "I create digital solutions",
     "whatIDoLong": "I am a full-stack developer passionate about creating user-friendly digital solutions. My focus is on developing responsive and accessible web applications and constantly improving my skills.",
-    "checkPortfolio": "Check out my portfolio!"
+    "checkPortfolio": "Check out my portfolio!",
+    "test": "Testing with parameter - {{something}} - {{somethingelse}}!"
   },
   "about": {
     "aboutMe": "About Me",
