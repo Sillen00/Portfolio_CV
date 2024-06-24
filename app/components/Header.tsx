@@ -3,20 +3,16 @@ import { AlignJustify, Github, Linkedin, Phone, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import { twMerge } from "tailwind-merge";
 import css from "./Header.module.scss";
 import OrangeOutlineBtn from "./OrangeOutlineBtn";
 
 const Header = () => {
+  const { t, i18n } = useTranslation();
   // const currentPath = usePathname();
   // className={`${href === currentPath ? "text-zinc-900" : "text-zinc-500"} hover:text-orange-600`}>
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  // const [t, i18n] = useTranslation();
-  // const handleLanguageChange = (language: string) => {
-  //   i18n.changeLanguage(language);
-  // };
 
   const links = [
     { href: "#about", label: "About" },
@@ -25,14 +21,12 @@ const Header = () => {
     { href: "#contact", label: "Contact" },
   ];
 
+  const toggleLanguage = () => {
+    i18n.changeLanguage(i18n.language.toLowerCase().startsWith("en") ? "sv" : "en");
+  };
+
   return (
     <header className={twMerge(css.header, "fira flex justify-between items-center px-6 md:px-12 py-2 fixed w-full z-50")}>
-      {/* <button onClick={() => handleLanguageChange("en")} className='hover:text-secondary-color'>
-        EN
-      </button>
-      <button onClick={() => handleLanguageChange("sv")} className='hover:text-secondary-color'>
-        SV
-      </button> */}
       <Link href='#top'>
         <Image
           className={css.logo}
@@ -60,6 +54,7 @@ const Header = () => {
           <Link href='./pdfs/Simon_Bengtsson_CV_SV_ENG.pdf' target='_blank' className='hidden md:block ml-5'>
             <OrangeOutlineBtn className='px-4 py-1.5'>Resume</OrangeOutlineBtn>
           </Link>
+          <button onClick={toggleLanguage}>{t("header.changeLangTo")}</button>
         </div>
 
         {isMenuOpen && (
