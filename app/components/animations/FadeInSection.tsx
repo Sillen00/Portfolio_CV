@@ -32,7 +32,7 @@ const FadeInSection = ({ children }: { children: React.ReactNode }) => {
                 start: "top 90%",
                 end: "top 45%",
                 scrub: true,
-                markers: true,
+                // markers: true,
               },
             }
           );
