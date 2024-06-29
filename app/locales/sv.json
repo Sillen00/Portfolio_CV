@@ -5,7 +5,7 @@
     "portfolio": "Portfolio",
     "contact": "Contact",
     "resume": "CV",
-    "changeLangTo": "English"
+    "changeLangTo": "EN"
   },
   "hero": {
     "myNameIs": "Hej, mitt namn är",
@@ -20,7 +20,7 @@
     "introducedTechnologies": "Introducerade tekniker"
   },
   "experience": {
-    "experience": "Experience",
+    "experience": "Erfarenhet",
     "kokokaka": {
       "title": "Frontend Utvecklare",
       "date": "januari - maj 2024",
@@ -63,7 +63,7 @@
     }
   },
   "portfolio": {
-    "portfolio": "Portfolio",
+    "portfolio": "Portfölj",
     "featuredProject": "Utvaldt Projekt",
     "otherProjects": "Fler Anmärkningsvärda Projekt",
     "showMore": "Visa Mer",

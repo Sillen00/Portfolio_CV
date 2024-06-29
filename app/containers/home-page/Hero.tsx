@@ -11,7 +11,7 @@ const Hero = () => {
       <h1 className='leading-none'>Simon Bengtsson</h1>
       <h2 className='text-gray leading-tight pb-4'>{t("hero.whatIDo")}</h2>
       <p className='text-gray max-w-[550px] mb-14'>{t("hero.whatIDoLong")}</p>
-      <p>{t("hero.test", { something: 123, somethingelse: "tudelu" })}</p>
+      {/* <p>{t("hero.test", { something: 123, somethingelse: "tudelu" })}</p> */}
       <Link href='#portfolio'>
         <OrangeOutlineBtn className='fira py-4 px-6'>{t("hero.checkPortfolio")}</OrangeOutlineBtn>
       </Link>

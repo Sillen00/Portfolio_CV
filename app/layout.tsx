@@ -36,7 +36,7 @@ export default function RootLayout({
 }>) {
   // const language = detectLanguage()
   return (
-    <html>
+    <html lang='en'>
       <body suppressHydrationWarning={true} className={inter.className}>
         <Header />
         <main>{children}</main>

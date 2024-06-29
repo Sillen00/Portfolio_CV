@@ -25,7 +25,6 @@ const Header = () => {
     const timer = setTimeout(() => {
       if (typeof window !== "undefined" && window.navigator.language) {
         const detectedLanguage = window.navigator.language.split("-")[0];
-        console.log(detectedLanguage);
         // setLanguage(detectedLanguage);
         i18n.changeLanguage(detectedLanguage == "sv" ? "sv" : "en");
       }
@@ -67,7 +66,7 @@ const Header = () => {
           <Link href='./pdfs/Simon_Bengtsson_CV_SV_ENG.pdf' target='_blank' className='hidden md:block ml-5'>
             <OrangeOutlineBtn className='px-4 py-1.5'>Resume</OrangeOutlineBtn>
           </Link>
-          <button onClick={toggleLanguage}>{t("header.changeLangTo")}</button>
+          <button className='hidden md:block' onClick={toggleLanguage}>{t("header.changeLangTo")}</button>
         </div>
 
         {isMenuOpen && (
