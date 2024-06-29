@@ -4,6 +4,7 @@ import AbsoluteLinks from "./components/AbsoluteLinks";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./globals.css";
+// import { detectLanguage } from "./services/detectLanguage";
 
 const inter = Roboto({
   weight: "400",
@@ -33,8 +34,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // const language = detectLanguage()
   return (
-    <html lang='en'>
+    <html>
       <body suppressHydrationWarning={true} className={inter.className}>
         <Header />
         <main>{children}</main>

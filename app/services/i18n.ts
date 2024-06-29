@@ -13,6 +13,16 @@ const resources = {
   },
 };
 
+// Function to detect browser language
+// const detectLanguage = () => {
+//   if (typeof window !== "undefined" && window.navigator.language) {
+//     const language = window.navigator.language;
+//     // Return only the language code (e.g., "en" instead of "en-US")
+//     return language.split("-")[0];
+//   }
+//   return "en"; // Default to English if detection fails
+// };
+
 i18n
   // detect user language
   // learn more: https://github.com/i18next/i18next-browser-languageDetector
@@ -23,6 +33,7 @@ i18n
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
     debug: true,
+    // lng: detectLanguage(),
     fallbackLng: "en",
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
