@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import FadeInSection from "@/app/components/animations/FadeInSection";
 import { twMerge } from "tailwind-merge";
 import css from "./_Home.module.scss";
@@ -10,7 +10,7 @@ import MedieInstitutet from "./experiencecomponents/MedieInstitutet";
 import Netto from "./experiencecomponents/Netto";
 
 const Experience = () => {
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
   const [selectedItem, setSelectedItem] = useState("Kokokaka");
 
   const experiences = ["Kokokaka", "Gym Control", "MedieInstitutet", "Elpro", "Netto"];
@@ -26,8 +26,8 @@ const Experience = () => {
       <section className='max-w-screen-lg mx-auto pt-32 pb-28 px-6 md:px-28' id='experience'>
         <h3 className={twMerge(css.line, "flex flex-nowrap items-center relative mb-8")}>
           <span className='fira text-secondary-color text-2xl mr-4'>02. </span>
-          Experience
-          {/* {t("experience.experience")} */}
+          {/* Experience */}
+          {t("experience.experience")}
         </h3>
 
         <div className='sm:flex'>

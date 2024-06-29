@@ -4,13 +4,13 @@ import Link from "next/link";
 // import { useRouter } from "next/router";
 import OrangeOutlineBtn from "@/app/components/OrangeOutlineBtn";
 import { useState } from "react";
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import { twMerge } from "tailwind-merge";
 import { projects } from "../../../data/projects";
 import css from "./_Home.module.scss";
 
 const Portfolio = () => {
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
   const [showAllProjects, setShowAllProjects] = useState(false);
 
   const toggleShowAllProjects = () => {
@@ -31,8 +31,8 @@ const Portfolio = () => {
       <div className='max-w-screen-lg mx-auto pt-32 pb-28 px-6 md:px-28'>
         <h3 className={twMerge(css.line, "flex flex-nowrap items-center relative mb-8")}>
           <span className='fira text-secondary-color text-2xl mr-4'>03. </span>
-          Portfolio
-          {/* {t("portfolio.portfolio")} */}
+          {/* Portfolio */}
+          {t("portfolio.portfolio")}
         </h3>
         {projects
           .filter(project => project.feautured)
@@ -48,8 +48,8 @@ const Portfolio = () => {
               />
               <div className={twMerge(css.imageFilter)}></div>
               <p className='fira text-secondary-color'>
-                Featured Project
-                {/* {t("portfolio.featuredProject")} */}
+                {/* Featured Project */}
+                {t("portfolio.featuredProject")}
               </p>
 
               <Link href={project.hostedLink ?? ""} target='_blank'>
@@ -78,8 +78,8 @@ const Portfolio = () => {
       </div>
 
       <h3 className='text-center mt-24 mb-6'>
-        Other Noteworthy Projects
-        {/* {t("portfolio.otherProjects")} */}
+        {/* Other Noteworthy Projects */}
+        {t("portfolio.otherProjects")}
       </h3>
 
       {/* UNFEAUTURED PROJECTS --------------------------------------------------- */}
@@ -136,7 +136,7 @@ const Portfolio = () => {
         onKeyDown={event => handleKeyDown(event, showAllProjects)}
       >
         <OrangeOutlineBtn className='px-6 py-4 rounded-md'>
-          {showAllProjects ? "Show more" : "Show less"}
+          {showAllProjects ? t("portfolio.showMore") : t("portfolio.showLess")}
           {/* t("portfolio.showLess") */}
           {/* t("portfolio.showMore") */}
         </OrangeOutlineBtn>
