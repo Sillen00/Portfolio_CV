@@ -55,7 +55,7 @@ const Header = () => {
         <div className='flex gap-5'>
           <ul className={twMerge("gap-5 hidden md:flex items-center")}>
             {links.map(({ href, label }, index) => (
-              <li key={href} className={"hover:text-secondary-color"}>
+              <li key={href} className={"hover:text-secondary-color select-none"}>
                 <Link href={href}>
                   <span className='text-secondary-color'>0{index + 1}. </span>
                   {label}
@@ -66,7 +66,9 @@ const Header = () => {
           <Link href='./pdfs/Simon_Bengtsson_CV_SV_ENG.pdf' target='_blank' className='hidden md:block ml-5'>
             <OrangeOutlineBtn className='px-4 py-1.5'>Resume</OrangeOutlineBtn>
           </Link>
-          <button className='hidden md:block' onClick={toggleLanguage}>{t("header.changeLangTo")}</button>
+          <button className='hidden md:block hover:text-secondary-color' onClick={toggleLanguage}>
+            {t("header.changeLangTo")}
+          </button>
         </div>
 
         {isMenuOpen && (
