@@ -54,7 +54,7 @@ const Portfolio = () => {
                     trigger: ref,
                     start: "top bottom-=30", // Adjust start point based on your needs
                     toggleActions: "play none none none",
-                    markers: true,
+                    // markers: true,
                   },
                 }
               );
@@ -74,7 +74,7 @@ const Portfolio = () => {
                     trigger: ref,
                     start: "top bottom-=300", // Adjust start point based on your needs
                     toggleActions: "play none none none",
-                    markers: true,
+                    // markers: true,
                   },
                 }
               );
