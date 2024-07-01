@@ -3,11 +3,15 @@ import Image from "next/image";
 import Link from "next/link";
 // import { useRouter } from "next/router";
 import OrangeOutlineBtn from "@/app/components/OrangeOutlineBtn";
-import { useState } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { twMerge } from "tailwind-merge";
 import { projects } from "../../../data/projects";
 import css from "./_Home.module.scss";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Portfolio = () => {
   const { t } = useTranslation();
@@ -22,6 +26,68 @@ const Portfolio = () => {
       setShowAllProjects(!showAllProjects);
     }
   };
+
+  const projectRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    const mm = gsap.matchMedia();
+
+    mm.add(
+      {
+        isMobile: "(max-width: 767px)", // Ställ in mobil brytpunkt
+        isDesktop: "(min-width: 768px)", // Ställ in desktop brytpunkt
+      },
+      context => {
+        let { isMobile, isDesktop }: { isMobile?: string; isDesktop?: string } = context.conditions || {};
+
+        if (isMobile) {
+          projectRefs.current.forEach((ref, index) => {
+            if (ref) {
+              gsap.fromTo(
+                ref,
+                { opacity: 0 },
+                {
+                  opacity: 1,
+                  duration: 0.5,
+                  delay: index * 0.2, // Stagger the animations
+                  scrollTrigger: {
+                    trigger: ref,
+                    start: "top bottom-=30", // Adjust start point based on your needs
+                    toggleActions: "play none none none",
+                    markers: true,
+                  },
+                }
+              );
+            }
+          });
+        } else if (isDesktop) {
+          projectRefs.current.forEach((ref, index) => {
+            if (ref) {
+              gsap.fromTo(
+                ref,
+                { opacity: 0 },
+                {
+                  opacity: 1,
+                  duration: 1.5,
+                  delay: index * 0.2, // Stagger the animations
+                  scrollTrigger: {
+                    trigger: ref,
+                    start: "top bottom-=300", // Adjust start point based on your needs
+                    toggleActions: "play none none none",
+                    markers: true,
+                  },
+                }
+              );
+            }
+          });
+        }
+      }
+    );
+
+    return () => {
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    };
+  }, []);
 
   return (
     <section id='portfolio'>
@@ -89,43 +155,44 @@ const Portfolio = () => {
         {projects
           .filter(project => !project.feautured)
           .slice(0, showAllProjects ? projects.length : 6)
-          .map(project => (
+          .map((project, index) => (
             <div
+              ref={el => {
+                projectRefs.current[index] = el;
+              }}
               className={twMerge(css.unfeautured, "px-5 pt-8 pb-20 relative mb-6 bg-background-color-dark rounded-md ")}
               key={project.id}
               // href={project.hostedLink ? project.hostedLink : project.githubLink}
               // target='_blank'
             >
-              <div>
-                <div className='flex justify-between items-center mb-6'>
-                  <Folder size={42} className='text-secondary-color' />
-                  <div className='flex gap-3'>
-                    {project.hostedLink ? (
-                      <Link className='hover:text-secondary-color' href={project.hostedLink} target='_blank'>
-                        <ExternalLink size={22} />
-                        <span className={css.visuallyHidden}>External Project Link</span>
-                      </Link>
-                    ) : (
-                      <span className='w-[22px]'></span>
-                    )}
-                    {project.githubLink ? (
-                      <Link className='hover:text-secondary-color' href={project.githubLink} target='_blank'>
-                        <Github size={22} />
-                        <span className={css.visuallyHidden}>GitHub Profile</span>
-                      </Link>
-                    ) : (
-                      <span className='w-[22px]'></span>
-                    )}
-                  </div>
+              <div className='flex justify-between items-center mb-6'>
+                <Folder size={42} className='text-secondary-color' />
+                <div className='flex gap-3'>
+                  {project.hostedLink ? (
+                    <Link className='hover:text-secondary-color' href={project.hostedLink} target='_blank'>
+                      <ExternalLink size={22} />
+                      <span className={css.visuallyHidden}>External Project Link</span>
+                    </Link>
+                  ) : (
+                    <span className='w-[22px]'></span>
+                  )}
+                  {project.githubLink ? (
+                    <Link className='hover:text-secondary-color' href={project.githubLink} target='_blank'>
+                      <Github size={22} />
+                      <span className={css.visuallyHidden}>GitHub Profile</span>
+                    </Link>
+                  ) : (
+                    <span className='w-[22px]'></span>
+                  )}
                 </div>
-                <h4 className='text-light pb-2.5'>{project.title}</h4>
-                <p className='small text-gray'>{project.text}</p>
-                <ul className='fira text-gray flex gap-2.5 flex-wrap absolute bottom-[24px] '>
-                  {project.builtWith?.map((item, index) => (
-                    <li key={index}>{item}</li>
-                  ))}
-                </ul>
               </div>
+              <h4 className='text-light pb-2.5'>{project.title}</h4>
+              <p className='small text-gray'>{project.text}</p>
+              <ul className='fira text-gray flex gap-2.5 flex-wrap absolute bottom-[24px] '>
+                {project.builtWith?.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
             </div>
           ))}
       </div>
