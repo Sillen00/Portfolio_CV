@@ -136,7 +136,7 @@ const Portfolio = () => {
         onKeyDown={event => handleKeyDown(event, showAllProjects)}
       >
         <OrangeOutlineBtn className='px-6 py-4 rounded-md'>
-          {showAllProjects ? t("portfolio.showMore") : t("portfolio.showLess")}
+          {showAllProjects ? t("portfolio.showLess") : t("portfolio.showMore")}
           {/* t("portfolio.showLess") */}
           {/* t("portfolio.showMore") */}
         </OrangeOutlineBtn>

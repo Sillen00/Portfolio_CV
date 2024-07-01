@@ -31,7 +31,7 @@ const About = () => {
     <FadeInSection>
       <section className='max-w-screen-lg mx-auto pt-32 pb-28 px-6 md:px-28' id='about'>
         <h3 className={twMerge(css.line, "flex text-nowrap items-center relative mb-8")}>
-          <span className='fira text-secondary-color text-2xl mr-4'>01. </span>
+          <span className='fira text-secondary-color text-2xl mr-4 text-nowrap'>01. </span>
           {/* About Me */}
           {t("about.aboutMe")}
         </h3>
