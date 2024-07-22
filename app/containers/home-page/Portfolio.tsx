@@ -90,7 +90,7 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <section id='portfolio'>
+    <section lang='en' id='portfolio'>
       {/* FEAUTURED PROJECTS ---------------------------------- */}
       {/* FEAUTURED PROJECTS ---------------------------------- */}
       {/* FEAUTURED PROJECTS ---------------------------------- */}
